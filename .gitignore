@@ -1,3 +1,14 @@
+# Generated static site
+_site
+.jekyll-cache
+
+# OS Files
+Thumbs.db
+.DS_Store
+
+*.nogit
+*.old
+
 # Prerequisites
 *.d
 

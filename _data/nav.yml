@@ -1,0 +1,23 @@
+- title: Lectures
+  url: /lectures/
+  absolute: False
+  
+- title: Projects
+  url: /projects/
+  absolute: False
+
+- title: Resources
+  url: /resources/
+  absolute: False
+
+- title: Piazza
+  url:  https://piazza.com/mail.utoronto.ca/summer2020/cscc69
+  absolute: True
+
+- title: Github
+  url: https://github.com/ThierrySans/CSCC69
+  absolute: True
+  
+- title: Feedback
+  url: https://forms.gle/kksJCc48sYKUwP4y7
+  absolute: True
