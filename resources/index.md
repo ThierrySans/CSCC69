@@ -5,7 +5,7 @@ permalink: /resources/
 
 ## Textbooks
 
-<img src="http://pages.cs.wisc.edu/~remzi/OSTEP/book-cover-two.jpg" alt="Operating Systems: Three Easy Pieces" width="150"/>
+<img src="../static/media/book-cover.jpg" alt="Operating Systems: Three Easy Pieces" width="150"/>
 
 **Operating Systems: Three Easy Pieces** by *Remzi H. Arpaci-Dusseau* and *Andrea C. Arpaci-Dusseau*, 
 
