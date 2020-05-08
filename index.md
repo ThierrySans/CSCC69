@@ -123,6 +123,6 @@ Failure to comply with these guidelines is a serious academic offence. In past a
 
 The University of Toronto is committed to accessibility. If you require accommodations for a disability, or have any accessibility concerns about the course, the classroom or course materials, please contact Accessibility Services as soon as possible: disability.services@utoronto.ca or <http://studentlife.utoronto.ca/accessibility>
 
-### Acknowledgments 
+## Acknowledgments 
 
 The course syllabus, lecture and project materials are heavily influenced by Stanford CS 140 and John Hopkins University CS 318. I would like to thank Ben Pfaff (Stanford and VMware Research), David Mazières (Stanford) and Ryan Huang (John Hopkins University) for giving me access to their materials.
