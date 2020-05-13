@@ -1,7 +1,8 @@
 - week: Intro
-#   notes:
-#       - Introduction: 01/slides/C09-Introduction.pdf
-#       - HTML & CSS: 01/slides/C09-HTMLandCSS.pdf
+  link: https://youtu.be/SzFFJ8JBXek
+  notes:
+      - Introduction: 01/slides/C69-TheBigPicture.pdf
+      - HTML & CSS: 01/slides//C69-Introduction.pdf
 #   readings:
 #       - HTML on MDN: https://developer.mozilla.org/en-US/docs/Learn/HTML/Howto
 #       - CSS on MDN: https://developer.mozilla.org/en-US/docs/Learn/CSS/Howto
