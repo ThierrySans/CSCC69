@@ -1,8 +1,8 @@
 - week: Intro
   link: https://youtu.be/SzFFJ8JBXek
   notes:
-      - Introduction: 01/slides/C69-TheBigPicture.pdf
-      - HTML & CSS: 01/slides//C69-Introduction.pdf
+      - Introduction: 01/slides/CSCC69-Introduction.pdf
+      - The Big Picture: 01/slides/CSCC69-TheBigPicture.pdf
 #   readings:
 #       - HTML on MDN: https://developer.mozilla.org/en-US/docs/Learn/HTML/Howto
 #       - CSS on MDN: https://developer.mozilla.org/en-US/docs/Learn/CSS/Howto
