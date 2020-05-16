@@ -92,7 +92,7 @@ For each project, the student or the team will be required to submit the source 
 
 For your work to be graded, it must meet the minimum standards of a professional computer scientist. **All** files required to build the program must be committed to the repository, and the program must work. Last minute difficulties with git can easily be avoided by ensuring all files are added to the repository well before the deadline, and that you know how to commit them. **Your submission may receive a grade of 0, if the code does not compile or does not execute properly.**
 
-No late submissions will be accepted for any course work, and no make-up assignments will be provided for missed/poorly completed work. It is your responsibility to ensure that all work is completed on time and to the best of your ability.
+Each team will have 4 late days which may be spent in units of one day and that can spread into 4 projects (all except project 0). Beyond those grace days, no late submissions will be accepted for any course work, and no make-up assignments will be provided for missed/poorly completed work. It is your responsibility to ensure that all work is completed on time and to the best of your ability.
 
 If an emergency arises that prevents you from being able to complete any piece of work, or attend an exam, contact one of the instructors immediately. You will need to have a properly completed Illness Verification Form signed by a registered doctor in order to be given special consideration.
 
