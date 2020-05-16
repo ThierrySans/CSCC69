@@ -13,46 +13,52 @@ We will start with a small project (project 0) and then do four substantial proj
 
 <div class="grid">
     <div class="hrow row">
-        <div class="hcolumn column2">Deadline (10PM)</div>
+        <div class="hcolumn column1">Deadline (10PM)</div>
         <div class="column3">Handout</div>
-        <div class="column3">Slides</div>
+        <div class="column2">Notes</div>
         <div class="column2">Individual/Group</div>
         <div class="column2">Weight</div>
+        <div class="column2">Submission</div>
     </div>
     <div class="row">
-        <div class="column2">May 24</div>
+        <div class="column1">May 24</div>
         <div class="column3"><a href="WWW/pintos_2.html">Project 0: Bootstrapping</a></div>
-        <div class="column3"></div>
+        <div class="column2"></div>
         <div class="column2">Individual</div>
         <div class="column2">10%</div>
+        <div class="column2"><a href="https://classroom.github.com/a/nBAc0pwC">Github Classroom</a></div>
     </div>
     <div class="row">
-        <div class="column2">June 14</div>
+        <div class="column1">June 14</div>
         <div class="column3"><a href="WWW/pintos_3.html">Project 1: Threads</a></div>
-        <div class="column3"></div>
+        <div class="column2"></div>
         <div class="column2">Group</div>
         <div class="column2">15%</div>
+        <div class="column2"><a href="https://classroom.github.com/g/fLtciXat">Github Classroom</a></div>
     </div>
     <div class="row">
-        <div class="column2">July 5</div>
+        <div class="column1">July 5</div>
         <div class="column3"><a href="WWW/pintos_4.html">Project 2: User Programs</a></div>
-        <div class="column3"></div>
+        <div class="column2"></div>
         <div class="column2">Group</div>
         <div class="column2">15%</div>
+        <div class="column2"><a href="https://classroom.github.com/g/aTyIhV4r">Github Classroom</a></div>
     </div>
     <div class="row">
-        <div class="column2">July 26</div>
+        <div class="column1">July 26</div>
         <div class="column3"><a href="WWW/pintos_5.html">Project 3: Virtual Memory</a></div>
-        <div class="column3"></div>
+        <div class="column2"></div>
         <div class="column2">Group</div>
         <div class="column2">20%</div>
+        <div class="column2"><a href="https://classroom.github.com/g/ekvFnk1l">Github Classroom</a></div>
     </div>
     <div class="row">
-        <div class="column2">August 16</div>
+        <div class="column1">August 16</div>
         <div class="column3"><a href="WWW/pintos_6.html">Project 4: File Systems</a></div>
-        <div class="column3"></div>
+        <div class="column2"></div>
         <div class="column2">Group</div>
         <div class="column2">20%</div>
+        <div class="column2"><a href="https://classroom.github.com/g/feSKT6FQ">Github Classroom</a></div>
     </div>
 </div>
 
