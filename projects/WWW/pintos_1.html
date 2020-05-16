@@ -1,7 +1,7 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
                       "http://www.w3.org/TR/html40/loose.dtd">
 <HTML>
-<!-- Created on May, 11 2020 by texi2html 1.66 -->
+<!-- Created on May, 15 2020 by texi2html 1.66 -->
 <!--
 Written by: Lionel Cons <Lionel.Cons@cern.ch> (original author)
             Karl Berry  <karl@freefriends.org>
@@ -92,18 +92,15 @@ First let's test the Pintos docker image:
 </P>
 <P>
 
-<TABLE><tr><td>&nbsp;</td><td class=example><pre>$ docker run --rm johnstarich/pintos pintos -q run alarm-zero
+<TABLE><tr><td>&nbsp;</td><td class=example><pre>$ docker run --rm --name pintos thierrysans/pintos pintos -q run alarm-zero
 </pre></td></tr></table><P>
 
 At first, this command might print a warning message that can be ignored:
 </P>
 <P>
 
-<TABLE><tr><td>&nbsp;</td><td class=example><pre>Use of literal control characters in variable names is deprecated at /pintos/utils/pintos line 911.
-Prototype mismatch: sub main::SIGVTALRM () vs none at /pintos/utils/pintos line 935.
-Constant subroutine SIGVTALRM redefined at /pintos/utils/pintos line 927.
-qemu-system-x86_64 -hda /tmp/sN6bOLA_KE.dsk -m 4 -net none -nographic -monitor null
-WARNING: Image format was not specified for '/tmp/sN6bOLA_KE.dsk' and probing guessed raw.
+<TABLE><tr><td>&nbsp;</td><td class=example><pre>qemu-system-i386 -device isa-debug-exit -hda /tmp/jyywB8o6gP.dsk -m 4 -net none -nographic -monitor null
+WARNING: Image format was not specified for '/tmp/jyywB8o6gP.dsk' and probing guessed raw.
          Automatically detecting the format is dangerous for raw images, write operations on block 0 will be restricted.
          Specify the 'raw' format explicitly to remove the restrictions.
 </pre></td></tr></table><P>
@@ -113,7 +110,7 @@ Then it should run Pintos and execute the command <CODE>alarm-zero</CODE> before
 <P>
 
 <TABLE><tr><td>&nbsp;</td><td class=example><pre>PiLo hda1
-Loading...........
+Loading............
 Kernel command line: -q run alarm-zero
 Pintos booting with 3,968 kB RAM...
 367 pages available in kernel pool.
@@ -125,14 +122,59 @@ Executing 'alarm-zero':
 (alarm-zero) PASS
 (alarm-zero) end
 Execution of 'alarm-zero' complete.
-Timer: 47 ticks
-Thread: 0 idle ticks, 47 kernel ticks, 0 user ticks
+Timer: 26 ticks
+Thread: 0 idle ticks, 26 kernel ticks, 0 user ticks
 Console: 385 characters output
 Keyboard: 0 keys pressed
 Powering off...
 </pre></td></tr></table><P>
 
-The Docker image <CODE>johnstarich/pintos</CODE> contains a modified version of the original Pintos source code. However you are not going to modify this code directly in the container, otherwise all of your changes will be lost as soon as the container shuts down.
+By default, the command <CODE>pintos</CODE> runs the QEMU simulator. You can as well choose to run the <CODE>Bochs</CODE> simulator:
+</P>
+<P>
+
+<TABLE><tr><td>&nbsp;</td><td class=example><pre>$ docker run --rm --name pintos thierrysans/pintos pintos --bochs -- -q run alarm-zero
+</pre></td></tr></table><P>
+
+and the output should look like this: 
+</P>
+<P>
+
+<TABLE><tr><td>&nbsp;</td><td class=example><pre>squish-pty bochs -q
+========================================================================
+                       Bochs x86 Emulator 2.6.2
+                Built from SVN snapshot on May 26, 2013
+                  Compiled on May 15 2020 at 17:27:08
+========================================================================
+00000000000i[     ] reading configuration from bochsrc.txt
+00000000000e[     ] bochsrc.txt:8: 'user_shortcut' will be replaced by new 'keyboard' option.
+00000000000i[     ] installing nogui module as the Bochs GUI
+00000000000i[     ] using log file bochsout.txt
+PiLo hda1
+Loading............
+Kernel command line: -q run alarm-zero
+Pintos booting with 4,096 kB RAM...
+383 pages available in kernel pool.
+383 pages available in user pool.
+Calibrating timer...  163,400 loops/s.
+Boot complete.
+Executing 'alarm-zero':
+(alarm-zero) begin
+(alarm-zero) PASS
+(alarm-zero) end
+Execution of 'alarm-zero' complete.
+Timer: 40 ticks
+Thread: 0 idle ticks, 43 kernel ticks, 0 user ticks
+Console: 381 characters output
+Keyboard: 0 keys pressed
+Powering off...
+========================================================================
+Bochs is exiting with the following message:
+[ACPI ] ACPI control: soft power off
+========================================================================
+</pre></td></tr></table><P>
+
+The Docker image <CODE>thierrysans/pintos</CODE> contains a modified version of the original Pintos source code. However you are not going to modify this code directly in the container, otherwise all of your changes will be lost as soon as the container shuts down.
 </P>
 <P>
 
@@ -246,14 +288,22 @@ As the next step, build the source code supplied for the first project. First, r
 </P>
 <P>
 
-<TABLE><tr><td>&nbsp;</td><td class=example><pre>$ docker run -it -v &quot;$(pwd)/src:/pintos&quot; johnstarich/pintos bash
+<TABLE><tr><td>&nbsp;</td><td class=example><pre>$ docker run --rm --name pintos -it -v &quot;$(pwd):/pintos&quot; thierrysans/pintos bash
+</pre></td></tr></table><P>
+
+Once in the Docker container, you should build the utils directory (first time only):
+</P>
+<P>
+
+<TABLE><tr><td>&nbsp;</td><td class=example><pre>$ cd /pintos/src/utils
+$ make
 </pre></td></tr></table><P>
 
 Then, build Pintos <STRONG>inside the docker container</STRONG>:
 </P>
 <P>
 
-<TABLE><tr><td>&nbsp;</td><td class=example><pre>$ cd threads
+<TABLE><tr><td>&nbsp;</td><td class=example><pre>$ cd /pintos/src/threads
 $ make
 </pre></td></tr></table><P>
 
@@ -326,58 +376,25 @@ called <CODE>pintos</CODE>.  In the simplest case, you can invoke
 <TABLE><tr><td>&nbsp;</td><td class=example><pre>$ pintos -q run alarm-multiple
 </pre></td></tr></table><P>
 
-Try it out.  First <CODE>cd</CODE> into the newly created <Q><TT>build</TT></Q>
-directory.  Then issue the command <CODE>pintos run alarm-multiple</CODE>,
-which passes the arguments <CODE>run alarm-multiple</CODE> to the Pintos
-kernel.  In these arguments, <CODE>run</CODE> instructs the kernel to run a
+In these arguments, <CODE>run</CODE> instructs the kernel to run a
 test and <CODE>alarm-multiple</CODE> is the test to run.
 </P>
 <P>
 
+By default, pintos runs the QEMU simulator but you can also run the same command with the Bochs simulator: 
+</P>
+<P>
+
+<TABLE><tr><td>&nbsp;</td><td class=example><pre>$ pintos --bochs -- -q run alarm-multiple
+</pre></td></tr></table><P>
+
 This command creates a <Q><TT>bochsrc.txt</TT></Q> file, which is needed for
-running Bochs, and then invoke Bochs.  Bochs opens a new window that
-represents the simulated machine's display, and a BIOS message briefly
-flashes.  Then Pintos boots and runs the <CODE>alarm-multiple</CODE> test
-program, which outputs a few screenfuls of text.  When it's done, you
-can close Bochs by clicking on the &quot;Power&quot; button in the window's top
-right corner, or rerun the whole process by clicking on the &quot;Reset&quot;
-button just to its left.  The other buttons are not very useful for our
-purposes.
+running Bochs, and then invoke Bochs.
 </P>
 <P>
 
-(If no window appeared at all, then you're probably logged in remotely and X
-forwarding is not set up correctly.  In this case, you can fix your X
-setup, or you can use the <Q><SAMP>-v</SAMP></Q> option to disable X output:
-<CODE>pintos -v -- run alarm-multiple</CODE>.)
-</P>
-<P>
-
-The text printed by Pintos inside Bochs probably went by too quickly to
-read.  However, you've probably noticed by now that the same text was
-displayed in the terminal you used to run <CODE>pintos</CODE>.  This is
-because Pintos sends all output both to the VGA display and to the first
-serial port, and by default the serial port is connected to Bochs's
-<CODE>stdin</CODE> and <CODE>stdout</CODE>.  You can log serial output to a file by
-redirecting at the
-command line, e.g. <CODE>pintos run alarm-multiple &gt; logfile</CODE>.
-</P>
-<P>
-
-The <CODE>pintos</CODE> program offers several options for configuring the
-simulator or the virtual hardware.  If you specify any options, they
-must precede the commands passed to the Pintos kernel and be separated
-from them by <Q><SAMP>--</SAMP></Q>, so that the whole command looks like
-<CODE>pintos <VAR>option</VAR><small>...</small> -- <VAR>argument</VAR><small>...</small></CODE>.  Invoke
-<CODE>pintos</CODE> without any arguments to see a list of available options.
-Options can select a simulator to use: the default is Bochs, but
-<Q><SAMP>--qemu</SAMP></Q> selects QEMU.  You can run the simulator
-with a debugger (see section <A HREF="pintos_11.html#SEC161">E.5 GDB</A>).  You can set the amount of memory to give
-the VM.  Finally, you can select how you want VM output to be displayed:
-use <Q><SAMP>-v</SAMP></Q> to turn off the VGA display, <Q><SAMP>-t</SAMP></Q> to use your
-terminal window as the VGA display instead of opening a new window
-(Bochs only), or <Q><SAMP>-s</SAMP></Q> to suppress serial input from <CODE>stdin</CODE>
-and output to <CODE>stdout</CODE>.
+You can run each simulator with a debugger (see section <A HREF="pintos_11.html#SEC161">E.5 GDB</A>). You can set the amount of memory to give
+the VM.
 </P>
 <P>
 
@@ -399,8 +416,7 @@ program twice and have it do exactly the same thing.  On second and
 later runs, you can make new observations without having to discard or
 verify your old observations.  This property is called
 &quot;reproducibility.&quot;  One of the simulators that Pintos supports, Bochs,
-can be set up for
-reproducibility, and that's the way that <CODE>pintos</CODE> invokes it
+can be set up for reproducibility, and that's the way that <CODE>pintos</CODE> invokes it
 by default.
 </P>
 <P>
@@ -447,8 +463,8 @@ and options <Q><SAMP>-j</SAMP></Q> and <Q><SAMP>-r</SAMP></Q> are mutually exclu
 </P>
 <P>
 
-The QEMU simulator is available as an
-alternative to Bochs (use <Q><SAMP>--qemu</SAMP></Q> when invoking
+The Bochs simulator is available as an
+alternative to QEMU (use <Q><SAMP>--bochs</SAMP></Q> when invoking
 <CODE>pintos</CODE>).  The QEMU simulator is much faster than Bochs, but it
 only supports real-time simulation and does not have a reproducible
 mode.
@@ -810,7 +826,7 @@ trouble with blow-ups.
 <BR>
 <FONT SIZE="-1">
 This document was generated
-by <I>Thierry Sans</I> on <I>May, 11 2020</I>
+by <I>Thierry Sans</I> on <I>May, 15 2020</I>
 using <A HREF="http://texi2html.cvshome.org"><I>texi2html</I></A>
 </FONT>
 

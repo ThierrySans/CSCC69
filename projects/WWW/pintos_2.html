@@ -1,7 +1,7 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
                       "http://www.w3.org/TR/html40/loose.dtd">
 <HTML>
-<!-- Created on May, 11 2020 by texi2html 1.66 -->
+<!-- Created on May, 15 2020 by texi2html 1.66 -->
 <!--
 Written by: Lionel Cons <Lionel.Cons@cern.ch> (original author)
             Karl Berry  <karl@freefriends.org>
@@ -195,45 +195,11 @@ Before you turn in your project, you must copy <A HREF="bootstrapping.tmpl">the 
 <!--docid::SEC22::-->
 <P>
 
-Read the see section <A HREF="pintos_1.html#SEC1">1. Introduction</A> section to get an overview of Pintos. Afterwards, execute
+Read the see section <A HREF="pintos_1.html#SEC1">1. Introduction</A> section to get an overview of Pintos.
 </P>
 <P>
 
-<TABLE><tr><td>&nbsp;</td><td class=example><pre>$ cd pintos/src/threads
-$ make qemu
-</pre></td></tr></table><P>
-
-If everything works, you should see Pintos booting in the <A HREF="http://fabrice.bellard.free.fr/qemu/">QEMU emulator</A>, and print Boot complete. near the end. In addition to the shell where you execute the command, a new graphic window of QEMU will also pop up printing the same messages. If you are remotely connecting to a machine, e.g., the lab machines of the CS department, you probably will encounter this error:
-</P>
-<P>
-
-<TABLE><tr><td>&nbsp;</td><td class=example><pre>Unable to init server: Could not connect: Connection refused
-gtk initialization failed
-</pre></td></tr></table><P>
-
-You need to figure out how to resolve this error and make the QEMU window appear. 
-</P>
-<P>
-
-<STRONG>Hint:</STRONG> an option in ssh may be useful, check man ssh.
-</P>
-<P>
-
-Note that to quit the Pintos interface, for the QEMU window, you can just close it; for the terminal, you need to press Ctrl-a x to exit (if you are running inside GNU screen or Tmux and its prefix key is Ctrl-a, press Ctrl-a twice and x to exit). We also provide a Makefile target to allow you to run Pintos just in the terminal: <CODE>make qemu-nox</CODE>.
-</P>
-<P>
-
-While by default we run Pintos in QEMU, Pintos can also run in the <A HREF="http://bochs.sourceforge.net/">Bochs</A> and VMWare Player emulator. Bochs will be useful for the see section <A HREF="pintos_3.html#SEC25">3. Project 1: Threads</A>. To run Pintos with Bochs,
-</P>
-<P>
-
-<TABLE><tr><td>&nbsp;</td><td class=example><pre>$ cd pintos/src/threads
-$ make 
-$ cd build
-$ pintos --bochs -- run alarm-zero
-</pre></td></tr></table><P>
-
-Take screenshots of the successful booting of Pintos in QEMU and Bochs, each in both the terminal and the QEMU window. Put the screenshots under <Q><TT>pintos/src/p0</TT></Q>.
+Run the command <CODE>-q run alarm-zero</CODE> using each simulator QEMU and Bochs. Copy the terminal output of each successful booting of Pintos under the files <Q><TT>pintos/qemu-output.txt</TT></Q> and <Q><TT>pintos/bochs-output.txt</TT></Q>.
 </P>
 <P>
 
@@ -248,7 +214,40 @@ While you are working on the projects, you will frequently use the GNU Debugger 
 </P>
 <P>
 
-Your first task in this section is to use GDB to trace the QEMU BIOS a bit to understand how an IA-32 compatible computer boots. Answer the following questions in your design document:
+<STRONG>Hint:</STRONG> you will want to use GDB commands instead of printf for this exercise.
+</P>
+<P>
+
+To load pintos inside GDB, first run your pintos command using the <CODE>--gdb</CODE> option:
+</P>
+<P>
+
+<TABLE><tr><td>&nbsp;</td><td class=example><pre>$ pintos --gdb -- -q run alarm-zero
+</pre></td></tr></table><P>
+
+Then open another terminal window and get inside the same docker container:
+</P>
+<P>
+
+<TABLE><tr><td>&nbsp;</td><td class=example><pre>$ docker exec -it pintos bash
+</pre></td></tr></table><P>
+
+Once inside the container, open the GDB console:
+</P>
+<P>
+
+<TABLE><tr><td>&nbsp;</td><td class=example><pre>$ cd /pintos/src/threads/build
+$ pintos-gdb kernel.o
+</pre></td></tr></table><P>
+
+Finally connect GDB to the simulator
+</P>
+<P>
+
+<TABLE><tr><td>&nbsp;</td><td class=example><pre>(gdb) debugpintos
+</pre></td></tr></table><P>
+
+Your first task in this section is to trace the program and understand how an IA-32 compatible computer boots. Answer the following questions in your design document:
 </P>
 <P>
 
@@ -260,7 +259,20 @@ Your first task in this section is to use GDB to trace the QEMU BIOS a bit to un
 </UL>
 <P>
 
-In the second task, you will be tracing the Pintos bootloader. Set a breakpoint at address <CODE>0x7c00</CODE>, which is where the boot sector will be loaded. Continue execution until that breakpoint. Trace through the code in <Q><TT>threads/loader.S</TT></Q>, using the source code and the disassembly file <Q><TT>threads/build/loader.asm</TT></Q> to keep track of where you are. Also use the x/i command in GDB to disassemble sequences of instructions in the boot loader, and compare the original boot loader source code with both the disassembly in <Q><TT>threads/build/loader.asm</TT></Q> and GDB.
+In the second task, you will be tracing the Pintos bootloader. 
+</P>
+<P>
+
+First, let's disassemble the loader:
+</P>
+<P>
+
+<TABLE><tr><td>&nbsp;</td><td class=example><pre>$ cd /pintos
+$ ld -melf_i386 -N -e 0 -Ttext 0x7c00 -o loader.out /pintos/src/threads/build/threads/loader.o
+$ objdump -S loader.out &gt; loader.asm
+</pre></td></tr></table><P>
+
+Then, use GDB to set a breakpoint at address <CODE>0x7c00</CODE>, which is where the boot sector will be loaded. Continue execution until that breakpoint. Trace through the code in <Q><TT>threads/loader.S</TT></Q>, using the source code and the disassembly file <Q><TT>loader.asm</TT></Q> to keep track of where you are. Also use the command <CODE>x/i $pc</CODE> (at first, then simply <CODE>x/i</CODE>) command in GDB to disassemble sequences of instructions in the boot loader, and compare the original boot loader source code with both the disassembly in <Q><TT>loader.asm</TT></Q> and GDB.
 </P>
 <P>
 
@@ -276,7 +288,7 @@ Trace the Pintos bootloader and answer the following questions in your design do
 </UL>
 <P>
 
-After the Pintos kernel take control, the initial setup is done in assembly code <Q><TT>threads/start.S</TT></Q>. Later on, the kernel will finally kick into the C world by calling the <CODE>pintos_init()</CODE> function in <Q><TT>threads/init.c</TT></Q>. Set a breakpoint at <CODE>pintos_init()</CODE> and then continue tracing a bit into the C initialization code. Then read the source code of <CODE>pintos_init()</CODE> function.
+After the Pintos kernel take control, the initial setup is done in assembly code <Q><TT>threads/start.S</TT></Q>. Later on, the kernel will finally kick into the C world by calling the <CODE>main()</CODE> function in <Q><TT>threads/init.c</TT></Q>. Set a breakpoint at <CODE>main()</CODE> and then continue tracing a bit into the C initialization code. Then read the source code of <CODE>main()</CODE> function.
 </P>
 <P>
 
@@ -303,8 +315,6 @@ Trace the Pintos kernel and answer the following questions in your design docume
 <LI>what is the value of expression init_page_dir[pd_no(ptov(0))] in hexadecimal format?
 </UL>
 </UL>
-    
-<STRONG>Hint:</STRONG> you will want to use GDB commands instead of printf for this exercise.
 <P>
 
 <A NAME="Project 0 Kernel Monitor"></A>
@@ -347,7 +357,7 @@ You only need to make this monitor very simple. It starts with a prompt <CODE>C6
 <BR>
 <FONT SIZE="-1">
 This document was generated
-by <I>Thierry Sans</I> on <I>May, 11 2020</I>
+by <I>Thierry Sans</I> on <I>May, 15 2020</I>
 using <A HREF="http://texi2html.cvshome.org"><I>texi2html</I></A>
 </FONT>
 

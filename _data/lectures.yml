@@ -8,12 +8,6 @@
 #       - CSS on MDN: https://developer.mozilla.org/en-US/docs/Learn/CSS/Howto
 
 - week: Process and Threads
-  # notes:
-  #     - Introduction: 01/slides/C09-Introduction.pdf
-  #     - HTML & CSS: 01/slides/C09-HTMLandCSS.pdf
-  # readings:
-  #     - HTML on MDN: https://developer.mozilla.org/en-US/docs/Learn/HTML/Howto
-  #     - CSS on MDN: https://developer.mozilla.org/en-US/docs/Learn/CSS/Howto
 
 - week: Concurrency and Synchronization
 

@@ -3,8 +3,6 @@ layout: default
 permalink: /projects/
 ---
 
-<span class="em">This is work in progress</span>
-
 ## Pintos
 
 A significant element of this class are programming projects using Pintos. Pintos is a teaching operating system for 80x86. It is simple and small (compared to Linux). On the other hand, it is realistic enough to help you understand core OS concepts in depth. It supports kernel threads, virtual memory, user programs, and file system. But its original implementations are premature or incomplete. Through the projects, you will be strengthening all of these areas of Pintos to make it complete.
