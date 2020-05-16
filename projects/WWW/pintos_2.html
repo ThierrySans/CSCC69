@@ -1,7 +1,7 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
                       "http://www.w3.org/TR/html40/loose.dtd">
 <HTML>
-<!-- Created on May, 15 2020 by texi2html 1.66 -->
+<!-- Created on May, 16 2020 by texi2html 1.66 -->
 <!--
 Written by: Lionel Cons <Lionel.Cons@cern.ch> (original author)
             Karl Berry  <karl@freefriends.org>
@@ -236,8 +236,14 @@ Once inside the container, open the GDB console:
 </P>
 <P>
 
-<TABLE><tr><td>&nbsp;</td><td class=example><pre>$ cd /pintos/src/threads/build
-$ pintos-gdb kernel.o
+<TABLE><tr><td>&nbsp;</td><td class=example><pre>$ pintos-gdb /pintos/src/threads/build/kernel.o
+</pre></td></tr></table><P>
+
+<STRONG>Note:</STRONG> If you are using Windows, GDB has some issues with the line endings. You can use <CODE>dos2unix</CODE> to fix this problem:
+</P>
+<P>
+
+<TABLE><tr><td>&nbsp;</td><td class=example><pre>$ dos2unix pintos-gdb /pintos/src/threads/build/kernel.o
 </pre></td></tr></table><P>
 
 Finally connect GDB to the simulator
@@ -357,7 +363,7 @@ You only need to make this monitor very simple. It starts with a prompt <CODE>C6
 <BR>
 <FONT SIZE="-1">
 This document was generated
-by <I>Thierry Sans</I> on <I>May, 15 2020</I>
+by <I>Thierry Sans</I> on <I>May, 16 2020</I>
 using <A HREF="http://texi2html.cvshome.org"><I>texi2html</I></A>
 </FONT>
 
