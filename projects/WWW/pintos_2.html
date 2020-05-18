@@ -243,7 +243,7 @@ Once inside the container, open the GDB console:
 </P>
 <P>
 
-<TABLE><tr><td>&nbsp;</td><td class=example><pre>$ dos2unix pintos-gdb /pintos/src/threads/build/kernel.o
+<TABLE><tr><td>&nbsp;</td><td class=example><pre>$ dos2unix /pintos/src/utils/pintos-gdb /pintos/src/threads/build/kernel.o
 </pre></td></tr></table><P>
 
 Finally connect GDB to the simulator
@@ -298,7 +298,7 @@ After the Pintos kernel take control, the initial setup is done in assembly code
 </P>
 <P>
 
-Suppose we are interested in tracing the behavior of one kernel function <CODE>palloc_get_page()</CODE> and one global <CODE>variable uint32_t *init_page_dir</CODE>. For this exercise, you do not need to understand their meaning and the terminology used in them. You will get to know them better in see section <A HREF="pintos_5.html#SEC63">5. Project 3: Virtual Memory</A>.
+Suppose we are interested in tracing the behavior of one kernel function <CODE>palloc_get_page</CODE> and one global <CODE>variable uint32_t *init_page_dir</CODE>. For this exercise, you do not need to understand their meaning and the terminology used in them. You will get to know them better in see section <A HREF="pintos_5.html#SEC63">5. Project 3: Virtual Memory</A>.
 </P>
 <P>
 
@@ -307,18 +307,18 @@ Trace the Pintos kernel and answer the following questions in your design docume
 <P>
 
 <UL>
-<LI>At the entry of pintos_init(), what is the value of expression init_page_dir[pd_no(ptov(0))] in hexadecimal format?
-<LI>When palloc_get_page() is called for the first time,
+<LI>At the entry of <CODE>main</CODE>, what is the value of expression <CODE>init_page_dir[pd_no(ptov(0))]</CODE> in hexadecimal format?
+<LI>When <CODE>palloc_get_page</CODE> is called for the first time,
 <UL>
 <LI>what does the call stack look like?
 <LI>what is the return value in hexadecimal format?
-<LI>what is the value of expression init_page_dir[pd_no(ptov(0))] in hexadecimal format?
+<LI>what is the value of expression <CODE>init_page_dir[pd_no(ptov(0))]</CODE> in hexadecimal format?
 </UL>
-<LI>When palloc_get_page() is called for the third time,
+<LI>When <CODE>palloc_get_page</CODE> is called for the third time,
 <UL>
 <LI>what does the call stack look like?
 <LI>what is the return value in hexadecimal format?
-<LI>what is the value of expression init_page_dir[pd_no(ptov(0))] in hexadecimal format?
+<LI>what is the value of expression <CODE>init_page_dir[pd_no(ptov(0))]</CODE> in hexadecimal format?
 </UL>
 </UL>
 <P>
