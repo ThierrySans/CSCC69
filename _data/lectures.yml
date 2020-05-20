@@ -1,4 +1,4 @@
-- week: Intro
+- week: The Big Picture
   link: https://youtu.be/SzFFJ8JBXek
   notes:
       - Introduction: 01/slides/CSCC69-Introduction.pdf
@@ -10,13 +10,16 @@
       - "Chap 26 - Concurrency: An Introduction": http://pages.cs.wisc.edu/~remzi/OSTEP/threads-intro.pdf
       - "Chap 36 - I/O devices": http://pages.cs.wisc.edu/~remzi/OSTEP/file-devices.pdf
 
-- week: Process and Scheduling
+- week: Managing and Scheduling Processes
+  link: https://youtu.be/4yMztdL2Dro
   readings:
       - "(again) Chap 4 - The Abstraction: The Process": http://pages.cs.wisc.edu/~remzi/OSTEP/cpu-intro.pdf
       - "Chap 5 - Interlude: Process API": http://pages.cs.wisc.edu/~remzi/OSTEP/cpu-api.pdf
       - "Chap 6 - Mechanism: Limited Direct Execution": http://pages.cs.wisc.edu/~remzi/OSTEP/cpu-mechanisms.pdf
       - "Chap 7 - Scheduling: Introduction": http://pages.cs.wisc.edu/~remzi/OSTEP/cpu-sched.pdf
       - "Chap 8 - Scheduling: The Multi-Level Feedback Queue": http://pages.cs.wisc.edu/~remzi/OSTEP/cpu-sched-mlfq.pdf
+  notes:
+      - Processes: 02/slides/CSCC69-Processes.pdf
 
 - week: Threads
   readings:
