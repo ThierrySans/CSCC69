@@ -7,7 +7,6 @@
       - "Chap 2 - Introduction to Operating Systems": http://pages.cs.wisc.edu/~remzi/OSTEP/intro.pdf
       - "Chap 4 - The Abstraction: The Process": http://pages.cs.wisc.edu/~remzi/OSTEP/cpu-intro.pdf
       - "Chap 13 - The Abstraction: Address Spaces": http://pages.cs.wisc.edu/~remzi/OSTEP/vm-intro.pdf 
-      - "Chap 26 - Concurrency: An Introduction": http://pages.cs.wisc.edu/~remzi/OSTEP/threads-intro.pdf
       - "Chap 36 - I/O devices": http://pages.cs.wisc.edu/~remzi/OSTEP/file-devices.pdf
 
 - week: Managing and Scheduling Processes
@@ -21,18 +20,20 @@
   notes:
       - Processes: 02/slides/CSCC69-Processes.pdf
 
-- week: Threads
+- week: Threads and Synchronization
+  link: https://youtu.be/OzpVnYFs97M
+  notes:
+      - Threads: 03/slides/CSCC69-Threads.pdf
   readings:
-      - "(again) Chap 26 - Concurrency: An Introduction": http://pages.cs.wisc.edu/~remzi/OSTEP/threads-intro.pdf
+      - "Chap 26 - Concurrency: An Introduction": http://pages.cs.wisc.edu/~remzi/OSTEP/threads-intro.pdf
       - "Chap 27 - Interlude: Thread API": http://pages.cs.wisc.edu/~remzi/OSTEP/threads-api.pdf
-
-- week: Concurrency and Synchronization
-  readings:
       - "Chap 28 - Locks": http://pages.cs.wisc.edu/~remzi/OSTEP/threads-locks.pdf 
-      - "Chap 29 - Lock-based Concurrent Data Structures": http://pages.cs.wisc.edu/~remzi/OSTEP/threads-locks-usage.pdf
-      - "Chap 30 - Condition Variables": http://pages.cs.wisc.edu/~remzi/OSTEP/threads-cv.pdf
       - "Chap 31 - Semaphores": http://pages.cs.wisc.edu/~remzi/OSTEP/threads-sema.pdf
-      - "Chap 32 - Common Concurrency Problems": http://pages.cs.wisc.edu/~remzi/OSTEP/threads-bugs.pdf      
+
+- week: Concurrency Problems
+  readings:
+      - "Chap 32 - Common Concurrency Problems": http://pages.cs.wisc.edu/~remzi/OSTEP/threads-bugs.pdf
+      - "Chap 33 - Event-based Concurrency (Advanced)": http://pages.cs.wisc.edu/~remzi/OSTEP/threads-events.pdf    
 
 - week: Virtual Memory
 
