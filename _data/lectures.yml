@@ -31,6 +31,9 @@
       - "Chap 31 - Semaphores": http://pages.cs.wisc.edu/~remzi/OSTEP/threads-sema.pdf
 
 - week: Concurrency Problems
+  link: https://q.utoronto.ca/courses/170589/external_tools/246
+  notes:
+      - Concurrency: 04/slides/CSCC69-ConcurrencyProblems.pdf
   readings:
       - "Chap 32 - Common Concurrency Problems": http://pages.cs.wisc.edu/~remzi/OSTEP/threads-bugs.pdf
       - "Chap 33 - Event-based Concurrency (Advanced)": http://pages.cs.wisc.edu/~remzi/OSTEP/threads-events.pdf    
