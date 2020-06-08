@@ -40,8 +40,18 @@
 
 - week: Virtual Memory
   link: https://q.utoronto.ca/courses/170589/external_tools/246
+  readings:
+      - "Chap 15 - Mechanism: Address Translation": http://pages.cs.wisc.edu/~remzi/OSTEP/vm-mechanism.pdf
+      - "Chap 16 - Segmentation": http://pages.cs.wisc.edu/~remzi/OSTEP/vm-segmentation.pdf
+      - "Chap 18 - Paging: Introduction": http://pages.cs.wisc.edu/~remzi/OSTEP/vm-paging.pdf
+      - "Chap 19 - Paging: Faster Translations (TLBs)": http://pages.cs.wisc.edu/~remzi/OSTEP/vm-tlbs.pdf
+      - "Chap 20 - Paging: Smaller Tables": http://pages.cs.wisc.edu/~remzi/OSTEP/vm-smalltables.pdf
 
 - week: Memory Management
+  readings:
+      - "Chap 21 - Beyond Physical Memory: Mechanisms": http://pages.cs.wisc.edu/~remzi/OSTEP/vm-beyondphys.pdf
+      - "Chap 22 - Beyond Physical Memory: Policies": http://pages.cs.wisc.edu/~remzi/OSTEP/vm-beyondphys-policy.pdf
+      - "Chap 23 - Complete Virtual Memory Systems": http://pages.cs.wisc.edu/~remzi/OSTEP/vm-complete.pdf
 
 - break: Reading Week
 

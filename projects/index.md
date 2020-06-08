@@ -13,7 +13,7 @@ We will start with a small project (project 0) and then do four substantial proj
 
 <div class="grid">
     <div class="hrow row">
-        <div class="hcolumn column1">Deadline (10PM)</div>
+        <div class="hcolumn column1">Deadline (11:59PM)</div>
         <div class="column2">Handout</div>
         <div class="column2">Notes</div>
         <div class="column2">Individual/Group</div>
