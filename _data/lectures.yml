@@ -46,6 +46,9 @@
       - "Chap 18 - Paging: Introduction": http://pages.cs.wisc.edu/~remzi/OSTEP/vm-paging.pdf
       - "Chap 19 - Paging: Faster Translations (TLBs)": http://pages.cs.wisc.edu/~remzi/OSTEP/vm-tlbs.pdf
       - "Chap 20 - Paging: Smaller Tables": http://pages.cs.wisc.edu/~remzi/OSTEP/vm-smalltables.pdf
+  notes:
+      - Virtual Memory: 05/slides/CSCC69-VirtualMemory.pdf
+      - Paging in details: 05/slides/CSCC69-Paging.pdf
 
 - week: Memory Management
   readings:
