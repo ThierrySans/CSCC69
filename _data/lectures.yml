@@ -39,7 +39,7 @@
       - "Chap 33 - Event-based Concurrency (Advanced)": http://pages.cs.wisc.edu/~remzi/OSTEP/threads-events.pdf    
 
 - week: Virtual Memory
-  link: https://q.utoronto.ca/courses/170589/external_tools/246
+  link: https://www.youtube.com/watch?v=FSNWYOxvX2o
   readings:
       - "Chap 15 - Mechanism: Address Translation": http://pages.cs.wisc.edu/~remzi/OSTEP/vm-mechanism.pdf
       - "Chap 16 - Segmentation": http://pages.cs.wisc.edu/~remzi/OSTEP/vm-segmentation.pdf
@@ -51,6 +51,7 @@
       - Paging in details: 05/slides/CSCC69-Paging.pdf
 
 - week: Memory Management
+  link: https://q.utoronto.ca/courses/170589/external_tools/246
   readings:
       - "Chap 21 - Beyond Physical Memory: Mechanisms": http://pages.cs.wisc.edu/~remzi/OSTEP/vm-beyondphys.pdf
       - "Chap 22 - Beyond Physical Memory: Policies": http://pages.cs.wisc.edu/~remzi/OSTEP/vm-beyondphys-policy.pdf
