@@ -56,6 +56,8 @@
       - "Chap 21 - Beyond Physical Memory: Mechanisms": http://pages.cs.wisc.edu/~remzi/OSTEP/vm-beyondphys.pdf
       - "Chap 22 - Beyond Physical Memory: Policies": http://pages.cs.wisc.edu/~remzi/OSTEP/vm-beyondphys-policy.pdf
       - "Chap 23 - Complete Virtual Memory Systems": http://pages.cs.wisc.edu/~remzi/OSTEP/vm-complete.pdf
+  notes:
+      - Memory Management: 06/slides/CSCC69-MemoryManagement.pdf
 
 - break: Reading Week
 
