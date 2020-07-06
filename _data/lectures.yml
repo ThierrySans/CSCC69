@@ -63,15 +63,27 @@
 
 - break: Summer Break
 
-- week: File system 
+- week: File Systems
   link: https://q.utoronto.ca/courses/170589/external_tools/246
+  readings:
+      - "(again) Chap 36 - I/O Devices": http://pages.cs.wisc.edu/~remzi/OSTEP/file-devices.pdf
+      - "Chap 39 - Files and Directories": http://pages.cs.wisc.edu/~remzi/OSTEP/file-intro.pdf
+      - "Chap 40 - File System Implementation": http://pages.cs.wisc.edu/~remzi/OSTEP/file-implementation.pdf
 
-- week: I/O
+- week: Adavanced File Systems
+  readings:
+      - "Chap 42 - Crash Consistency: FSCK and Journaling": http://pages.cs.wisc.edu/~remzi/OSTEP/file-journaling.pdf
+      - "Chap 43 - Log-structured File Systems": http://pages.cs.wisc.edu/~remzi/OSTEP/file-lfs.pdf
 
 - week: Protection and Security
 
 - week: Mobile and Distributed systems
+  readings:
+      - "Chapter 48 - Distributed Systems": http://pages.cs.wisc.edu/~remzi/OSTEP/dist-intro.pdf
 
 - week: Virtualization and the cloud
+  readings:
+      - "Appendix B - Virtual Machine Monitors": http://pages.cs.wisc.edu/~remzi/OSTEP/vmm-intro.pdf
+  
 
 - week: TBD

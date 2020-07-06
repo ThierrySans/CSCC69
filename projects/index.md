@@ -48,7 +48,7 @@ We will start with a small project (project 0) and then do four substantial proj
     <div class="row">
         <div class="column1">July 26</div>
         <div class="column2"><a href="WWW/pintos_5.html">Project 3: Virtual Memory</a></div>
-        <div class="column2"></div>
+        <div class="column2"><a href="project3/slides/project3.pdf">Slides</a></div>
         <div class="column2">Group</div>
         <div class="column1">20%</div>
         <div class="column2"><a href="https://classroom.github.com/g/ekvFnk1l">Github Classroom</a></div>
