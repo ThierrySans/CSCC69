@@ -63,10 +63,15 @@
 
 - break: Summer Break
 
-- week: File Systems
+- week: I/O and Disks
   link: https://q.utoronto.ca/courses/170589/external_tools/246
   readings:
       - "(again) Chap 36 - I/O Devices": http://pages.cs.wisc.edu/~remzi/OSTEP/file-devices.pdf
+      - "Chap 37 - Hard Disk Drives": http://pages.cs.wisc.edu/~remzi/OSTEP/file-disks.pdf
+      - "Chap 44 - Flash-based SSDs": http://pages.cs.wisc.edu/~remzi/OSTEP/file-ssd.pdf
+
+- week: File Systems
+  readings:
       - "Chap 39 - Files and Directories": http://pages.cs.wisc.edu/~remzi/OSTEP/file-intro.pdf
       - "Chap 40 - File System Implementation": http://pages.cs.wisc.edu/~remzi/OSTEP/file-implementation.pdf
 
@@ -86,4 +91,4 @@
       - "Appendix B - Virtual Machine Monitors": http://pages.cs.wisc.edu/~remzi/OSTEP/vmm-intro.pdf
   
 
-- week: TBD
+
