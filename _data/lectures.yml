@@ -77,6 +77,8 @@
   readings:
       - "Chap 39 - Files and Directories": http://pages.cs.wisc.edu/~remzi/OSTEP/file-intro.pdf
       - "Chap 40 - File System Implementation": http://pages.cs.wisc.edu/~remzi/OSTEP/file-implementation.pdf
+  notes:
+      - File Systems: 08/slides/CSCC69-FileSystems.pdf
 
 - week: Adavanced File Systems
   readings:
