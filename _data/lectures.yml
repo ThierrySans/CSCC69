@@ -73,15 +73,17 @@
       - I/O and Disks: 07/slides/CSCC69-IO.pdf
 
 - week: File Systems
-  link: https://q.utoronto.ca/courses/170589/external_tools/246
+  link: https://youtu.be/xYIpvD7ckVU
   readings:
       - "Chap 39 - Files and Directories": http://pages.cs.wisc.edu/~remzi/OSTEP/file-intro.pdf
       - "Chap 40 - File System Implementation": http://pages.cs.wisc.edu/~remzi/OSTEP/file-implementation.pdf
   notes:
       - File Systems: 08/slides/CSCC69-FileSystems.pdf
 
-- week: Adavanced File Systems
+- week: Advanced File Systems
+  link: https://q.utoronto.ca/courses/170589/external_tools/246
   readings:
+      - "Chap 41 - Locality and The Fast File System": http://pages.cs.wisc.edu/~remzi/OSTEP/file-ffs.pdf
       - "Chap 42 - Crash Consistency: FSCK and Journaling": http://pages.cs.wisc.edu/~remzi/OSTEP/file-journaling.pdf
       - "Chap 43 - Log-structured File Systems": http://pages.cs.wisc.edu/~remzi/OSTEP/file-lfs.pdf
 
