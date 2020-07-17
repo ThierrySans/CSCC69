@@ -28,6 +28,7 @@ We will start with a small project (project 0) and then do four substantial proj
         <div class="column2">Individual</div>
         <div class="column1">10%</div>
         <div class="column2"><a href="https://classroom.github.com/a/nBAc0pwC">Github Classroom</a></div>
+        <div class="column2"><a href="https://grademy.work/ThierrySans/C69S20-project0">Rubric</a></div>
     </div>
     <div class="row">
         <div class="column1">June 14</div>
@@ -36,6 +37,7 @@ We will start with a small project (project 0) and then do four substantial proj
         <div class="column2">Group</div>
         <div class="column1">15%</div>
         <div class="column2"><a href="https://classroom.github.com/g/fLtciXat">Github Classroom</a></div>
+        <div class="column2"><a href="https://grademy.work/ThierrySans/C69S20-project1">Rubric</a></div>
     </div>
     <div class="row">
         <div class="column1">July 5</div>
@@ -44,6 +46,7 @@ We will start with a small project (project 0) and then do four substantial proj
         <div class="column2">Group</div>
         <div class="column1">15%</div>
         <div class="column2"><a href="https://classroom.github.com/g/aTyIhV4r">Github Classroom</a></div>
+        <div class="column2"><a href="https://grademy.work/ThierrySans/C69S20-project2">Rubric</a></div>
     </div>
     <div class="row">
         <div class="column1">July 26</div>
