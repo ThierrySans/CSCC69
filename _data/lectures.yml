@@ -81,7 +81,7 @@
       - File Systems: 08/slides/CSCC69-FileSystems.pdf
 
 - week: Advanced File Systems
-  link: https://q.utoronto.ca/courses/170589/external_tools/246
+  link: https://youtu.be/Vt0EDiEscok
   readings:
       - "Chap 41 - Locality and The Fast File System": http://pages.cs.wisc.edu/~remzi/OSTEP/file-ffs.pdf
       - "Chap 42 - Crash Consistency: FSCK and Journaling": http://pages.cs.wisc.edu/~remzi/OSTEP/file-journaling.pdf
@@ -90,6 +90,7 @@
       - File Systems: 09/slides/CSCC69-AdvancedFileSystems.pdf
 
 - week: Protection and Security
+  link: https://q.utoronto.ca/courses/170589/external_tools/246
 
 - week: Mobile and Distributed systems
   readings:
