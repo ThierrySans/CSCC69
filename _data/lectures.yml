@@ -89,16 +89,23 @@
   notes:
       - File Systems: 09/slides/CSCC69-AdvancedFileSystems.pdf
 
-- week: Protection and Security
+- week: Virtualization
   link: https://q.utoronto.ca/courses/170589/external_tools/246
+  readings:
+      - "Appendix B - Virtual Machine Monitors": http://pages.cs.wisc.edu/~remzi/OSTEP/vmm-intro.pdf
+  notes:
+      - File Systems: 10/slides/CSCC69-Virtualization.pdf
 
 - week: Mobile and Distributed systems
   readings:
       - "Chapter 48 - Distributed Systems": http://pages.cs.wisc.edu/~remzi/OSTEP/dist-intro.pdf
 
-- week: Virtualization and the cloud
-  readings:
-      - "Appendix B - Virtual Machine Monitors": http://pages.cs.wisc.edu/~remzi/OSTEP/vmm-intro.pdf
+- week: Protection and Security
+
+
+
+
+
   
 
 
