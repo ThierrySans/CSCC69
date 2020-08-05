@@ -87,18 +87,22 @@
       - "Chap 42 - Crash Consistency: FSCK and Journaling": http://pages.cs.wisc.edu/~remzi/OSTEP/file-journaling.pdf
       - "Chap 43 - Log-structured File Systems": http://pages.cs.wisc.edu/~remzi/OSTEP/file-lfs.pdf
   notes:
-      - File Systems: 09/slides/CSCC69-AdvancedFileSystems.pdf
+      - Advanced File Systems: 09/slides/CSCC69-AdvancedFileSystems.pdf
 
 - week: Virtualization
-  link: https://q.utoronto.ca/courses/170589/external_tools/246
+  link: https://youtu.be/kG5uNeGhqgo
   readings:
       - "Appendix B - Virtual Machine Monitors": http://pages.cs.wisc.edu/~remzi/OSTEP/vmm-intro.pdf
   notes:
-      - File Systems: 10/slides/CSCC69-Virtualization.pdf
+      - Virtualization: 10/slides/CSCC69-Virtualization.pdf
 
-- week: Mobile and Distributed systems
+- week: Distributed Systems amd Mobile OS
+  link: https://q.utoronto.ca/courses/170589/external_tools/246
   readings:
       - "Chapter 48 - Distributed Systems": http://pages.cs.wisc.edu/~remzi/OSTEP/dist-intro.pdf
+  notes:
+      - Mobile OS: 11/slides/CSCC69-DistributedSystems.pdf
+      - Mobile OS: 11/slides/CSCC69-MobileOS.pdf
 
 - week: Protection and Security
 
