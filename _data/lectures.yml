@@ -97,7 +97,7 @@
       - Virtualization: 10/slides/CSCC69-Virtualization.pdf
 
 - week: Distributed Systems amd Mobile OS
-  link: https://q.utoronto.ca/courses/170589/external_tools/246
+  link: https://youtu.be/GB37wsXu_qc 
   readings:
       - "Chapter 48 - Distributed Systems": http://pages.cs.wisc.edu/~remzi/OSTEP/dist-intro.pdf
   notes:
@@ -105,6 +105,14 @@
       - Mobile OS: 11/slides/CSCC69-MobileOS.pdf
 
 - week: Protection and Security
+  link: https://q.utoronto.ca/courses/170589/external_tools/246
+  notes:
+      - OS Security: 12/slides/CSCC69-OSSecurity.pdf
+  readings:
+      - "SetUID, SetGID, and Sticky Bits in Linux File Permissions": https://www.geeksforgeeks.org/setuid-setgid-and-sticky-bits-in-linux-file-permissions/
+      - "Linux Capabilities: Why They Exist and How They Work": https://blog.container-solutions.com/linux-capabilities-why-they-exist-and-how-they-work
+      - "Checking for Race Conditions in File Accesses": http://nob.cs.ucdavis.edu/bishop/papers/1996-compsys/racecond.pdf
+      - "A Brief Tour of Linux Security Modules": https://www.starlab.io/blog/a-brief-tour-of-linux-security-modules
 
 
 
