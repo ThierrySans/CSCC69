@@ -78,7 +78,7 @@ The numeric marks of the projects and final exam will be used to compute a compo
     </div>
     <div class="row">
         <div class="hcolumn column4">Projects</div>
-        <div class="column4">80%</div>
+        <div class="column4">80% (4 projects, 20% each)</div>
     </div>
     <div class="row">
         <div class="hcolumn column4">Final Exam</div>
