@@ -1,7 +1,7 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
                       "http://www.w3.org/TR/html40/loose.dtd">
 <HTML>
-<!-- Created on May, 17 2020 by texi2html 1.66 -->
+<!-- Created on December, 28 2020 by texi2html 1.66 -->
 <!--
 Written by: Lionel Cons <Lionel.Cons@cern.ch> (original author)
             Karl Berry  <karl@freefriends.org>
@@ -12,10 +12,10 @@ Send bugs and suggestions to <users@texi2html.cvshome.org>
 
 -->
 <HEAD>
-<TITLE>Pintos Projects: Coding Standards</TITLE>
+<TITLE>Pintos Projects: Project Documentation</TITLE>
 
-<META NAME="description" CONTENT="Pintos Projects: Coding Standards">
-<META NAME="keywords" CONTENT="Pintos Projects: Coding Standards">
+<META NAME="description" CONTENT="Pintos Projects: Project Documentation">
+<META NAME="keywords" CONTENT="Pintos Projects: Project Documentation">
 <META NAME="resource-type" CONTENT="document">
 <META NAME="distribution" CONTENT="global">
 <META NAME="Generator" CONTENT="texi2html 1.66">
@@ -24,10 +24,10 @@ Send bugs and suggestions to <users@texi2html.cvshome.org>
 
 <BODY >
 
-<A NAME="SEC148"></A>
+<A NAME="SEC142"></A>
 <TABLE CELLPADDING=1 CELLSPACING=1 BORDER=0>
-<TR><TD VALIGN="MIDDLE" ALIGN="LEFT">[<A HREF="pintos_8.html#SEC141"> &lt;&lt; </A>]</TD>
-<TD VALIGN="MIDDLE" ALIGN="LEFT">[<A HREF="pintos_10.html#SEC152"> &gt;&gt; </A>]</TD>
+<TR><TD VALIGN="MIDDLE" ALIGN="LEFT">[<A HREF="pintos_8.html#SEC138"> &lt;&lt; </A>]</TD>
+<TD VALIGN="MIDDLE" ALIGN="LEFT">[<A HREF="pintos_10.html#SEC145"> &gt;&gt; </A>]</TD>
 <TD VALIGN="MIDDLE" ALIGN="LEFT"> &nbsp; <TD VALIGN="MIDDLE" ALIGN="LEFT"> &nbsp; <TD VALIGN="MIDDLE" ALIGN="LEFT"> &nbsp; <TD VALIGN="MIDDLE" ALIGN="LEFT"> &nbsp; <TD VALIGN="MIDDLE" ALIGN="LEFT"> &nbsp; <TD VALIGN="MIDDLE" ALIGN="LEFT">[<A HREF="pintos.html#SEC_Top">Top</A>]</TD>
 <TD VALIGN="MIDDLE" ALIGN="LEFT">[<A HREF="pintos.html#SEC_Contents">Contents</A>]</TD>
 <TD VALIGN="MIDDLE" ALIGN="LEFT">[Index]</TD>
@@ -35,260 +35,193 @@ Send bugs and suggestions to <users@texi2html.cvshome.org>
 </TR></TABLE>
 
 <HR SIZE=2>
-<H1> C. Coding Standards </H1>
-<!--docid::SEC148::-->
+<H1> D. Project Documentation </H1>
+<!--docid::SEC142::-->
 <P>
 
-Our standards for coding are most important for grading.  We want to
-stress that aside from the fact that we are explicitly basing part of
-your grade on these things, good coding practices will improve the
-quality of your code.  This makes it easier for your partners to
-interact with it, and ultimately, will improve your chances of having a
-good working program.  That said once, the rest of this document will
-discuss only the ways in which our coding standards will affect our
-grading.
+This chapter presents a sample assignment and a filled-in design
+document for one possible implementation.  Its purpose is to give you an
+idea of what we expect to see in your own design documents.
 </P>
 <P>
 
-<A NAME="Coding Style"></A>
+<A NAME="Sample Assignment"></A>
 <HR SIZE="6">
-<A NAME="SEC149"></A>
-<H2> C.1 Style </H2>
-<!--docid::SEC149::-->
+<A NAME="SEC143"></A>
+<H2> D.1 Sample Assignment </H2>
+<!--docid::SEC143::-->
 <P>
 
-Style, for the purposes of our grading, refers to how readable your
-code is.  At minimum, this means that your code is well formatted, your
-variable names are descriptive and your functions are decomposed and
-well commented.  Any other factors which make it hard (or easy) for us
-to read or use your code will be reflected in your style grade.
+Implement <CODE>thread_join()</CODE>.
 </P>
 <P>
 
-The existing Pintos code is written in the GNU style and largely
-follows the <A HREF="http://www.gnu.org/prep/standards_toc.html">GNU
-Coding Standards</A>.  We encourage you to follow the applicable parts of
-them too, especially chapter 5, &quot;Making the Best Use of C.&quot;  Using a
-different style won't cause actual problems, but it's ugly to see
-gratuitous differences in style from one function to another.  If your
-code is too ugly, it will cost you points.
+<A NAME="IDX184"></A>
+</P>
+<DL>
+<DT><U>Function:</U> void <B>thread_join</B> (tid_t <VAR>tid</VAR>)
+<DD>Blocks the current thread until thread <VAR>tid</VAR> exits.  If <VAR>A</VAR> is
+the running thread and <VAR>B</VAR> is the argument, then we say that
+&quot;<VAR>A</VAR> joins <VAR>B</VAR>.&quot;
+<P>
+
+Incidentally, the argument is a thread id, instead of a thread pointer,
+because a thread pointer is not unique over time.  That is, when a
+thread dies, its memory may be, whether immediately or much later,
+reused for another thread.  If thread <VAR>A</VAR> over time had two children
+<VAR>B</VAR> and <VAR>C</VAR> that were stored at the same address, then
+<CODE>thread_join(<VAR>B</VAR>)</CODE> and <CODE>thread_join(<VAR>C</VAR>)</CODE> would be
+ambiguous.
 </P>
 <P>
 
-Please limit C source file lines to at most 79 characters long.
+A thread may only join its immediate children.  Calling
+<CODE>thread_join()</CODE> on a thread that is not the caller's child should
+cause the caller to return immediately.  Children are not &quot;inherited,&quot;
+that is, if <VAR>A</VAR> has child <VAR>B</VAR> and <VAR>B</VAR> has child <VAR>C</VAR>,
+then <VAR>A</VAR> always returns immediately should it try to join <VAR>C</VAR>,
+even if <VAR>B</VAR> is dead.
 </P>
 <P>
 
-Pintos comments sometimes refer to external standards or
-specifications by writing a name inside square brackets, like this:
-<CODE>[IA32-v3a]</CODE>.  These names refer to the reference names used in
-this documentation (see section <A HREF="pintos_14.html#SEC175">Bibliography</A>).
+A thread need not ever be joined.  Your solution should properly free
+all of a thread's resources, including its <CODE>struct thread</CODE>,
+whether it is ever joined or not, and regardless of whether the child
+exits before or after its parent.  That is, a thread should be freed
+exactly once in all cases.
 </P>
 <P>
 
-If you remove existing Pintos code, please delete it from your source
-file entirely.  Don't just put it into a comment or a conditional
-compilation directive, because that makes the resulting code hard to
-read.
+Joining a given thread is idempotent.  That is, joining a thread
+multiple times is equivalent to joining it once, because it has already
+exited at the time of the later joins.  Thus, joins on a given thread
+after the first should return immediately.
 </P>
 <P>
 
-We're only going to do a compile in the directory for the project being
-submitted.  You don't need to make sure that the previous projects also
-compile.
+You must handle all the ways a join can occur: nested joins (<VAR>A</VAR>
+joins <VAR>B</VAR>, then <VAR>B</VAR> joins <VAR>C</VAR>), multiple joins (<VAR>A</VAR>
+joins <VAR>B</VAR>, then <VAR>A</VAR> joins <VAR>C</VAR>), and so on.
 </P>
-<P>
-
-Project code should be written so that all of the subproblems for the
-project function together, that is, without the need to rebuild with
-different macros defined, etc.  If you do extra credit work that
-changes normal Pintos behavior so as to interfere with grading, then
-you must implement it so that it only acts that way when given a
-special command-line option of the form <Q><SAMP>-<VAR>name</VAR></SAMP></Q>, where
-<VAR>name</VAR> is a name of your choice.  You can add such an option by
-modifying <CODE>parse_options()</CODE> in <Q><TT>threads/init.c</TT></Q>.
-</P>
-<P>
-
-The introduction describes additional coding style requirements
-(see section <A HREF="pintos_1.html#SEC9">1.2.2 Design</A>).
-</P>
-<P>
-
-<A NAME="C99"></A>
-<HR SIZE="6">
-<A NAME="SEC150"></A>
-<H2> C.2 C99 </H2>
-<!--docid::SEC150::-->
-<P>
-
-The Pintos source code uses a few features of the &quot;C99&quot; standard
-library that were not in the original 1989 standard for C.  Many
-programmers are unaware of these feature, so we will describe them.  The
-new features used in Pintos are
-mostly in new headers:
-</P>
-<P>
-
-</P>
-<DL COMPACT>
-<DT><Q><TT>&lt;stdbool.h&gt;</TT></Q>
-<DD>Defines macros <CODE>bool</CODE>, a 1-bit type that takes on only the values
-0 and 1, <CODE>true</CODE>, which expands to 1, and <CODE>false</CODE>, which
-expands to 0.
-<P>
-
-</P>
-<DT><Q><TT>&lt;stdint.h&gt;</TT></Q>
-<DD>On systems that support them, this header defines types
-<CODE>int<VAR>n</VAR>_t</CODE> and <CODE>uint<VAR>n</VAR>_t</CODE> for <VAR>n</VAR> = 8, 16, 32,
-64, and possibly other values.  These are 2's complement signed and unsigned
-types, respectively, with the given number of bits.  
-<P>
-
-On systems where it is possible, this header also defines types
-<CODE>intptr_t</CODE> and <CODE>uintptr_t</CODE>, which are integer types big
-enough to hold a pointer.
-</P>
-<P>
-
-On all systems, this header defines types <CODE>intmax_t</CODE> and
-<CODE>uintmax_t</CODE>, which are the system's signed and unsigned integer
-types with the widest ranges.
-</P>
-<P>
-
-For every signed integer type <CODE><VAR>type</VAR>_t</CODE> defined here, as well
-as for <CODE>ptrdiff_t</CODE> defined in <Q><TT>&lt;stddef.h&gt;</TT></Q>, this header also
-defines macros <CODE><VAR>TYPE</VAR>_MAX</CODE> and <CODE><VAR>TYPE</VAR>_MIN</CODE> that
-give the type's range.  Similarly, for every unsigned integer type
-<CODE><VAR>type</VAR>_t</CODE> defined here, as well as for <CODE>size_t</CODE> defined
-in <Q><TT>&lt;stddef.h&gt;</TT></Q>, this header defines a <CODE><VAR>TYPE</VAR>_MAX</CODE>
-macro giving its maximum value.
-</P>
-<P>
-
-</P>
-<DT><Q><TT>&lt;inttypes.h&gt;</TT></Q>
-<DD><Q><TT>&lt;stdint.h&gt;</TT></Q> provides no straightforward way to format
-the types it defines with <CODE>printf()</CODE> and related functions.  This
-header provides macros to help with that.  For every
-<CODE>int<VAR>n</VAR>_t</CODE> defined by <Q><TT>&lt;stdint.h&gt;</TT></Q>, it provides macros
-<CODE>PRId<VAR>n</VAR></CODE> and <CODE>PRIi<VAR>n</VAR></CODE> for formatting values of
-that type with <CODE>&quot;%d&quot;</CODE> and <CODE>&quot;%i&quot;</CODE>.  Similarly, for every
-<CODE>uint<VAR>n</VAR>_t</CODE>, it provides <CODE>PRIo<VAR>n</VAR></CODE>,
-<CODE>PRIu<VAR>n</VAR></CODE>, <CODE>PRIu<VAR>x</VAR></CODE>, and <CODE>PRIu<VAR>X</VAR></CODE>.
-<P>
-
-You use these something like this, taking advantage of the fact that
-the C compiler concatenates adjacent string literals:
-<TABLE><tr><td>&nbsp;</td><td class=example><pre>#include &lt;inttypes.h&gt;
-<small>...</small>
-int32_t value = <small>...</small>;
-printf (&quot;value=%08&quot;PRId32&quot;\n&quot;, value);
-</pre></td></tr></table>The <Q><SAMP>%</SAMP></Q> is not supplied by the <CODE>PRI</CODE> macros.  As shown
-above, you supply it yourself and follow it by any flags, field
-width, etc.
-<P>
-
-</P>
-<DT><Q><TT>&lt;stdio.h&gt;</TT></Q>
-<DD>The <CODE>printf()</CODE> function has some new type modifiers for printing
-standard types:
-<P>
-
-</P>
-<DL COMPACT>
-<DT><Q><SAMP>j</SAMP></Q>
-<DD>For <CODE>intmax_t</CODE> (e.g. <Q><SAMP>%jd</SAMP></Q>) or <CODE>uintmax_t</CODE> (e.g.
-<Q><SAMP>%ju</SAMP></Q>).
-<P>
-
-</P>
-<DT><Q><SAMP>z</SAMP></Q>
-<DD>For <CODE>size_t</CODE> (e.g. <Q><SAMP>%zu</SAMP></Q>).
-<P>
-
-</P>
-<DT><Q><SAMP>t</SAMP></Q>
-<DD>For <CODE>ptrdiff_t</CODE> (e.g. <Q><SAMP>%td</SAMP></Q>).
 </DL>
 <P>
 
-Pintos <CODE>printf()</CODE> also implements a nonstandard <Q><SAMP>'</SAMP></Q> flag that
-groups large numbers with commas to make them easier to read.
-</DL>
-<P>
-
-<A NAME="Unsafe String Functions"></A>
+<A NAME="Sample Design Document"></A>
 <HR SIZE="6">
-<A NAME="SEC151"></A>
-<H2> C.3 Unsafe String Functions </H2>
-<!--docid::SEC151::-->
+<A NAME="SEC144"></A>
+<H2> D.2 Sample Design Document </H2>
+<!--docid::SEC144::-->
 <P>
 
-A few of the string functions declared in the standard
-<Q><TT>&lt;string.h&gt;</TT></Q> and <Q><TT>&lt;stdio.h&gt;</TT></Q> headers are notoriously unsafe.
-The worst offenders are intentionally not included in the Pintos C
-library:
-</P>
-<P>
+<TABLE><tr><td>&nbsp;</td><td class=example><pre>
+                         +-----------------+
+                         | CSCC69          |
+                         | SAMPLE PROJECT  |
+                         | DESIGN DOCUMENT |
+                         +-----------------+
 
-</P>
-<DL COMPACT>
-<DT><CODE>strcpy</CODE>
-<DD>When used carelessly this function can overflow the buffer reserved
-for its output string.  Use <CODE>strlcpy()</CODE> instead.  Refer to
-comments in its source code in <CODE>lib/string.c</CODE> for documentation.
-<P>
+---- GROUP ----
 
-</P>
-<DT><CODE>strncpy</CODE>
-<DD>This function can leave its destination buffer without a null string
-terminator.  It also has performance problems.  Again, use
-<CODE>strlcpy()</CODE>.
-<P>
+Ben Pfaff &lt;blp@stanford.edu&gt;
 
-</P>
-<DT><CODE>strcat</CODE>
-<DD>Same issue as <CODE>strcpy()</CODE>.  Use <CODE>strlcat()</CODE> instead.
-Again, refer to comments in its source code in <CODE>lib/string.c</CODE> for
-documentation.
-<P>
+---- PRELIMINARIES ----
 
-</P>
-<DT><CODE>strncat</CODE>
-<DD>The meaning of its buffer size argument is surprising.
-Again, use <CODE>strlcat()</CODE>.
-<P>
+&gt;&gt; If you have any preliminary comments on your submission, notes for
+&gt;&gt; the TAs, or extra credit, please give them here.
 
-</P>
-<DT><CODE>strtok</CODE>
-<DD>Uses global data, so it is unsafe in threaded programs such as
-kernels.  Use <CODE>strtok_r()</CODE> instead, and see its source code in
-<CODE>lib/string.c</CODE> for documentation and an example.
-<P>
+(This is a sample design document.)
 
-</P>
-<DT><CODE>sprintf</CODE>
-<DD>Same issue as <CODE>strcpy()</CODE>.  Use <CODE>snprintf()</CODE> instead.  Refer
-to comments in <CODE>lib/stdio.h</CODE> for documentation.
-<P>
+&gt;&gt; Please cite any offline or online sources you consulted while
+&gt;&gt; preparing your submission, other than the Pintos documentation,
+&gt;&gt; course text, and lecture notes.
 
-</P>
-<DT><CODE>vsprintf</CODE>
-<DD>Same issue as <CODE>strcpy()</CODE>.  Use <CODE>vsnprintf()</CODE> instead.
-</DL>
-<P>
+None.
 
-If you try to use any of these functions, the error message will give
-you a hint by referring to an identifier like
-<CODE>dont_use_sprintf_use_snprintf</CODE>.
-<A NAME="Project Documentation"></A>
+                                 JOIN
+                                 ====
+
+---- DATA STRUCTURES ----
+
+&gt;&gt; Copy here the declaration of each new or changed `struct' or `struct'
+&gt;&gt; member, global or static variable, `typedef', or enumeration.
+&gt;&gt; Identify the purpose of each in 25 words or less.
+
+A &quot;latch&quot; is a new synchronization primitive.  Acquires block
+until the first release.  Afterward, all ongoing and future
+acquires pass immediately.
+
+    /* Latch. */
+    struct latch 
+      {
+        bool released;              /* Released yet? */
+        struct lock monitor_lock;   /* Monitor lock. */
+        struct condition rel_cond;  /* Signaled when released. */
+      };
+
+Added to struct thread:
+
+    /* Members for implementing thread_join(). */
+    struct latch ready_to_die;   /* Release when thread about to die. */
+    struct semaphore can_die;    /* Up when thread allowed to die. */
+    struct list children;        /* List of child threads. */
+    list_elem children_elem;     /* Element of `children' list. */
+
+---- ALGORITHMS ----
+
+&gt;&gt; Briefly describe your implementation of thread_join() and how it
+&gt;&gt; interacts with thread termination.
+
+thread_join() finds the joined child on the thread's list of
+children and waits for the child to exit by acquiring the child's
+ready_to_die latch.  When thread_exit() is called, the thread
+releases its ready_to_die latch, allowing the parent to continue.
+
+---- SYNCHRONIZATION ----
+
+&gt;&gt; Consider parent thread P with child thread C.  How do you ensure
+&gt;&gt; proper synchronization and avoid race conditions when P calls wait(C)
+&gt;&gt; before C exits?  After C exits?  How do you ensure that all resources
+&gt;&gt; are freed in each case?  How about when P terminates without waiting,
+&gt;&gt; before C exits?  After C exits?  Are there any special cases?
+
+C waits in thread_exit() for P to die before it finishes its own
+exit, using the can_die semaphore &quot;down&quot;ed by C and &quot;up&quot;ed by P as
+it exits.  Regardless of whether whether C has terminated, there
+is no race on wait(C), because C waits for P's permission before
+it frees itself.
+
+Regardless of whether P waits for C, P still &quot;up&quot;s C's can_die
+semaphore when P dies, so C will always be freed.  (However,
+freeing C's resources is delayed until P's death.)
+
+The initial thread is a special case because it has no parent to
+wait for it or to &quot;up&quot; its can_die semaphore.  Therefore, its
+can_die semaphore is initialized to 1.
+
+---- RATIONALE ----
+
+&gt;&gt; Critique your design, pointing out advantages and disadvantages in
+&gt;&gt; your design choices.
+
+This design has the advantage of simplicity.  Encapsulating most
+of the synchronization logic into a new &quot;latch&quot; structure
+abstracts what little complexity there is into a separate layer,
+making the design easier to reason about.  Also, all the new data
+members are in `struct thread', with no need for any extra dynamic
+allocation, etc., that would require extra management code.
+
+On the other hand, this design is wasteful in that a child thread
+cannot free itself before its parent has terminated.  A parent
+thread that creates a large number of short-lived child threads
+could unnecessarily exhaust kernel memory.  This is probably
+acceptable for implementing kernel threads, but it may be a bad
+idea for use with user processes because of the larger number of
+resources that user processes tend to own.
+</pre></td></tr></table><A NAME="Debugging Tools"></A>
 <HR SIZE="6">
 <TABLE CELLPADDING=1 CELLSPACING=1 BORDER=0>
-<TR><TD VALIGN="MIDDLE" ALIGN="LEFT">[<A HREF="pintos_9.html#SEC148"> &lt;&lt; </A>]</TD>
-<TD VALIGN="MIDDLE" ALIGN="LEFT">[<A HREF="pintos_10.html#SEC152"> &gt;&gt; </A>]</TD>
+<TR><TD VALIGN="MIDDLE" ALIGN="LEFT">[<A HREF="pintos_9.html#SEC142"> &lt;&lt; </A>]</TD>
+<TD VALIGN="MIDDLE" ALIGN="LEFT">[<A HREF="pintos_10.html#SEC145"> &gt;&gt; </A>]</TD>
 <TD VALIGN="MIDDLE" ALIGN="LEFT"> &nbsp; <TD VALIGN="MIDDLE" ALIGN="LEFT"> &nbsp; <TD VALIGN="MIDDLE" ALIGN="LEFT"> &nbsp; <TD VALIGN="MIDDLE" ALIGN="LEFT"> &nbsp; <TD VALIGN="MIDDLE" ALIGN="LEFT"> &nbsp; <TD VALIGN="MIDDLE" ALIGN="LEFT">[<A HREF="pintos.html#SEC_Top">Top</A>]</TD>
 <TD VALIGN="MIDDLE" ALIGN="LEFT">[<A HREF="pintos.html#SEC_Contents">Contents</A>]</TD>
 <TD VALIGN="MIDDLE" ALIGN="LEFT">[Index]</TD>
@@ -297,7 +230,7 @@ you a hint by referring to an identifier like
 <BR>
 <FONT SIZE="-1">
 This document was generated
-by <I>Thierry Sans</I> on <I>May, 17 2020</I>
+by <I>Thierry Sans</I> on <I>December, 28 2020</I>
 using <A HREF="http://texi2html.cvshome.org"><I>texi2html</I></A>
 </FONT>
 

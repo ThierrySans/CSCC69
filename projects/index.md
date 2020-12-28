@@ -20,24 +20,24 @@ You can work in groups of 1-3 people. So start talking with your classmates arou
     </div>
     <div class="row">
         <div class="column2">Feb 7</div>
-        <div class="column3"><a href="WWW/pintos_3.html">Project 1: Threads</a></div>
+        <div class="column3"><a href="WWW/pintos_2.html">Project 1: Threads</a></div>
         <div class="column2"><!--a href="project1/slides/project1.pdf">Slides</a--></div>
         <!--div class="column2"><a href="https://classroom.github.com/g/fLtciXat">Github Classroom</a></div-->
         <!--div class="column2"><a href="https://grademy.work/ThierrySans/C69S20-project1">Rubric</a></div-->
     </div>
     <div class="row">
         <div class="column2">Feb 28</div>
-        <div class="column3"><a href="WWW/pintos_4.html">Project 2: User Programs</a></div>
+        <div class="column3"><a href="WWW/pintos_3.html">Project 2: User Programs</a></div>
         <div class="column2"><!--a href="project2/slides/project2.pdf">Slides</a--></div>
     </div>
     <div class="row">
         <div class="column2">Mar 21</div>
-        <div class="column3"><a href="WWW/pintos_5.html">Project 3: Virtual Memory</a></div>
+        <div class="column3"><a href="WWW/pintos_4.html">Project 3: Virtual Memory</a></div>
         <div class="column2"><!--a href="project3/slides/project3.pdf">Slides</a--></div>
     </div>
     <div class="row">
         <div class="column2">Apr 11</div>
-        <div class="column3"><a href="WWW/pintos_6.html">Project 4: File Systems</a></div>
+        <div class="column3"><a href="WWW/pintos_5.html">Project 4: File Systems</a></div>
         <div class="column2"><!--a href="project4/slides/project4.pdf">Slides</a--></div>
     </div>
 </div>
@@ -47,18 +47,18 @@ The complete Pintos documentation in [PDF](WWW/pintos.pdf) or [HTML](WWW/pintos.
 You should read everything below <span class="em">before attempting any of the projects</span>
 
 - [Getting Started](WWW/pintos_1.html)
-- [Coding Standards](WWW/pintos_9.html)
-- [Project Documentation](WWW/pintos_10.html)
+- [Coding Standards](WWW/pintos_8.html)
+- [Project Documentation](WWW/pintos_9.html)
 
 You'll want to read these once you start work on the projects. Their advice can save you a lot of time:
 
-- [Debugging Tools](WWW/pintos_11.html)
-- [Development Tools](WWW/pintos_12.html)
+- [Debugging Tools](WWW/pintos_10.html)
+- [Development Tools](WWW/pintos_11.html)
 
 You need not read the reference guide, but you may find the information in it valuable from time to time:
 
-- [Reference Guide](WWW/pintos_7.html)
+- [Reference Guide](WWW/pintos_6.html)
 
-Bracketed notations in Pintos source code comments can be looked up in the [Bibliography](WWW/pintos_14.html).
+Bracketed notations in Pintos source code comments can be looked up in the [Bibliography](WWW/pintos_13.html).
 
 
