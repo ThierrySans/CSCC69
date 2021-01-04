@@ -1,7 +1,7 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
                       "http://www.w3.org/TR/html40/loose.dtd">
 <HTML>
-<!-- Created on December, 28 2020 by texi2html 1.66 -->
+<!-- Created on January, 4 2021 by texi2html 1.66 -->
 <!--
 Written by: Lionel Cons <Lionel.Cons@cern.ch> (original author)
             Karl Berry  <karl@freefriends.org>
@@ -92,38 +92,29 @@ First let's test the Pintos docker image:
 </P>
 <P>
 
-<TABLE><tr><td>&nbsp;</td><td class=example><pre>$ docker run --rm --name pintos thierrysans/pintos pintos -q run alarm-zero
+<TABLE><tr><td>&nbsp;</td><td class=example><pre>$ docker run --rm --name pintos -w /pintos/src/threads/build thierrysans/pintos pintos -q run alarm-zero
 </pre></td></tr></table><P>
 
-At first, this command might print a warning message that can be ignored:
+It should run Pintos and execute the command <CODE>alarm-zero</CODE> before quitting (option <CODE>-q</CODE>):
 </P>
 <P>
 
-<TABLE><tr><td>&nbsp;</td><td class=example><pre>qemu-system-i386 -device isa-debug-exit -hda /tmp/jyywB8o6gP.dsk -m 4 -net none -nographic -monitor null
-WARNING: Image format was not specified for '/tmp/jyywB8o6gP.dsk' and probing guessed raw.
-         Automatically detecting the format is dangerous for raw images, write operations on block 0 will be restricted.
-         Specify the 'raw' format explicitly to remove the restrictions.
-</pre></td></tr></table><P>
-
-Then it should run Pintos and execute the command <CODE>alarm-zero</CODE> before quitting (option <CODE>-q</CODE>):
-</P>
-<P>
-
-<TABLE><tr><td>&nbsp;</td><td class=example><pre>PiLo hda1
+<TABLE><tr><td>&nbsp;</td><td class=example><pre>qemu-system-i386 -device isa-debug-exit -drive file=/tmp/4VOGYdFrP1.dsk,index=0,media=disk,format=raw -m 4 -net none -nographic -monitor null
+PiLo hda1
 Loading............
 Kernel command line: -q run alarm-zero
 Pintos booting with 3,968 kB RAM...
 367 pages available in kernel pool.
 367 pages available in user pool.
-Calibrating timer...  314,163,200 loops/s.
+Calibrating timer...  417,792,000 loops/s.
 Boot complete.
 Executing 'alarm-zero':
 (alarm-zero) begin
 (alarm-zero) PASS
 (alarm-zero) end
 Execution of 'alarm-zero' complete.
-Timer: 26 ticks
-Thread: 0 idle ticks, 26 kernel ticks, 0 user ticks
+Timer: 24 ticks
+Thread: 0 idle ticks, 25 kernel ticks, 0 user ticks
 Console: 385 characters output
 Keyboard: 0 keys pressed
 Powering off...
@@ -133,7 +124,7 @@ By default, the command <CODE>pintos</CODE> runs the QEMU simulator. You can as 
 </P>
 <P>
 
-<TABLE><tr><td>&nbsp;</td><td class=example><pre>$ docker run --rm --name pintos thierrysans/pintos pintos --bochs -- -q run alarm-zero
+<TABLE><tr><td>&nbsp;</td><td class=example><pre>$ docker run --rm --name pintos -w /pintos/src/threads/build thierrysans/pintos pintos --bochs -- -q run alarm-zero
 </pre></td></tr></table><P>
 
 and the output should look like this: 
@@ -144,7 +135,7 @@ and the output should look like this:
 ========================================================================
                        Bochs x86 Emulator 2.6.2
                 Built from SVN snapshot on May 26, 2013
-                  Compiled on May 15 2020 at 17:27:08
+                  Compiled on Dec 28 2020 at 05:20:03
 ========================================================================
 00000000000i[     ] reading configuration from bochsrc.txt
 00000000000e[     ] bochsrc.txt:8: 'user_shortcut' will be replaced by new 'keyboard' option.
@@ -299,7 +290,7 @@ Once in the Docker container, you should build the utils directory (first time o
 $ make
 </pre></td></tr></table><P>
 
-Then, build Pintos <STRONG>inside the docker container</STRONG>:
+Then, let us build the Pintos kernel for the first project (@xref{Project 1: Threads}) <STRONG>inside the docker container</STRONG>:
 </P>
 <P>
 
@@ -369,11 +360,12 @@ recompiled when other source or header files are changed.
 We've supplied a program for conveniently running Pintos in a simulator,
 called <CODE>pintos</CODE>.  In the simplest case, you can invoke
 <CODE>pintos</CODE> as <CODE>pintos <VAR>argument</VAR><small>...</small></CODE>.  Each
-<VAR>argument</VAR> is passed to the Pintos kernel for it to act on.
+<VAR>argument</VAR> is passed to the Pintos kernel for it to act on. The command <CODE>pintos</CODE> should be run in the directory where the kernel was built.  
 </P>
 <P>
 
-<TABLE><tr><td>&nbsp;</td><td class=example><pre>$ pintos -q run alarm-multiple
+<TABLE><tr><td>&nbsp;</td><td class=example><pre>$ cd /pintos/src/threads/build
+$ pintos -q run alarm-multiple
 </pre></td></tr></table><P>
 
 In these arguments, <CODE>run</CODE> instructs the kernel to run a
@@ -826,7 +818,7 @@ trouble with blow-ups.
 <BR>
 <FONT SIZE="-1">
 This document was generated
-by <I>Thierry Sans</I> on <I>December, 28 2020</I>
+by <I>Thierry Sans</I> on <I>January, 4 2021</I>
 using <A HREF="http://texi2html.cvshome.org"><I>texi2html</I></A>
 </FONT>
 
