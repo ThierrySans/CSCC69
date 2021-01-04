@@ -99,39 +99,6 @@ It should run Pintos and execute the command <CODE>alarm-zero</CODE> before quit
 </P>
 <P>
 
-<TABLE><tr><td>&nbsp;</td><td class=example><pre>qemu-system-i386 -device isa-debug-exit -drive file=/tmp/4VOGYdFrP1.dsk,index=0,media=disk,format=raw 
--m 4 -net none -nographic -monitor null
-PiLo hda1
-Loading............
-Kernel command line: -q run alarm-zero
-Pintos booting with 3,968 kB RAM...
-367 pages available in kernel pool.
-367 pages available in user pool.
-Calibrating timer...  417,792,000 loops/s.
-Boot complete.
-Executing 'alarm-zero':
-(alarm-zero) begin
-(alarm-zero) PASS
-(alarm-zero) end
-Execution of 'alarm-zero' complete.
-Timer: 24 ticks
-Thread: 0 idle ticks, 25 kernel ticks, 0 user ticks
-Console: 385 characters output
-Keyboard: 0 keys pressed
-Powering off...
-</pre></td></tr></table><P>
-
-By default, the command <CODE>pintos</CODE> runs the QEMU simulator. You can as well choose to run the <CODE>Bochs</CODE> simulator:
-</P>
-<P>
-
-<TABLE><tr><td>&nbsp;</td><td class=example><pre>$ docker run --rm --name pintos -w /pintos/src/threads/build thierrysans/pintos pintos --bochs -- -q run alarm-zero
-</pre></td></tr></table><P>
-
-and the output should look like this: 
-</P>
-<P>
-
 <TABLE><tr><td>&nbsp;</td><td class=example><pre>squish-pty bochs -q
 ========================================================================
                        Bochs x86 Emulator 2.6.2
@@ -164,6 +131,39 @@ Powering off...
 Bochs is exiting with the following message:
 [ACPI ] ACPI control: soft power off
 ========================================================================
+</pre></td></tr></table><P>
+
+By default, the command <CODE>pintos</CODE> runs the Bochs simulator. You can as well choose to run the QEMU simulator:
+</P>
+<P>
+
+<TABLE><tr><td>&nbsp;</td><td class=example><pre>$ docker run --rm --name pintos -w /pintos/src/threads/build thierrysans/pintos pintos --qemu -- -q run alarm-zero
+</pre></td></tr></table><P>
+
+and the output should look like this: 
+</P>
+<P>
+
+<TABLE><tr><td>&nbsp;</td><td class=example><pre>qemu-system-i386 -device isa-debug-exit -drive file=/tmp/4VOGYdFrP1.dsk,index=0,media=disk,format=raw 
+-m 4 -net none -nographic -monitor null
+PiLo hda1
+Loading............
+Kernel command line: -q run alarm-zero
+Pintos booting with 3,968 kB RAM...
+367 pages available in kernel pool.
+367 pages available in user pool.
+Calibrating timer...  417,792,000 loops/s.
+Boot complete.
+Executing 'alarm-zero':
+(alarm-zero) begin
+(alarm-zero) PASS
+(alarm-zero) end
+Execution of 'alarm-zero' complete.
+Timer: 24 ticks
+Thread: 0 idle ticks, 25 kernel ticks, 0 user ticks
+Console: 385 characters output
+Keyboard: 0 keys pressed
+Powering off...
 </pre></td></tr></table><P>
 
 The Docker image <CODE>thierrysans/pintos</CODE> contains a modified version of the original Pintos source code. However you are not going to modify this code directly in the container, otherwise all of your changes will be lost as soon as the container shuts down.
@@ -374,17 +374,17 @@ test and <CODE>alarm-multiple</CODE> is the test to run.
 </P>
 <P>
 
-By default, pintos runs the QEMU simulator but you can also run the same command with the Bochs simulator: 
-</P>
-<P>
-
-<TABLE><tr><td>&nbsp;</td><td class=example><pre>$ pintos --bochs -- -q run alarm-multiple
-</pre></td></tr></table><P>
-
 This command creates a <Q><TT>bochsrc.txt</TT></Q> file, which is needed for
 running Bochs, and then invoke Bochs.
 </P>
 <P>
+
+By default, pintos runs the Bochs simulator but you can also run the same command with the QEMU simulator: 
+</P>
+<P>
+
+<TABLE><tr><td>&nbsp;</td><td class=example><pre>$ pintos --qemu -- -q run alarm-multiple
+</pre></td></tr></table><P>
 
 You can run each simulator with a debugger (see section <A HREF="pintos_10.html#SEC151">E.5 GDB</A>). You can set the amount of memory to give
 the VM.
