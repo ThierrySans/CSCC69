@@ -1,7 +1,7 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
                       "http://www.w3.org/TR/html40/loose.dtd">
 <HTML>
-<!-- Created on January, 4 2021 by texi2html 1.66 -->
+<!-- Created on January, 7 2021 by texi2html 1.66 -->
 <!--
 Written by: Lionel Cons <Lionel.Cons@cern.ch> (original author)
             Karl Berry  <karl@freefriends.org>
@@ -531,7 +531,7 @@ which the threads are kept.  Specify <VAR>element</VAR> as the
 together.
 <P>
 
-Example: <CODE>btthreadlist all_list allelem</CODE> shows the backtraces of
+Example: <CODE>btthreadlist &amp;all_list allelem</CODE> shows the backtraces of
 all threads contained in <CODE>struct list all_list</CODE>, linked together by
 <CODE>allelem</CODE>.  This command is useful to determine where your threads
 are stuck when a deadlock occurs.  Please see the example scenario below.
@@ -543,7 +543,7 @@ are stuck when a deadlock occurs.  Please see the example scenario below.
 </P>
 <DL>
 <DT><U>GDB Macro:</U> <B>btthreadall</B>
-<DD>Short-hand for <CODE>btthreadlist all_list allelem</CODE>.
+<DD>Short-hand for <CODE>btthreadlist &amp;all_list allelem</CODE>.
 </DL>
 <P>
 
@@ -753,7 +753,7 @@ threads and prints the backtrace for each thread:
 </P>
 <P>
 
-<TABLE><tr><td>&nbsp;</td><td class=smallexample><pre><FONT SIZE=-1>(gdb) <STRONG>btthreadlist all_list allelem</STRONG>
+<TABLE><tr><td>&nbsp;</td><td class=smallexample><pre><FONT SIZE=-1>(gdb) <STRONG>btthreadlist &amp;all_list allelem</STRONG>
 pintos-debug: dumping backtrace of thread 'main' @0xc002f000
 #0  0xc0101820 in schedule () at ../../threads/thread.c:722
 #1  0xc0100f8f in thread_block () at ../../threads/thread.c:324
@@ -1033,7 +1033,7 @@ smaller than about 1.6 TB.
 <BR>
 <FONT SIZE="-1">
 This document was generated
-by <I>Thierry Sans</I> on <I>January, 4 2021</I>
+by <I>Thierry Sans</I> on <I>January, 7 2021</I>
 using <A HREF="http://texi2html.cvshome.org"><I>texi2html</I></A>
 </FONT>
 
