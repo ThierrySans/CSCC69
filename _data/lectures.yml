@@ -1,105 +1,105 @@
 - week: The Big Picture
   link: https://utoronto.zoom.us/j/81908690391
-  # notes:
-  #     - Introduction: 01/slides/CSCC69-Introduction.pdf
-  #     - The Big Picture: 01/slides/CSCC69-TheBigPicture.pdf
+  notes:
+      Introduction: 01/slides/CSCC69-Introduction
+      The Big Picture: 01/slides/CSCC69-TheBigPicture
   readings:
-      - "Chap 2 - Introduction to Operating Systems": http://pages.cs.wisc.edu/~remzi/OSTEP/intro.pdf
-      - "Chap 4 - The Abstraction: The Process": http://pages.cs.wisc.edu/~remzi/OSTEP/cpu-intro.pdf
-      - "Chap 13 - The Abstraction: Address Spaces": http://pages.cs.wisc.edu/~remzi/OSTEP/vm-intro.pdf 
-      - "Chap 36 - I/O devices": http://pages.cs.wisc.edu/~remzi/OSTEP/file-devices.pdf
+      "Chap 2 Introduction to Operating Systems": http://pages.cs.wisc.edu/~remzi/OSTEP/intro.pdf
+      "Chap 4 The Abstraction: The Process": http://pages.cs.wisc.edu/~remzi/OSTEP/cpu-intro.pdf
+      "Chap 13 The Abstraction: Address Spaces": http://pages.cs.wisc.edu/~remzi/OSTEP/vm-intro.pdf 
+      "Chap 36 I/O devices": http://pages.cs.wisc.edu/~remzi/OSTEP/file-devices.pdf
 
 - week: Managing and Scheduling Processes
   readings:
-      - "(again) Chap 4 - The Abstraction: The Process": http://pages.cs.wisc.edu/~remzi/OSTEP/cpu-intro.pdf
-      - "Chap 5 - Interlude: Process API": http://pages.cs.wisc.edu/~remzi/OSTEP/cpu-api.pdf
-      - "Chap 6 - Mechanism: Limited Direct Execution": http://pages.cs.wisc.edu/~remzi/OSTEP/cpu-mechanisms.pdf
-      - "Chap 7 - Scheduling: Introduction": http://pages.cs.wisc.edu/~remzi/OSTEP/cpu-sched.pdf
-      - "Chap 8 - Scheduling: The Multi-Level Feedback Queue": http://pages.cs.wisc.edu/~remzi/OSTEP/cpu-sched-mlfq.pdf
+      "(again) Chap 4 The Abstraction: The Process": http://pages.cs.wisc.edu/~remzi/OSTEP/cpu-intro.pdf
+      "Chap 5 Interlude: Process API": http://pages.cs.wisc.edu/~remzi/OSTEP/cpu-api.pdf
+      "Chap 6 Mechanism: Limited Direct Execution": http://pages.cs.wisc.edu/~remzi/OSTEP/cpu-mechanisms.pdf
+      "Chap 7 Scheduling: Introduction": http://pages.cs.wisc.edu/~remzi/OSTEP/cpu-sched.pdf
+      "Chap 8 Scheduling: The Multi-Level Feedback Queue": http://pages.cs.wisc.edu/~remzi/OSTEP/cpu-sched-mlfq.pdf
   # notes:
-  #     - Processes: 02/slides/CSCC69-Processes.pdf
+  #     Processes: 02/slides/CSCC69-Processes.pdf
 
 - week: Threads and Synchronization
   # notes:
-  #     - Threads: 03/slides/CSCC69-Threads.pdf
+  #     Threads: 03/slides/CSCC69-Threads.pdf
   readings:
-      - "Chap 26 - Concurrency: An Introduction": http://pages.cs.wisc.edu/~remzi/OSTEP/threads-intro.pdf
-      - "Chap 27 - Interlude: Thread API": http://pages.cs.wisc.edu/~remzi/OSTEP/threads-api.pdf
-      - "Chap 28 - Locks": http://pages.cs.wisc.edu/~remzi/OSTEP/threads-locks.pdf 
-      - "Chap 31 - Semaphores": http://pages.cs.wisc.edu/~remzi/OSTEP/threads-sema.pdf
+      "Chap 26 Concurrency: An Introduction": http://pages.cs.wisc.edu/~remzi/OSTEP/threads-intro.pdf
+      "Chap 27 Interlude: Thread API": http://pages.cs.wisc.edu/~remzi/OSTEP/threads-api.pdf
+      "Chap 28 Locks": http://pages.cs.wisc.edu/~remzi/OSTEP/threads-locks.pdf 
+      "Chap 31 Semaphores": http://pages.cs.wisc.edu/~remzi/OSTEP/threads-sema.pdf
 
 - week: Concurrency Problems
   # notes:
-  #     - Concurrency: 04/slides/CSCC69-ConcurrencyProblems.pdf
+  #     Concurrency: 04/slides/CSCC69-ConcurrencyProblems.pdf
   readings:
-      - "Chap 32 - Common Concurrency Problems": http://pages.cs.wisc.edu/~remzi/OSTEP/threads-bugs.pdf
-      - "Chap 33 - Event-based Concurrency (Advanced)": http://pages.cs.wisc.edu/~remzi/OSTEP/threads-events.pdf    
+      "Chap 32 Common Concurrency Problems": http://pages.cs.wisc.edu/~remzi/OSTEP/threads-bugs.pdf
+      "Chap 33 Event-based Concurrency (Advanced)": http://pages.cs.wisc.edu/~remzi/OSTEP/threads-events.pdf    
 
 - week: Virtual Memory
   readings:
-      - "Chap 15 - Mechanism: Address Translation": http://pages.cs.wisc.edu/~remzi/OSTEP/vm-mechanism.pdf
-      - "Chap 16 - Segmentation": http://pages.cs.wisc.edu/~remzi/OSTEP/vm-segmentation.pdf
-      - "Chap 18 - Paging: Introduction": http://pages.cs.wisc.edu/~remzi/OSTEP/vm-paging.pdf
-      - "Chap 19 - Paging: Faster Translations (TLBs)": http://pages.cs.wisc.edu/~remzi/OSTEP/vm-tlbs.pdf
-      - "Chap 20 - Paging: Smaller Tables": http://pages.cs.wisc.edu/~remzi/OSTEP/vm-smalltables.pdf
+      "Chap 15 Mechanism: Address Translation": http://pages.cs.wisc.edu/~remzi/OSTEP/vm-mechanism.pdf
+      "Chap 16 Segmentation": http://pages.cs.wisc.edu/~remzi/OSTEP/vm-segmentation.pdf
+      "Chap 18 Paging: Introduction": http://pages.cs.wisc.edu/~remzi/OSTEP/vm-paging.pdf
+      "Chap 19 Paging: Faster Translations (TLBs)": http://pages.cs.wisc.edu/~remzi/OSTEP/vm-tlbs.pdf
+      "Chap 20 Paging: Smaller Tables": http://pages.cs.wisc.edu/~remzi/OSTEP/vm-smalltables.pdf
   # notes:
-  #     - Virtual Memory: 05/slides/CSCC69-VirtualMemory.pdf
-  #     - Paging in details: 05/slides/CSCC69-Paging.pdf
+  #     Virtual Memory: 05/slides/CSCC69-VirtualMemory.pdf
+  #     Paging in details: 05/slides/CSCC69-Paging.pdf
 
 - break: Reading Week
 
 - week: Memory Management
   readings:
-      - "Chap 21 - Beyond Physical Memory: Mechanisms": http://pages.cs.wisc.edu/~remzi/OSTEP/vm-beyondphys.pdf
-      - "Chap 22 - Beyond Physical Memory: Policies": http://pages.cs.wisc.edu/~remzi/OSTEP/vm-beyondphys-policy.pdf
-      - "Chap 23 - Complete Virtual Memory Systems": http://pages.cs.wisc.edu/~remzi/OSTEP/vm-complete.pdf
+      "Chap 21 Beyond Physical Memory: Mechanisms": http://pages.cs.wisc.edu/~remzi/OSTEP/vm-beyondphys.pdf
+      "Chap 22 Beyond Physical Memory: Policies": http://pages.cs.wisc.edu/~remzi/OSTEP/vm-beyondphys-policy.pdf
+      "Chap 23 Complete Virtual Memory Systems": http://pages.cs.wisc.edu/~remzi/OSTEP/vm-complete.pdf
   # notes:
-  #     - Memory Management: 06/slides/CSCC69-MemoryManagement.pdf
+  #     Memory Management: 06/slides/CSCC69-MemoryManagement.pdf
 
 - week: I/O and Disks
   readings:
-      - "(again) Chap 36 - I/O Devices": http://pages.cs.wisc.edu/~remzi/OSTEP/file-devices.pdf
-      - "Chap 37 - Hard Disk Drives": http://pages.cs.wisc.edu/~remzi/OSTEP/file-disks.pdf
-      - "Chap 44 - Flash-based SSDs": http://pages.cs.wisc.edu/~remzi/OSTEP/file-ssd.pdf
+      "(again) Chap 36 I/O Devices": http://pages.cs.wisc.edu/~remzi/OSTEP/file-devices.pdf
+      "Chap 37 Hard Disk Drives": http://pages.cs.wisc.edu/~remzi/OSTEP/file-disks.pdf
+      "Chap 44 Flash-based SSDs": http://pages.cs.wisc.edu/~remzi/OSTEP/file-ssd.pdf
   # notes:
-  #     - I/O and Disks: 07/slides/CSCC69-IO.pdf
+  #     I/O and Disks: 07/slides/CSCC69-IO.pdf
 
 - week: File Systems
   readings:
-      - "Chap 39 - Files and Directories": http://pages.cs.wisc.edu/~remzi/OSTEP/file-intro.pdf
-      - "Chap 40 - File System Implementation": http://pages.cs.wisc.edu/~remzi/OSTEP/file-implementation.pdf
+      "Chap 39 Files and Directories": http://pages.cs.wisc.edu/~remzi/OSTEP/file-intro.pdf
+      "Chap 40 File System Implementation": http://pages.cs.wisc.edu/~remzi/OSTEP/file-implementation.pdf
   # notes:
-  #     - File Systems: 08/slides/CSCC69-FileSystems.pdf
+  #     File Systems: 08/slides/CSCC69-FileSystems.pdf
 
 - week: Advanced File Systems
   readings:
-      - "Chap 41 - Locality and The Fast File System": http://pages.cs.wisc.edu/~remzi/OSTEP/file-ffs.pdf
-      - "Chap 42 - Crash Consistency: FSCK and Journaling": http://pages.cs.wisc.edu/~remzi/OSTEP/file-journaling.pdf
-      - "Chap 43 - Log-structured File Systems": http://pages.cs.wisc.edu/~remzi/OSTEP/file-lfs.pdf
+      "Chap 41 Locality and The Fast File System": http://pages.cs.wisc.edu/~remzi/OSTEP/file-ffs.pdf
+      "Chap 42 Crash Consistency: FSCK and Journaling": http://pages.cs.wisc.edu/~remzi/OSTEP/file-journaling.pdf
+      "Chap 43 Log-structured File Systems": http://pages.cs.wisc.edu/~remzi/OSTEP/file-lfs.pdf
   # notes:
-  #     - Advanced File Systems: 09/slides/CSCC69-AdvancedFileSystems.pdf
+  #     Advanced File Systems: 09/slides/CSCC69-AdvancedFileSystems.pdf
 
 - week: Virtualization
   readings:
-      - "Appendix B - Virtual Machine Monitors": http://pages.cs.wisc.edu/~remzi/OSTEP/vmm-intro.pdf
+      "Appendix B Virtual Machine Monitors": http://pages.cs.wisc.edu/~remzi/OSTEP/vmm-intro.pdf
   # notes:
-  #     - Virtualization: 10/slides/CSCC69-Virtualization.pdf
+  #     Virtualization: 10/slides/CSCC69-Virtualization.pdf
 
 - week: Distributed Systems amd Mobile OS
   readings:
-      - "Chapter 48 - Distributed Systems": http://pages.cs.wisc.edu/~remzi/OSTEP/dist-intro.pdf
+      "Chapter 48 Distributed Systems": http://pages.cs.wisc.edu/~remzi/OSTEP/dist-intro.pdf
   # notes:
-  #     - Mobile OS: 11/slides/CSCC69-DistributedSystems.pdf
-  #     - Mobile OS: 11/slides/CSCC69-MobileOS.pdf
+  #     Mobile OS: 11/slides/CSCC69-DistributedSystems.pdf
+  #     Mobile OS: 11/slides/CSCC69-MobileOS.pdf
 
 - week: Protection and Security
   # notes:
-  #     - OS Security: 12/slides/CSCC69-OSSecurity.pdf
+  #     OS Security: 12/slides/CSCC69-OSSecurity.pdf
   readings:
-      - "SetUID, SetGID, and Sticky Bits in Linux File Permissions": https://www.geeksforgeeks.org/setuid-setgid-and-sticky-bits-in-linux-file-permissions/
-      - "Linux Capabilities: Why They Exist and How They Work": https://blog.container-solutions.com/linux-capabilities-why-they-exist-and-how-they-work
-      - "Checking for Race Conditions in File Accesses": http://nob.cs.ucdavis.edu/bishop/papers/1996-compsys/racecond.pdf
-      - "A Brief Tour of Linux Security Modules": https://www.starlab.io/blog/a-brief-tour-of-linux-security-modules
+      "SetUID, SetGID, and Sticky Bits in Linux File Permissions": https://www.geeksforgeeks.org/setuid-setgid-and-sticky-bits-in-linux-file-permissions/
+      "Linux Capabilities: Why They Exist and How They Work": https://blog.container-solutions.com/linux-capabilities-why-they-exist-and-how-they-work
+      "Checking for Race Conditions in File Accesses": http://nob.cs.ucdavis.edu/bishop/papers/1996-compsys/racecond.pdf
+      "A Brief Tour of Linux Security Modules": https://www.starlab.io/blog/a-brief-tour-of-linux-security-modules
 
 
 
