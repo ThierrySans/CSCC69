@@ -1,5 +1,5 @@
 - week: The Big Picture
-  link: https://utoronto.zoom.us/j/81908690391
+  link: https://youtu.be/-oUu0lslw-A
   notes:
       Introduction: 01/slides/CSCC69-Introduction
       The Big Picture: 01/slides/CSCC69-TheBigPicture
@@ -10,6 +10,7 @@
       "Chap 36 I/O devices": http://pages.cs.wisc.edu/~remzi/OSTEP/file-devices.pdf
 
 - week: Managing and Scheduling Processes
+  link: https://utoronto.zoom.us/j/81908690391
   readings:
       "(again) Chap 4 The Abstraction: The Process": http://pages.cs.wisc.edu/~remzi/OSTEP/cpu-intro.pdf
       "Chap 5 Interlude: Process API": http://pages.cs.wisc.edu/~remzi/OSTEP/cpu-api.pdf
