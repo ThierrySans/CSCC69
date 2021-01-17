@@ -2,6 +2,10 @@
   url: /lectures/
   absolute: False
   
+- title: Tutorials
+  url: /tutorials/
+  absolute: False
+  
 - title: Projects
   url: /projects/
   absolute: False

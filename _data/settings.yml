@@ -22,29 +22,29 @@ instructor:
 # https://www.fingerlakesbmw.org/main/flobfuscate.php
 assistants:
     - name: Anh Le
-      role:  T05
+      role:  TUT05
       contact: "&#105;&#111;&#97;&#110;&#104;&#46;&#108;&#101;&#64;&#109;&#97;&#105;&#108;&#46;&#117;&#116;&#111;&#114;&#111;&#110;&#116;&#111;&#46;&#99;&#97;"
-      hours: TBD
+      hours: Fri 8 AM
       location: <a href="https://utoronto.zoom.us/j/81908690391">Zoom</a> 
     - name: David Yue
-      role:  T02
+      role:  TUT02
       contact: "&#100;&#97;&#118;&#105;&#100;&#46;&#121;&#117;&#101;&#64;&#109;&#97;&#105;&#108;&#46;&#117;&#116;&#111;&#114;&#111;&#110;&#116;&#111;&#46;&#99;&#97;"
-      hours: TBD
+      hours: Wed 5PM
       location: <a href="https://utoronto.zoom.us/j/81908690391">Zoom</a>
     - name: Jun Zheng
-      role:  T03
+      role:  TUT03
       contact: "&#106;&#117;&#110;&#46;&#122;&#104;&#101;&#110;&#103;&#64;&#109;&#97;&#105;&#108;&#46;&#117;&#116;&#111;&#114;&#111;&#110;&#116;&#111;&#46;&#99;&#97;"
-      hours: TBD
+      hours: Thu 3 PM
       location: <a href="https://utoronto.zoom.us/j/81908690391">Zoom</a>
     - name: Qibo Wang
-      role:  T01
+      role:  TUT01
       contact: "&#113;&#105;&#98;&#111;&#46;&#119;&#97;&#110;&#103;&#64;&#109;&#97;&#105;&#108;&#46;&#117;&#116;&#111;&#114;&#111;&#110;&#116;&#111;&#46;&#99;&#97;"
-      hours: TBD
+      hours: Mon 9 AM 
       location: <a href="https://utoronto.zoom.us/j/81908690391">Zoom</a>
     - name: Swarup Srinivasan
-      role:  T04
+      role:  TUT04
       contact: "&#115;&#119;&#97;&#114;&#117;&#112;&#46;&#115;&#114;&#105;&#110;&#105;&#118;&#97;&#115;&#97;&#110;&#64;&#117;&#116;&#111;&#114;&#111;&#110;&#116;&#111;&#46;&#99;&#97;"
-      hours: TBD
+      hours: Tue 1 PM
       location: <a href="https://utoronto.zoom.us/j/81908690391">Zoom</a>      
   
 timings:
