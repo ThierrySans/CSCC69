@@ -7,7 +7,7 @@ permalink: /tutorials/
     <div class="week_id">Week</div>
     <div class="date">Date</div>
 	<div class="topic">Tutorial</div>
-    <div class="notes">Handout</div>
+    <div class="notes">Notes</div>
 </div>
 
 {% assign week_id = 0 %}
