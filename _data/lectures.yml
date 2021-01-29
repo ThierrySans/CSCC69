@@ -22,7 +22,7 @@
 - week: Scheduling
   link: https://utoronto.zoom.us/j/81908690391
   notes:
-      Threads: 03/slides/CSCC69-Scheduling
+      Scheduling: 03/slides/CSCC69-Scheduling
   readings:
       "(again) Chap 4 The Abstraction: The Process": http://pages.cs.wisc.edu/~remzi/OSTEP/cpu-intro.pdf
       "Chap 6 Mechanism: Limited Direct Execution": http://pages.cs.wisc.edu/~remzi/OSTEP/cpu-mechanisms.pdf
