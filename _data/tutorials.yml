@@ -10,7 +10,11 @@
 - week: Synchronization
   handout: 03/
     
-- week:
+- week: Scheduling
+  handout: 03/
+  notes: 
+      Priority donation (theory): https://utoronto-my.sharepoint.com/:v:/g/personal/qibo_wang_mail_utoronto_ca/EatHG51zyuBLqCZkGiBpbPcBqhSU6qQZF0GVr4m8BWmCdA?e=lZ1MyG
+      Priority donation (pintos): https://utoronto-my.sharepoint.com/:v:/g/personal/qibo_wang_mail_utoronto_ca/Eb22GoovZN9Pv6EBlMJpOZcBkgJj8vrne1KuoHSzhpMKHg?e=xEMFaO
 
 - week:
 
