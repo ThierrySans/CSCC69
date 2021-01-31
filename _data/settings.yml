@@ -25,27 +25,27 @@ assistants:
       role:  TA
       contact: "&#105;&#111;&#97;&#110;&#104;&#46;&#108;&#101;&#64;&#109;&#97;&#105;&#108;&#46;&#117;&#116;&#111;&#114;&#111;&#110;&#116;&#111;&#46;&#99;&#97;"
       hours: Fri 8-9 AM
-      location: <a href="https://utoronto.zoom.us/j/81908690391">Zoom</a> 
+      location: <a href="https://utoronto.zoom.us/j/85282666761">Zoom</a> 
     - name: David Yue
       role:  TA
       contact: "&#100;&#97;&#118;&#105;&#100;&#46;&#121;&#117;&#101;&#64;&#109;&#97;&#105;&#108;&#46;&#117;&#116;&#111;&#114;&#111;&#110;&#116;&#111;&#46;&#99;&#97;"
       hours: Wed 5-6 PM
-      location: <a href="https://utoronto.zoom.us/j/81908690391">Zoom</a>
+      location: <a href="https://utoronto.zoom.us/j/84049812118">Zoom</a>
     - name: Jun Zheng
       role:  TA
       contact: "&#106;&#117;&#110;&#46;&#122;&#104;&#101;&#110;&#103;&#64;&#109;&#97;&#105;&#108;&#46;&#117;&#116;&#111;&#114;&#111;&#110;&#116;&#111;&#46;&#99;&#97;"
       hours: Thu 3-4 PM
-      location: <a href="https://utoronto.zoom.us/j/81908690391">Zoom</a>
+      location: <a href="https://utoronto.zoom.us/j/85898278946">Zoom</a>
     - name: Qibo Wang
       role:  TA
       contact: "&#113;&#105;&#98;&#111;&#46;&#119;&#97;&#110;&#103;&#64;&#109;&#97;&#105;&#108;&#46;&#117;&#116;&#111;&#114;&#111;&#110;&#116;&#111;&#46;&#99;&#97;"
       hours: Mon 9-10 AM 
-      location: <a href="https://utoronto.zoom.us/j/81908690391">Zoom</a>
+      location: <a href="https://utoronto.zoom.us/j/83309848188">Zoom</a>
     - name: Swarup Srinivasan
       role:  TA
       contact: "&#115;&#119;&#97;&#114;&#117;&#112;&#46;&#115;&#114;&#105;&#110;&#105;&#118;&#97;&#115;&#97;&#110;&#64;&#117;&#116;&#111;&#114;&#111;&#110;&#116;&#111;&#46;&#99;&#97;"
       hours: Tue 1-2 PM
-      location: <a href="https://utoronto.zoom.us/j/81908690391">Zoom</a>      
+      location: <a href="https://utoronto.zoom.us/j/3034108297">Zoom</a>      
   
 timings:
     - section: LEC01
@@ -54,15 +54,15 @@ timings:
       instructor: Thierry Sans
     - section: TUT01
       time: Mon 10:00-11:00
-      location: <a href="https://utoronto.zoom.us/j/81908690391">Zoom</a>
+      location: <a href="https://utoronto.zoom.us/j/83309848188">Zoom</a>
       instructor: Qibo Wang
     - section: TUT02
       time: Mon 11:00-12:00
-      location: <a href="https://utoronto.zoom.us/j/81549148281">Zoom</a>
+      location: <a href="https://utoronto.zoom.us/j/84049812118">Zoom</a>
       instructor: David Yue
     - section: TUT03
       time: Tue 17:00-18:00
-      location: <a href="https://utoronto.zoom.us/j/81549148281">Zoom</a>
+      location: <a href="https://utoronto.zoom.us/j/85898278946">Zoom</a>
       instructor: Jun Zheng
     - section: TUT04
       time: Tue 16:00-17:00
@@ -70,7 +70,7 @@ timings:
       instructor: Swarup Srinivasan
     - section: TUT05
       time: Tue 9:00-10:00
-      location: <a href="https://utoronto.zoom.us/j/81908690391">Zoom</a>
+      location: <a href="https://utoronto.zoom.us/j/3034108297">Zoom</a>
       instructor: Anh Le
         
 first: 20210113
