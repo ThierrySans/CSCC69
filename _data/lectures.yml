@@ -29,10 +29,10 @@
       "Chap 7 Scheduling: Introduction": http://pages.cs.wisc.edu/~remzi/OSTEP/cpu-sched.pdf
       "Chap 8 Scheduling: The Multi-Level Feedback Queue": http://pages.cs.wisc.edu/~remzi/OSTEP/cpu-sched-mlfq.pdf
 
-- week: Processes, Kernel Threads and User threads
+- week: User Programs
   link: https://utoronto.zoom.us/j/81908690391
-  # notes:
-  #     Concurrency: 04/slides/CSCC69-ConcurrencyProblems.pdf
+  notes:
+      User Programs: 04/slides/CSCC69-UserPrograms
   readings:
       "Chap 5 Interlude: Process API": http://pages.cs.wisc.edu/~remzi/OSTEP/cpu-api.pdf
       "Chap 27 Interlude: Thread API": http://pages.cs.wisc.edu/~remzi/OSTEP/threads-api.pdf
