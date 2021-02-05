@@ -22,23 +22,21 @@ You can work in groups of 1-3 people. So start talking with your classmates arou
         <div class="column2">Feb 7</div>
         <div class="column3"><a href="WWW/pintos_2.html">Project 1: Threads</a></div>
         <div class="column2"><!--a href="project1/slides/project1.pdf">Slides</a--></div>
-        <!--div class="column2"><a href="https://classroom.github.com/g/fLtciXat">Github Classroom</a></div-->
-        <!--div class="column2"><a href="https://grademy.work/ThierrySans/C69S20-project1">Rubric</a></div-->
+        <div class="column3"><a href="https://grademy.work/ThierrySans/C69W21-project1">Rubric</a></div>
     </div>
     <div class="row">
         <div class="column2">Feb 28</div>
         <div class="column3"><a href="WWW/pintos_3.html">Project 2: User Programs</a></div>
         <div class="column2"><!--a href="project2/slides/project2.pdf">Slides</a--></div>
+        <div class="column3"><a href="https://grademy.work/ThierrySans/C69W21-project2">Rubric</a></div>
     </div>
     <div class="row">
         <div class="column2">Mar 21</div>
         <div class="column3"><a href="WWW/pintos_4.html">Project 3: Virtual Memory</a></div>
-        <div class="column2"><!--a href="project3/slides/project3.pdf">Slides</a--></div>
     </div>
     <div class="row">
         <div class="column2">Apr 11</div>
         <div class="column3"><a href="WWW/pintos_5.html">Project 4: File Systems</a></div>
-        <div class="column2"><!--a href="project4/slides/project4.pdf">Slides</a--></div>
     </div>
 </div>
 
