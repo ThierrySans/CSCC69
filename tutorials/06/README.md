@@ -13,7 +13,7 @@ Some key facts about virtual memory:
 
 Example of passing arguments: 
 
-​<div class="screenshot"><img src="media/example.png" alt="args"/></div>
+<img class="screenshot" src="media/example.png" alt="args"/>
 
 Questions: 
 
