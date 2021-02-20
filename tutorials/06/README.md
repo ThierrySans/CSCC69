@@ -11,12 +11,15 @@ Some key facts about virtual memory:
 - The kernel page directory maps the entire memory space so all adresses are valid and accessible. However, the user programs have a sparse page directory mapping and not all adresses are valid because not accessible (not mapped). 
 - A page number x in the kernel page directory might corresponds to a different page number in the user program. 
 
+Example of passing arguments: 
+
+​<div class="screenshot"><img src="media/example.png" alt="args"/></div>
+
 Questions: 
 
 1. Where are the command line arguments stored when they are initially passed into the program?
 ​
 2. When passing command-line arguments to a program, in which order should the arguments be pushed onto the user program stack?
-​<div class="screenshot"><img src="media/example.png" alt="args"/></div>
 
 3. Which method is responsible for setting up the stack of a user program? In other words, when and where are the pages allocated for the user program?
 ​
