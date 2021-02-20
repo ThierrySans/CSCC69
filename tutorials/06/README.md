@@ -15,7 +15,7 @@ Some key fact about virtual memory:
 ​
 2. When passing command-line arguments to a program, in which order should the arguments be pushed onto the user program stack?
 ​
-<div class="screenshot"><img src="media/example.png" alt="args"/></div>
+    <div class="screenshot"><img src="media/example.png" alt="args"/></div>
 
 3. Which method is responsible for setting up the stack of a user program? In other words, when and where are the pages allocated for the user program?
 ​
