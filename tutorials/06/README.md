@@ -4,7 +4,7 @@ permalink: /tutorials/06/
 ---
 
 
-Some key fact about virtual memory:
+Some key facts about virtual memory:
 
 - All addresses manipulated by assembly instructions are virtual addresses. Assembly instructions never manipulate physical addresses.
 - The translation from a virtual address to a physical address is done automatically by the MMU (Memory Management Unit) based on the information mapping stored in the page directory. The page directory can be stored anywhere in memory and its location is stored in the CR3 pointer. 
@@ -16,7 +16,7 @@ Questions:
 1. Where are the command line arguments stored when they are initially passed into the program?
 ​
 2. When passing command-line arguments to a program, in which order should the arguments be pushed onto the user program stack?
-​   <div class="screenshot"><img src="media/example.png" alt="args"/></div>
+​<div class="screenshot"><img src="media/example.png" alt="args"/></div>
 
 3. Which method is responsible for setting up the stack of a user program? In other words, when and where are the pages allocated for the user program?
 ​
