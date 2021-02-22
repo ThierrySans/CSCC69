@@ -23,13 +23,13 @@ Questions:
 
 3. Which method is responsible for setting up the stack of a user program? In other words, when and where are the pages allocated for the user program?
 ​
-4. What is the (virtual) address of the beginning of the stack when the kernel thread is executing the user's program (user mode)?
+4. What is the (virtual) address of the beginning of the stack when the kernel thread is executing the user's program in user mode (when running the user program for instance)?
 
-5. What is the (virtual) address of the beginning of the stack when the kernel thread is executing the user's program (user mode)? 
+5. What is the (virtual) address of the beginning of the stack when the kernel thread is setting/accessing that stack in kernel mode (when executing a system call for instance)? 
 
 6. Where is the page directory store for each process? 
 
-7. In Pintos, which function do you use to translate a "user address" into a "kernel address"? 
+7. Which function do you use to translate a "user address" into a "kernel address"? 
 
 8. When a system call is executed and a user address is passed as an argument, how do you know whether this is a valid user address? 
 
