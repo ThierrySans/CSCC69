@@ -94,7 +94,7 @@
       Virtualization: 10/slides/CSCC69-Virtualization
 
 - week: Distributed Systems amd Mobile OS
-  link: https://utoronto.zoom.us/j/81908690391
+  link: https://youtu.be/uABxlQfYHlU
   readings:
       "Chapter 48 Distributed Systems": http://pages.cs.wisc.edu/~remzi/OSTEP/dist-intro.pdf
   notes:
@@ -102,6 +102,7 @@
       Mobile OS: 11/slides/CSCC69-MobileOS
 
 - week: Protection and Security
+  link: https://utoronto.zoom.us/j/81908690391
   notes:
       OS Security: 12/slides/CSCC69-OSSecurity
   readings:
