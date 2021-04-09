@@ -98,7 +98,7 @@
   readings:
       "Chapter 48 Distributed Systems": http://pages.cs.wisc.edu/~remzi/OSTEP/dist-intro.pdf
   notes:
-      Mobile OS: 11/slides/CSCC69-DistributedSystems
+      Distributed Systems: 11/slides/CSCC69-DistributedSystems
       Mobile OS: 11/slides/CSCC69-MobileOS
 
 - week: Protection and Security
