@@ -97,13 +97,13 @@
   link: https://utoronto.zoom.us/j/81908690391
   readings:
       "Chapter 48 Distributed Systems": http://pages.cs.wisc.edu/~remzi/OSTEP/dist-intro.pdf
-  # notes:
-  #     Mobile OS: 11/slides/CSCC69-DistributedSystems.pdf
-  #     Mobile OS: 11/slides/CSCC69-MobileOS.pdf
+  notes:
+      Mobile OS: 11/slides/CSCC69-DistributedSystems
+      Mobile OS: 11/slides/CSCC69-MobileOS
 
 - week: Protection and Security
-  # notes:
-  #     OS Security: 12/slides/CSCC69-OSSecurity.pdf
+  notes:
+      OS Security: 12/slides/CSCC69-OSSecurity
   readings:
       "SetUID, SetGID, and Sticky Bits in Linux File Permissions": https://www.geeksforgeeks.org/setuid-setgid-and-sticky-bits-in-linux-file-permissions/
       "Linux Capabilities: Why They Exist and How They Work": https://blog.container-solutions.com/linux-capabilities-why-they-exist-and-how-they-work
