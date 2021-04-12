@@ -93,17 +93,17 @@
   notes:
       Virtualization: 10/slides/CSCC69-Virtualization
 
-- week: Distributed Systems amd Mobile OS
+- week: Distributed Systems amd 
   link: https://youtu.be/uABxlQfYHlU
   readings:
       "Chapter 48 Distributed Systems": http://pages.cs.wisc.edu/~remzi/OSTEP/dist-intro.pdf
   notes:
       Distributed Systems: 11/slides/CSCC69-DistributedSystems
-      Mobile OS: 11/slides/CSCC69-MobileOS
 
-- week: Protection and Security
-  link: https://utoronto.zoom.us/j/81908690391
+- week: Mobile OS and OS Security
+  link: https://youtu.be/JV0f8myNtnQ
   notes:
+      Mobile OS: 12/slides/CSCC69-MobileOS
       OS Security: 12/slides/CSCC69-OSSecurity
   readings:
       "SetUID, SetGID, and Sticky Bits in Linux File Permissions": https://www.geeksforgeeks.org/setuid-setgid-and-sticky-bits-in-linux-file-permissions/
