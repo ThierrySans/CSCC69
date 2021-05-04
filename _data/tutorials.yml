@@ -1,45 +1,50 @@
 - week: No tutorial
-  notes: 
+  notes:
       Getting Started: https://youtu.be/7D77e5bm8lw
 
 - week: Interrupts and Threads
   handout: 02/
-  notes: 
+  notes:
       Thread Switching: https://youtu.be/4C8J6jLPJPc
       
 - week: Synchronization
   handout: 03/
     
 - week: Scheduling
-  handout: 04/
-  notes: 
-      Priority donation (theory): https://utoronto-my.sharepoint.com/:v:/g/personal/qibo_wang_mail_utoronto_ca/EatHG51zyuBLqCZkGiBpbPcBqhSU6qQZF0GVr4m8BWmCdA?e=lZ1MyG
-      Priority donation (pintos): https://utoronto-my.sharepoint.com/:v:/g/personal/qibo_wang_mail_utoronto_ca/Eb22GoovZN9Pv6EBlMJpOZcBkgJj8vrne1KuoHSzhpMKHg?e=xEMFaO
+  # handout: 04/
+  # notes:
+  #     Priority donation (theory): https://utoronto-my.sharepoint.com/:v:/g/personal/qibo_wang_mail_utoronto_ca/EatHG51zyuBLqCZkGiBpbPcBqhSU6qQZF0GVr4m8BWmCdA?e=lZ1MyG
+  #     Priority donation (pintos): https://utoronto-my.sharepoint.com/:v:/g/personal/qibo_wang_mail_utoronto_ca/Eb22GoovZN9Pv6EBlMJpOZcBkgJj8vrne1KuoHSzhpMKHg?e=xEMFaO
 
 - week: System Calls
-  handout: 05/
-  notes:
-    System Calls: https://youtu.be/jfPdiaAG0AQ
+  # handout: 05/
+  # notes:
+  #   System Calls: https://youtu.be/jfPdiaAG0AQ
 
 - week: Virtual Memory
-  handout: 06/
-  notes:
-    Virtual Memory: https://youtu.be/HWxMH_SNnNM
+  # handout: 06/
+  # notes:
+  #   Virtual Memory: https://youtu.be/HWxMH_SNnNM
   
 - week: Memory Management
-  handout: 07/
-    
-- week: No tutorial
-
+  # handout: 07/
+  
 - week: Memory Mapped Files
-  handout: 09/
+  # handout: 09/
+
+- break: Reading Week
+
+- break: Summer break
+
+- week: No tutorial
     
 - week: File System Buffer Cache
-  handout: 10/
+  # handout: 10/
 
 - week: Indexed Files
-  handout: 11/
+  # handout: 11/
 
 - week: Directories
-  handout: 12/
+  # handout: 12/
+ 
      

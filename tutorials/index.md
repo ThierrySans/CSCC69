@@ -38,7 +38,7 @@ permalink: /tutorials/
 {% endfor %}
 
 <script type="text/javascript">
-   make_schedule({{site.data.settings.first}},7,0);
+   make_schedule({{site.data.settings.first}},7,1);
 </script>
    
 

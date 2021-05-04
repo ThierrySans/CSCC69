@@ -1,8 +1,8 @@
 - week: The Big Picture
-  link: https://youtu.be/-oUu0lslw-A
-  notes:
-      Introduction: 01/slides/CSCC69-Introduction
-      The Big Picture: 01/slides/CSCC69-TheBigPicture
+  link: https://utoronto.zoom.us/j/81908690391
+  # notes:
+  #     Introduction: 01/slides/CSCC69-Introduction
+  #     The Big Picture: 01/slides/CSCC69-TheBigPicture
   readings:
       "Chap 2 Introduction to Operating Systems": http://pages.cs.wisc.edu/~remzi/OSTEP/intro.pdf
       "Chap 4 The Abstraction: The Process": http://pages.cs.wisc.edu/~remzi/OSTEP/cpu-intro.pdf
@@ -10,19 +10,17 @@
       "Chap 36 I/O devices": http://pages.cs.wisc.edu/~remzi/OSTEP/file-devices.pdf
 
 - week: Multithreading
-  link: https://youtu.be/kIGJspascvQ
   readings:
       "Chap 26 Concurrency: An Introduction": http://pages.cs.wisc.edu/~remzi/OSTEP/threads-intro.pdf
       "Chap 28 Locks": http://pages.cs.wisc.edu/~remzi/OSTEP/threads-locks.pdf 
       "Chap 31 Semaphores": http://pages.cs.wisc.edu/~remzi/OSTEP/threads-sema.pdf
       "Chap 32 Common Concurrency Problems": http://pages.cs.wisc.edu/~remzi/OSTEP/threads-bugs.pdf
-  notes:
-      Multithreading: 02/slides/CSCC69-Multithreading
+  # notes:
+  #     Multithreading: 02/slides/CSCC69-Multithreading
 
 - week: Scheduling
-  link: https://youtu.be/J5oAYpBwy1A
-  notes:
-      Scheduling: 03/slides/CSCC69-Scheduling
+  # notes:
+  #     Scheduling: 03/slides/CSCC69-Scheduling
   readings:
       "(again) Chap 4 The Abstraction: The Process": http://pages.cs.wisc.edu/~remzi/OSTEP/cpu-intro.pdf
       "Chap 6 Mechanism: Limited Direct Execution": http://pages.cs.wisc.edu/~remzi/OSTEP/cpu-mechanisms.pdf
@@ -30,81 +28,74 @@
       "Chap 8 Scheduling: The Multi-Level Feedback Queue": http://pages.cs.wisc.edu/~remzi/OSTEP/cpu-sched-mlfq.pdf
 
 - week: User Programs
-  link: https://youtu.be/cZU8tvFIkpY
-  notes:
-      User Programs: 04/slides/CSCC69-UserPrograms
+  # notes:
+  #     User Programs: 04/slides/CSCC69-UserPrograms
   readings:
       "Chap 5 Interlude: Process API": http://pages.cs.wisc.edu/~remzi/OSTEP/cpu-api.pdf
       "Chap 27 Interlude: Thread API": http://pages.cs.wisc.edu/~remzi/OSTEP/threads-api.pdf
 
 - week: Virtual Memory
-  link: https://youtu.be/uW9Qwm4plwE
   readings:
       "Chap 15 Mechanism: Address Translation": http://pages.cs.wisc.edu/~remzi/OSTEP/vm-mechanism.pdf
       "Chap 16 Segmentation": http://pages.cs.wisc.edu/~remzi/OSTEP/vm-segmentation.pdf
       "Chap 18 Paging: Introduction": http://pages.cs.wisc.edu/~remzi/OSTEP/vm-paging.pdf
       "Chap 19 Paging: Faster Translations (TLBs)": http://pages.cs.wisc.edu/~remzi/OSTEP/vm-tlbs.pdf
       "Chap 20 Paging: Smaller Tables": http://pages.cs.wisc.edu/~remzi/OSTEP/vm-smalltables.pdf
-  notes:
-      Virtual Memory: 05/slides/CSCC69-VirtualMemory
-      Paging in details: 05/slides/CSCC69-Paging
-
-- break: Reading Week
+  # notes:
+  #     Virtual Memory: 05/slides/CSCC69-VirtualMemory
+  #     Paging in details: 05/slides/CSCC69-Paging
 
 - week: Memory Management
-  link: https://youtu.be/6CxWwS0vqhE
   readings:
       "Chap 21 Beyond Physical Memory: Mechanisms": http://pages.cs.wisc.edu/~remzi/OSTEP/vm-beyondphys.pdf
       "Chap 22 Beyond Physical Memory: Policies": http://pages.cs.wisc.edu/~remzi/OSTEP/vm-beyondphys-policy.pdf
       "Chap 23 Complete Virtual Memory Systems": http://pages.cs.wisc.edu/~remzi/OSTEP/vm-complete.pdf
-  notes:
-      Memory Management: 06/slides/CSCC69-MemoryManagement
+  # notes:
+  #     Memory Management: 06/slides/CSCC69-MemoryManagement
 
 - week: I/O and Disks
-  link: https://youtu.be/M5URpleMjFo
   readings:
       "(again) Chap 36 I/O Devices": http://pages.cs.wisc.edu/~remzi/OSTEP/file-devices.pdf
       "Chap 37 Hard Disk Drives": http://pages.cs.wisc.edu/~remzi/OSTEP/file-disks.pdf
       "Chap 44 Flash-based SSDs": http://pages.cs.wisc.edu/~remzi/OSTEP/file-ssd.pdf
-  notes:
-      I/O and Disks: 07/slides/CSCC69-IO
+  # notes:
+  #     I/O and Disks: 07/slides/CSCC69-IO
+
+- break: Reading Week
+
+- break: Summer break
 
 - week: File Systems
-  link: https://youtu.be/FPfUBYkNJXQ
   readings:
       "Chap 39 Files and Directories": http://pages.cs.wisc.edu/~remzi/OSTEP/file-intro.pdf
       "Chap 40 File System Implementation": http://pages.cs.wisc.edu/~remzi/OSTEP/file-implementation.pdf
-  notes:
-      File Systems: 08/slides/CSCC69-FileSystems
+  # notes:
+  #     File Systems: 08/slides/CSCC69-FileSystems
 
 - week: Advanced File Systems
-  link: https://youtu.be/K5_sK3TNCdk
   readings:
       "Chap 41 Locality and The Fast File System": http://pages.cs.wisc.edu/~remzi/OSTEP/file-ffs.pdf
       "Chap 42 Crash Consistency: FSCK and Journaling": http://pages.cs.wisc.edu/~remzi/OSTEP/file-journaling.pdf
       "Chap 43 Log-structured File Systems": http://pages.cs.wisc.edu/~remzi/OSTEP/file-lfs.pdf
-  notes:
-      Advanced File Systems: 09/slides/CSCC69-AdvancedFileSystems
+  # notes:
+  #     Advanced File Systems: 09/slides/CSCC69-AdvancedFileSystems
 
 - week: Virtualization
-  link: https://youtu.be/iptW3YSeo-k
   readings:
       "Appendix B Virtual Machine Monitors": http://pages.cs.wisc.edu/~remzi/OSTEP/vmm-intro.pdf
-  notes:
-      Virtualization: 10/slides/CSCC69-Virtualization
+  # notes:
+  #     Virtualization: 10/slides/CSCC69-Virtualization
 
 - week: Distributed Systems amd 
-  link: https://youtu.be/uABxlQfYHlU
   readings:
       "Chapter 48 Distributed Systems": http://pages.cs.wisc.edu/~remzi/OSTEP/dist-intro.pdf
-  notes:
-      Distributed Systems: 11/slides/CSCC69-DistributedSystems
+  # notes:
+  #     Distributed Systems: 11/slides/CSCC69-DistributedSystems
 
 - week: Mobile OS and OS Security
-  link: https://youtu.be/JV0f8myNtnQ
-  notes:
-      Mobile OS: 12/slides/CSCC69-MobileOS
-      OS Security: 12/slides/CSCC69-OSSecurity
+  # notes:
+  #     Mobile OS: 12/slides/CSCC69-MobileOS
+  #     OS Security: 12/slides/CSCC69-OSSecurity
   readings:
       "SetUID, SetGID, and Sticky Bits in Linux File Permissions": https://www.geeksforgeeks.org/setuid-setgid-and-sticky-bits-in-linux-file-permissions/
       "Linux Capabilities: Why They Exist and How They Work": https://blog.container-solutions.com/linux-capabilities-why-they-exist-and-how-they-work
