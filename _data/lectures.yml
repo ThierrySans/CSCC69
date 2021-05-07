@@ -1,5 +1,5 @@
 - week: The Big Picture
-  link: https://utoronto.zoom.us/j/81908690391
+  link: https://youtu.be/0S6i8uKXSHc
   notes:
       Introduction: 01/slides/CSCC69-Introduction
       The Big Picture: 01/slides/CSCC69-TheBigPicture
@@ -10,6 +10,7 @@
       "Chap 36 I/O devices": http://pages.cs.wisc.edu/~remzi/OSTEP/file-devices.pdf
 
 - week: Multithreading
+  link: https://utoronto.zoom.us/j/81908690391
   readings:
       "Chap 26 Concurrency: An Introduction": http://pages.cs.wisc.edu/~remzi/OSTEP/threads-intro.pdf
       "Chap 28 Locks": http://pages.cs.wisc.edu/~remzi/OSTEP/threads-locks.pdf 
