@@ -55,7 +55,11 @@ You should read everything below <span class="em">before attempting any of the p
 You'll want to read these once you start work on the projects. Their advice can save you a lot of time:
 
 - [Debugging Tools](WWW/pintos_10.html)
-- [Debug Pintos in VS Code](../doc/vscode/)
+
+If you use Visual Studio Code, here are several ways to use GDB within the code editors:
+- [Debug Pintos in VS Code (by Darren Liu)](../doc/vscode/)
+- [VSCode Development Setup (by Mustafa Quraish)](../doc/vscode2/)
+- [Pintos Dev Container (by Jiasong Liang)](https://github.com/LiangLouise/pintos_dev_container)
 
 You need not read the reference guide, but you may find the information in it valuable from time to time:
 
