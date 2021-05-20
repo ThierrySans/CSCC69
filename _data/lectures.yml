@@ -20,7 +20,7 @@
       Multithreading: 02/slides/CSCC69-Multithreading
 
 - week: Scheduling
-  link: https://utoronto.zoom.us/j/81908690391
+  link: https://youtu.be/cyRlQFPpwik
   notes:
       Scheduling: 03/slides/CSCC69-Scheduling
   readings:
@@ -30,6 +30,7 @@
       "Chap 8 Scheduling: The Multi-Level Feedback Queue": http://pages.cs.wisc.edu/~remzi/OSTEP/cpu-sched-mlfq.pdf
 
 - week: User Programs
+  link: https://utoronto.zoom.us/j/81908690391
   # notes:
   #     User Programs: 04/slides/CSCC69-UserPrograms
   readings:
