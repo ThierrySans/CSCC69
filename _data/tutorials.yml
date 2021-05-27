@@ -17,9 +17,9 @@
       Priority donation (pintos): https://utoronto-my.sharepoint.com/:v:/g/personal/qibo_wang_mail_utoronto_ca/EatHG51zyuBLqCZkGiBpbPcBqhSU6qQZF0GVr4m8BWmCdA?e=46ASe7
 
 - week: System Calls
-  # handout: 05/
-  # notes:
-  #   System Calls: https://youtu.be/jfPdiaAG0AQ
+  handout: 05/
+  notes:
+    System Calls: https://youtu.be/jfPdiaAG0AQ
 
 - week: Virtual Memory
   # handout: 06/
