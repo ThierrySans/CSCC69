@@ -28,13 +28,13 @@
   
 - week: Memory Management
   handout: 07/
-  
-- week: Memory Mapped Files
-  # handout: 09/
 
 - break: Reading Week
 
 - break: Summer break
+
+- week: Memory Mapped Files
+  # handout: 09/
 
 - week: No tutorial
     
