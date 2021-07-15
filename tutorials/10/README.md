@@ -36,3 +36,5 @@ However, modern Operating systems define block size of 4 KB or 8 KB.
 8. What is read-ahead?
 
 9. Why should we do read-ahead asynchronously?
+
+10. [Exam] What is the difference between a memory-mapped file and a file in the buffer cache? What advantages each solution provides? Can you use both or are they mutually exclusive?
