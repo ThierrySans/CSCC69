@@ -80,7 +80,7 @@
       File Systems: 08/slides/CSCC69-FileSystems
 
 - week: Advanced File Systems
-  link: https://utoronto.zoom.us/j/81908690391
+  link: https://youtu.be/UFxRgURheJg
   readings:
       "Chap 41 Locality and The Fast File System": http://pages.cs.wisc.edu/~remzi/OSTEP/file-ffs.pdf
       "Chap 42 Crash Consistency: FSCK and Journaling": http://pages.cs.wisc.edu/~remzi/OSTEP/file-journaling.pdf
@@ -89,6 +89,7 @@
       Advanced File Systems: 09/slides/CSCC69-AdvancedFileSystems
 
 - week: Virtualization
+  link: https://utoronto.zoom.us/j/81908690391
   readings:
       "Appendix B Virtual Machine Monitors": http://pages.cs.wisc.edu/~remzi/OSTEP/vmm-intro.pdf
   # notes:
