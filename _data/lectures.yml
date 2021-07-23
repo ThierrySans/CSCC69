@@ -95,7 +95,7 @@
   notes:
       Virtualization: 10/slides/CSCC69-Virtualization
 
-- week: Distributed Systems amd 
+- week: Distributed Systems
   readings:
       "Chapter 48 Distributed Systems": http://pages.cs.wisc.edu/~remzi/OSTEP/dist-intro.pdf
   # notes:
