@@ -92,8 +92,8 @@
   link: https://utoronto.zoom.us/j/81908690391
   readings:
       "Appendix B Virtual Machine Monitors": http://pages.cs.wisc.edu/~remzi/OSTEP/vmm-intro.pdf
-  # notes:
-  #     Virtualization: 10/slides/CSCC69-Virtualization
+  notes:
+      Virtualization: 10/slides/CSCC69-Virtualization
 
 - week: Distributed Systems amd 
   readings:
