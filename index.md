@@ -117,6 +117,8 @@ Do not let other students look at your project solutions, since this can lead to
 
 You are not allowed to look at solutions available online and you are not allowed to make your solution publicly available online as well, even after the class term. 
 
+You are not allowed to ask for help outside of the course Piazza. Asking for help anywhere else online or in private chat groups (unless the private group chat was setup between the group members of the group project) will be considered as unauthorized help. 
+
 The course staff reserves the right to use code and text analysis tools to compare your submission with others (including past/present submissions and others available online) to verify that no improper behavior has occurred.
 
 Failure to comply with these guidelines is a serious academic offence. In past academic offense cases, the Associate Dean has imposed penalties for code violations that range from a mark of zero on plagiarized projects to academic suspension from the University.
