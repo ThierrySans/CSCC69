@@ -1,7 +1,7 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
                       "http://www.w3.org/TR/html40/loose.dtd">
 <HTML>
-<!-- Created on January, 7 2021 by texi2html 1.66 -->
+<!-- Created on January, 4 2022 by texi2html 1.66 -->
 <!--
 Written by: Lionel Cons <Lionel.Cons@cern.ch> (original author)
             Karl Berry  <karl@freefriends.org>
@@ -139,7 +139,7 @@ install Pintos:
 
 <OL>
 <LI>
-Install <A HREF="http://bochs.sourceforge.net/">Bochs</A>, version 2.2.6, as
+Install <A HREF="http://bochs.sourceforge.net/">Bochs</A>, version 2.6.11, as
 described below (see section <A HREF="pintos_12.html#SEC164">G.1 Building Bochs for Pintos</A>).
 <P>
 
@@ -225,100 +225,57 @@ should be configured, by passing <Q><SAMP>--with-x --with-x11 --with-term
 </P>
 <P>
 
-This version of Pintos is designed for use with Bochs 2.2.6.  A number
+This version of Pintos is designed for use with Bochs 2.6.11.  A number
 of patches for this version of Bochs are included in <Q><TT>src/misc</TT></Q>:
 </P>
 <P>
 
 </P>
 <DL COMPACT>
-<DT><Q><TT>bochs-2.2.6-big-endian.patch</TT></Q>
+<DT><Q><TT>bochs-2.6.11-banner-stderr.patch</TT></Q>
 <DD><P>
 
-Makes the GDB stubs work on big-endian systems such as Solaris/Sparc, by
-doing proper byteswapping.  It should be harmless elsewhere.
+Prints startup boilerplate information to stderr instead of stdout.
 </P>
 <P>
 
 </P>
-<DT><Q><TT>bochs-2.2.6-jitter.patch</TT></Q>
+<DT><Q><TT>bochs-2.6.11-jitter-plus-segv.patch</TT></Q>
 <DD><P>
 
 Adds the &quot;jitter&quot; feature, in which timer interrupts are delivered at
-random intervals (see section <A HREF="pintos_1.html#SEC6">1.1.4 Debugging versus Testing</A>).
-</P>
-<P>
-
-</P>
-<DT><Q><TT>bochs-2.2.6-triple-fault.patch</TT></Q>
-<DD><P>
-
-Causes Bochs to break to GDB when a triple fault occurs and
-the GDB stub is active (see section <A HREF="pintos_10.html#SEC155">E.6 Triple Faults</A>).
-</P>
-<P>
-
-</P>
-<DT><Q><TT>bochs-2.2.6-ms-extensions.patch</TT></Q>
-<DD><P>
-
-Needed for Bochs to compile with GCC on some hosts.  Probably
-harmless elsewhere.
-</P>
-<P>
-
-</P>
-<DT><Q><TT>bochs-2.2.6-solaris-tty.patch</TT></Q>
-<DD><P>
-
-Needed for Bochs to compile in terminal support on Solaris
-hosts.  Probably harmless elsewhere.
-</P>
-<P>
-
-</P>
-<DT><Q><TT>bochs-2.2.6-page-fault-segv.patch</TT></Q>
-<DD><P>
-
-Makes the GDB stub report a SIGSEGV to the debugger when a page-fault
+random intervals (see section <A HREF="pintos_1.html#SEC6">1.1.4 Debugging versus Testing</A>). Also makes the
+GDB stub report a SIGSEGV to the debugger when a page-fault
 exception occurs, instead of &quot;signal 0.&quot;  The former can be ignored
 with <CODE>handle SIGSEGV nostop</CODE> but the latter cannot.
 </P>
 <P>
 
 </P>
-<DT><Q><TT>bochs-2.2.6-paranoia.patch</TT></Q>
+<DT><Q><TT>bochs-2.6.11-link-tinfo.patch</TT></Q>
 <DD><P>
 
-Fixes compile error with modern versions of GCC.
-</P>
-<P>
-
-</P>
-<DT><Q><TT>bochs-2.2.6-solaris-link.patch</TT></Q>
-<DD><P>
-
-Needed on Solaris hosts.  Do not apply it elsewhere.
+Patches the build mechanism to include the -ltinfo library; doesn't
+change any functionality.
 </DL>
 <P>
 
-To apply all the patches, <CODE>cd</CODE> into the Bochs directory, then
-type:
-<TABLE><tr><td>&nbsp;</td><td class=example><pre>patch -p1 &lt; $PINTOSDIR/src/misc/bochs-2.2.6-big-endian.patch
-patch -p1 &lt; $PINTOSDIR/src/misc/bochs-2.2.6-jitter.patch
-patch -p1 &lt; $PINTOSDIR/src/misc/bochs-2.2.6-triple-fault.patch
-patch -p1 &lt; $PINTOSDIR/src/misc/bochs-2.2.6-ms-extensions.patch
-patch -p1 &lt; $PINTOSDIR/src/misc/bochs-2.2.6-solaris-tty.patch
-patch -p1 &lt; $PINTOSDIR/src/misc/bochs-2.2.6-page-fault-segv.patch
-patch -p1 &lt; $PINTOSDIR/src/misc/bochs-2.2.6-paranoia.patch
-patch -p1 &lt; $PINTOSDIR/src/misc/bochs-2.2.6-solaris-link.patch
-</pre></td></tr></table>You will have to supply the proper <CODE>$PINTOSDIR</CODE>, of course.  You can
-use <CODE>patch</CODE>'s <Q><SAMP>--dry-run</SAMP></Q> option if you want to test
-whether the patches would apply cleanly before trying to apply them.
+The best way to build Bochs is by invoking
+<CODE>src/misc/bochs-2.6.11-build.sh</CODE>. This should be invoked in
+a directory containing the Bochs distribution file
+(<CODE>bochs-2.6.11-tar.gz</CODE>).
+The build script takes a single argument, which provides the destination
+for installation (the binaries will be placed in the <CODE>bin</CODE>
+subdirectory of that directory).
+The script will apply the patches and build both versions of Bochs.
+</P>
 <P>
 
-Sample commands to build and install Bochs for Pintos are supplied in
-<Q><TT>src/misc/bochs-2.2.6-build.sh</TT></Q>.
+The <CODE>src/misc</CODE> directory also contains patches and build scripts for
+older versions of Bochs, if desired. However, these may require
+changes elsewhere in Pintos. For example, <CODE>src/utils/pintos</CODE>
+had to be modified for Bochs 2.6.11; if you use an older version of
+Bochs you will need to back out those changes.
 <A NAME="Bibliography"></A>
 <HR SIZE="6">
 <TABLE CELLPADDING=1 CELLSPACING=1 BORDER=0>
@@ -332,7 +289,7 @@ Sample commands to build and install Bochs for Pintos are supplied in
 <BR>
 <FONT SIZE="-1">
 This document was generated
-by <I>Thierry Sans</I> on <I>January, 7 2021</I>
+by <I>Thierry Sans</I> on <I>January, 4 2022</I>
 using <A HREF="http://texi2html.cvshome.org"><I>texi2html</I></A>
 </FONT>
 

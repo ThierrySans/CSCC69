@@ -1,7 +1,7 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
                       "http://www.w3.org/TR/html40/loose.dtd">
 <HTML>
-<!-- Created on January, 7 2021 by texi2html 1.66 -->
+<!-- Created on January, 4 2022 by texi2html 1.66 -->
 <!--
 Written by: Lionel Cons <Lionel.Cons@cern.ch> (original author)
             Karl Berry  <karl@freefriends.org>
@@ -908,6 +908,22 @@ See section <A HREF="pintos_1.html#SEC8">1.2.1 Testing</A>.
 <P>
 
 </P>
+<DT><B>Should I try running the tests with jitter?</B>
+<DD><P>
+
+Using the jitter feature in Bochs (see section <A HREF="pintos_1.html#SEC6">1.1.4 Debugging versus Testing</A>)
+is a great way to discover bugs that are timing dependent. However,
+the following tests are known to
+fail with jitter even if your code is correct: <CODE>alarm-priority</CODE>,
+<CODE>alarm-simultaneous</CODE>,
+<CODE>mlfqs-recent-1</CODE>, <CODE>mlfqs-fair-2</CODE>, <CODE>mlfqs-fair-20</CODE>,
+<CODE>mlfqs-nice-2</CODE>, <CODE>mlfqs-nice-10</CODE>, and <CODE>priority-fifo</CODE>.
+The behavior of these tests can sometimes vary based on timing (e.g.,
+if a timer interrupt arrives at an inconvenient time).
+</P>
+<P>
+
+</P>
 <DT><B>Why do I get a test failure in <CODE>pass()</CODE>?</B>
 <DD><P>
 
@@ -1235,7 +1251,7 @@ average.
 <BR>
 <FONT SIZE="-1">
 This document was generated
-by <I>Thierry Sans</I> on <I>January, 7 2021</I>
+by <I>Thierry Sans</I> on <I>January, 4 2022</I>
 using <A HREF="http://texi2html.cvshome.org"><I>texi2html</I></A>
 </FONT>
 

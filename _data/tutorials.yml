@@ -1,30 +1,30 @@
 - week: No tutorial
-  # notes:
-  #     Getting Started: https://youtu.be/7D77e5bm8lw
+  notes:
+      Getting Started: https://youtu.be/7D77e5bm8lw
 
 - week: Interrupts and Threads
   # handout: 02/
-  # notes:
-  #     Thread Switching: https://youtu.be/4C8J6jLPJPc
+  notes:
+      Thread Switching: https://youtu.be/4C8J6jLPJPc
       
 - week: Synchronization
   # handout: 03/
     
 - week: Scheduling
   # handout: 04/
-  # notes:
-  #     Priority donation (theory):  https://utoronto-my.sharepoint.com/:v:/g/personal/qibo_wang_mail_utoronto_ca/Eb22GoovZN9Pv6EBlMJpOZcBkgJj8vrne1KuoHSzhpMKHg?e=SIpSCc
-  #     Priority donation (pintos): https://utoronto-my.sharepoint.com/:v:/g/personal/qibo_wang_mail_utoronto_ca/EatHG51zyuBLqCZkGiBpbPcBqhSU6qQZF0GVr4m8BWmCdA?e=46ASe7
+  notes:
+      Priority donation (theory):  https://utoronto-my.sharepoint.com/:v:/g/personal/qibo_wang_mail_utoronto_ca/Eb22GoovZN9Pv6EBlMJpOZcBkgJj8vrne1KuoHSzhpMKHg?e=SIpSCc
+      Priority donation (pintos): https://utoronto-my.sharepoint.com/:v:/g/personal/qibo_wang_mail_utoronto_ca/EatHG51zyuBLqCZkGiBpbPcBqhSU6qQZF0GVr4m8BWmCdA?e=46ASe7
 
 - week: System Calls
   # handout: 05/
-  # notes:
-  #   System Calls: https://youtu.be/jfPdiaAG0AQ
+  notes:
+    System Calls: https://youtu.be/jfPdiaAG0AQ
 
 - week: Virtual Memory
   # handout: 06/
-  # notes:
-  #   Virtual Memory: https://youtu.be/HWxMH_SNnNM
+  notes:
+    Virtual Memory: https://youtu.be/HWxMH_SNnNM
   
 - break: Reading Week  
   
@@ -34,7 +34,7 @@
 - week: Memory Mapped Files
   # handout: 08/
 
-- week: Project Help Session
+- week: Help Session
     
 - week: File System Buffer Cache
   # handout: 10/
