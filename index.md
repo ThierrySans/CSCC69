@@ -13,24 +13,21 @@ We encourage you to post questions regarding course materials and projects on Pi
 <div class="grid">
     <div class="hrow row">
         <div class="hcolumn column3"></div>
-        <div class="column1">Role</div>
         <div class="column3">Office Hours</div>
-        <div class="column2">Location</div>
+        <div class="column3">Location</div>
         <div class="column3">Contact</div>
     </div>
     <div class="row">
         <div class="hcolumn column3">Thierry Sans</div>
-        <div class="column1">{{site.data.settings.instructor.role}}</div>
         <div class="column3">{{site.data.settings.instructor.hours}}</div>
-        <div class="column2">{{site.data.settings.instructor.location}}</div>
+        <div class="column3">{{site.data.settings.instructor.location}}</div>
         <div class="column3">{{site.data.settings.instructor.contact}}</div>
     </div>
     {% for a in site.data.settings.assistants %}
     <div class="row">
         <div class="hcolumn column3">{{a.name}}</div>
-        <div class="column1">{{a.role}}</div>
         <div class="column3">{{a.hours}}</div>
-        <div class="column2">{{a.location}}</div>
+        <div class="column3">{{a.location}}</div>
         <div class="column3">{{a.contact}}</div>
     </div>
     {% endfor %}
@@ -88,17 +85,19 @@ The numeric marks of the projects and final exam will be used to compute a compo
     </div>
 </div>
 
-## Submission Policy
+A mark of **at least 50% on the final exam** is required to pass the course. If you receive less than 50% on the final exam, your overall course grade will be capped at 49.
+
+## Submission and Grading Policy
 
 For each project, the student or the team will be required to submit the source code on the Github repository through Github classroom. 
+
+The instructor reserves the right to assign different grades to each of the team members based on their individual contributions made to Github repository. 
 
 For your work to be graded, it must meet the minimum standards of a professional computer scientist. **All** files required to build the program must be committed to the repository, and the program must work. Last minute difficulties with git can easily be avoided by ensuring all files are added to the repository well before the deadline, and that you know how to commit them. **Your submission may receive a grade of 0, if the code does not compile or does not execute properly.**
 
 Each team will have 4 late days which may be spent in units of one day and that can spread into 4 projects. Beyond those grace days, no late submissions will be accepted for any course work, and no make-up assignments will be provided for missed/poorly completed work. It is your responsibility to ensure that all work is completed on time and to the best of your ability.
 
 If an emergency arises that prevents you from being able to complete any piece of work, or attend an exam, contact one of the instructors immediately. You will need to have a properly completed Illness Verification Form signed by a registered doctor in order to be given special consideration.
-
-## Re-mark Policy
 
 If a piece of work has been mis-marked or if you believe the rubric used to evaluate the work is not appropriate, you may request a re-mark. For a re-mark to succeed, you must clearly and concisely express what you believe was mis-marked. To request a re-mark, please contact your TA. Requests must be submitted *within 1 week* of the marks being returned.
 
@@ -107,6 +106,8 @@ If a piece of work has been mis-marked or if you believe the rubric used to eval
 You are expected to comply with the [Code of Behaviour on Academic Matters](http://www.governingcouncil.utoronto.ca/Assets/Governing+Council+Digital+Assets/Policies/PDF/ppjun011995.pdf). 
 
 Assignment solutions must be prepared individually, except where an assignment handout allows working with a partner. Note that working with a partner may be restricted to just part of an assignment, such as programming task, whereas the rest of the assignment must be solved by an individual.
+
+You are fully responsible for the piece of work you submit to Github repository as your contribution to the project. 
 
 When the assignment handout allows you to use snippets of code from the web, you should cite the source in the source code. As a rule of thumb, any piece of code larger than 5 lines that has been copied and re-used as is or even slightly modified must be clearly referenced. However, any piece of code larger than 25 lines should not be re-used. 
 
@@ -123,7 +124,7 @@ Failure to comply with these guidelines is a serious academic offence. In past a
 
 ## Accessibility Needs
 
-The University of Toronto is committed to accessibility. If you require accommodations for a disability, or have any accessibility concerns about the course, the classroom or course materials, please contact Accessibility Services as soon as possible: disability.services@utoronto.ca or <http://studentlife.utoronto.ca/accessibility>
+The University of Toronto is committed to accessibility. If you require accommodations for a disability, or have any accessibility concerns about the course, the classroom or course materials, please contact Accessibility Services as soon as possible: <https://www.utsc.utoronto.ca/ability/welcome-accessability-services>
 
 ## Acknowledgments 
 
