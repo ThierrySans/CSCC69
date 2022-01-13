@@ -1,8 +1,8 @@
 - week: The Big Picture
-  link: https://youtu.be/0S6i8uKXSHc
-  # notes:
-  #     Introduction: 01/slides/CSCC69-Introduction
-  #     The Big Picture: 01/slides/CSCC69-TheBigPicture
+  link: https://utoronto.zoom.us/j/81646366886
+  notes:
+      Introduction: 01/slides/CSCC69-Introduction
+      The Big Picture: 01/slides/CSCC69-TheBigPicture
   readings:
       "Chap 2 Introduction to Operating Systems": http://pages.cs.wisc.edu/~remzi/OSTEP/intro.pdf
       "Chap 4 The Abstraction: The Process": http://pages.cs.wisc.edu/~remzi/OSTEP/cpu-intro.pdf
@@ -10,7 +10,6 @@
       "Chap 36 I/O devices": http://pages.cs.wisc.edu/~remzi/OSTEP/file-devices.pdf
 
 - week: Multithreading
-  # link: https://youtu.be/K22fSwK7zKw
   readings:
       "Chap 26 Concurrency: An Introduction": http://pages.cs.wisc.edu/~remzi/OSTEP/threads-intro.pdf
       "Chap 28 Locks": http://pages.cs.wisc.edu/~remzi/OSTEP/threads-locks.pdf 
@@ -20,7 +19,6 @@
   #     Multithreading: 02/slides/CSCC69-Multithreading
 
 - week: Scheduling
-  # link: https://youtu.be/cyRlQFPpwik
   # notes:
   #     Scheduling: 03/slides/CSCC69-Scheduling
   readings:
@@ -30,7 +28,6 @@
       "Chap 8 Scheduling: The Multi-Level Feedback Queue": http://pages.cs.wisc.edu/~remzi/OSTEP/cpu-sched-mlfq.pdf
 
 - week: User Programs
-  # link: https://youtu.be/OQlCxdkJSLQ
   # notes:
   #     User Programs: 04/slides/CSCC69-UserPrograms
   readings:
@@ -38,7 +35,6 @@
       "Chap 27 Interlude: Thread API": http://pages.cs.wisc.edu/~remzi/OSTEP/threads-api.pdf
 
 - week: Virtual Memory
-  # link: https://youtu.be/B9PNNLfBo5s
   readings:
       "Chap 15 Mechanism: Address Translation": http://pages.cs.wisc.edu/~remzi/OSTEP/vm-mechanism.pdf
       "Chap 16 Segmentation": http://pages.cs.wisc.edu/~remzi/OSTEP/vm-segmentation.pdf
@@ -50,7 +46,6 @@
   #     Paging in details: 05/slides/CSCC69-Paging
 
 - week: Memory Management
-  # link: https://youtu.be/q6m6QqLZlSY
   readings:
       "Chap 21 Beyond Physical Memory: Mechanisms": http://pages.cs.wisc.edu/~remzi/OSTEP/vm-beyondphys.pdf
       "Chap 22 Beyond Physical Memory: Policies": http://pages.cs.wisc.edu/~remzi/OSTEP/vm-beyondphys-policy.pdf
@@ -61,7 +56,6 @@
 - break: Reading Week
 
 - week: I/O and Disks
-  # link: https://youtu.be/6jUvJ2jbNHo
   readings:
       "(again) Chap 36 I/O Devices": http://pages.cs.wisc.edu/~remzi/OSTEP/file-devices.pdf
       "Chap 37 Hard Disk Drives": http://pages.cs.wisc.edu/~remzi/OSTEP/file-disks.pdf
@@ -70,7 +64,6 @@
   #     I/O and Disks: 07/slides/CSCC69-IO
 
 - week: File Systems
-  # link: https://youtu.be/kgkmc6fwDYA
   readings:
       "Chap 39 Files and Directories": http://pages.cs.wisc.edu/~remzi/OSTEP/file-intro.pdf
       "Chap 40 File System Implementation": http://pages.cs.wisc.edu/~remzi/OSTEP/file-implementation.pdf
@@ -78,7 +71,6 @@
   #     File Systems: 08/slides/CSCC69-FileSystems
 
 - week: Advanced File Systems
-  # link: https://youtu.be/UFxRgURheJg
   readings:
       "Chap 41 Locality and The Fast File System": http://pages.cs.wisc.edu/~remzi/OSTEP/file-ffs.pdf
       "Chap 42 Crash Consistency: FSCK and Journaling": http://pages.cs.wisc.edu/~remzi/OSTEP/file-journaling.pdf
@@ -87,21 +79,18 @@
   #     Advanced File Systems: 09/slides/CSCC69-AdvancedFileSystems
 
 - week: Virtualization
-  # link: https://youtu.be/YVquwsfPSKE
   readings:
       "Appendix B Virtual Machine Monitors": http://pages.cs.wisc.edu/~remzi/OSTEP/vmm-intro.pdf
   # notes:
   #     Virtualization: 10/slides/CSCC69-Virtualization
 
 - week: Distributed Systems
-  # link: https://youtu.be/iYWSzkHu71A
   readings:
       "Chapter 48 Distributed Systems": http://pages.cs.wisc.edu/~remzi/OSTEP/dist-intro.pdf
   # notes:
   #     Distributed Systems: 11/slides/CSCC69-DistributedSystems
 
 - week: Mobile OS and OS Security
-  # link: https://youtu.be/Qt-SFMwU0wQ
   # notes:
   #     Mobile OS: 12/slides/CSCC69-MobileOS
   #     OS Security: 12/slides/CSCC69-OSSecurity
