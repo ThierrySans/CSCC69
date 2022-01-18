@@ -22,16 +22,16 @@ instructor:
 assistants:
     - name: Aryan Thakur
       contact: "&#97;&#114;&#121;&#97;&#110;&#46;&#116;&#104;&#97;&#107;&#117;&#114;&#64;&#109;&#97;&#105;&#108;&#46;&#117;&#116;&#111;&#114;&#111;&#110;&#116;&#111;&#46;&#99;&#97;"
-      hours: TBD
-      location: TBD
+      hours: Wed 5 PM - 6 PM
+      location: <a href="https://utoronto.zoom.us/j/82516023507">Zoom</a>
     - name: Qibo Wang
       contact: "&#113;&#105;&#98;&#111;&#46;&#119;&#97;&#110;&#103;&#64;&#109;&#97;&#105;&#108;&#46;&#117;&#116;&#111;&#114;&#111;&#110;&#116;&#111;&#46;&#99;&#97;"
-      hours: TBD
-      location: TBD
+      hours: Mon 10 AM - 11 AM
+      location: <a href="https://utoronto.zoom.us/j/89832057654">Zoom</a>
     - name: Tahmid Haque
       contact: "&#116;&#97;&#104;&#109;&#105;&#100;&#46;&#104;&#97;&#113;&#117;&#101;&#64;&#109;&#97;&#105;&#108;&#46;&#117;&#116;&#111;&#114;&#111;&#110;&#116;&#111;&#46;&#99;&#97;"
-      hours: TBD
-      location: TBD
+      hours: Tue 2 PM - 3 PM
+      location: <a href="https://utoronto.zoom.us/j/87500553348">Zoom</a>
   
 timings:
     - section: LEC01
@@ -44,11 +44,11 @@ timings:
       instructor: Qibo Wang
     - section: TUT03
       time: Tue 16:00-17:00
-      location: IC 326
-      instructor: TBD
+      location: <a href="https://utoronto.zoom.us/j/85193106642">Zoom</a>
+      instructor: Tahmid Haque
     - section: TUT04
       time: Thu 17:00-18:00
-      location: IC 326
-      instructor: TBD
+      location: <a href="https://utoronto.zoom.us/j/86425770950">Zoom</a>
+      instructor: Aryan Thakur
         
 first: 20220110
