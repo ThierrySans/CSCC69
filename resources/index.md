@@ -39,6 +39,11 @@ These are not necessary to complete the assignments, but if you want to understa
 - [Current Intel processor manuals](http://www.intel.com/products/processor/manuals/)
 - [Current AMD processor manuals](https://developer.amd.com/resources/developer-guides-manuals/)
 
+## Coding Style
+
+- [GNU Coding Standards](https://www.gnu.org/prep/standards/standards.html)
+- [Best practices for writing code comments](https://stackoverflow.blog/2021/12/23/best-practices-for-writing-code-comments/)
+- [Code Tells You How, Comments Tell You Why](https://blog.codinghorror.com/code-tells-you-how-comments-tell-you-why/)
 
 
 
