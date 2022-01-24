@@ -15,18 +15,18 @@ permalink: /tutorials/03/
 
 6. Here is a very naive implementation of a lock. Could you explain why disabling the interrupts while holding the lock seems to be a good idea at first? 
 
-```
-struct lock { 
-} 
+    ```
+    struct lock { 
+    } 
 
-void acquire (lock) { 
-    disable_interrupts();
-} 
+    void acquire (lock) { 
+        disable_interrupts();
+    } 
 
-void release (lock) { 
-    enable_interrupts(); 
-}
-```
+    void release (lock) { 
+        enable_interrupts(); 
+    }
+    ```
 
 7. However, could you also also explain why it is actually not a good idea after all?
 
