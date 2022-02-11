@@ -38,7 +38,7 @@
       "Chap 27 Interlude: Thread API": http://pages.cs.wisc.edu/~remzi/OSTEP/threads-api.pdf
 
 - week: Virtual Memory
-  link: https://utoronto.zoom.us/j/81646366886
+  link: https://youtu.be/rt_T-JGhSKU
   readings:
       "Chap 15 Mechanism: Address Translation": http://pages.cs.wisc.edu/~remzi/OSTEP/vm-mechanism.pdf
       "Chap 16 Segmentation": http://pages.cs.wisc.edu/~remzi/OSTEP/vm-segmentation.pdf
@@ -50,6 +50,7 @@
       Paging in details: 05/slides/CSCC69-Paging
 
 - week: Memory Management
+  link: https://utoronto.zoom.us/j/81646366886
   readings:
       "Chap 21 Beyond Physical Memory: Mechanisms": http://pages.cs.wisc.edu/~remzi/OSTEP/vm-beyondphys.pdf
       "Chap 22 Beyond Physical Memory: Policies": http://pages.cs.wisc.edu/~remzi/OSTEP/vm-beyondphys-policy.pdf
