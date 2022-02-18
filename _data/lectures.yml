@@ -50,7 +50,7 @@
       Paging in details: 05/slides/CSCC69-Paging
 
 - week: Memory Management
-  link: https://utoronto.zoom.us/j/81646366886
+  link: https://youtu.be/MRFrjHuE4B0
   readings:
       "Chap 21 Beyond Physical Memory: Mechanisms": http://pages.cs.wisc.edu/~remzi/OSTEP/vm-beyondphys.pdf
       "Chap 22 Beyond Physical Memory: Policies": http://pages.cs.wisc.edu/~remzi/OSTEP/vm-beyondphys-policy.pdf
@@ -61,6 +61,7 @@
 - break: Reading Week
 
 - week: I/O and Disks
+  link: https://utoronto.zoom.us/j/81646366886
   readings:
       "(again) Chap 36 I/O Devices": http://pages.cs.wisc.edu/~remzi/OSTEP/file-devices.pdf
       "Chap 37 Hard Disk Drives": http://pages.cs.wisc.edu/~remzi/OSTEP/file-disks.pdf
