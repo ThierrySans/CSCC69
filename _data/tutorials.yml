@@ -30,13 +30,13 @@
   
 - break: Reading Week  
   
+- week: Help Session 
+  
 - week: Memory Management
   # handout: 07/
 
 - week: Memory Mapped Files
   # handout: 08/
-
-- week: Help Session
     
 - week: File System Buffer Cache
   # handout: 10/
