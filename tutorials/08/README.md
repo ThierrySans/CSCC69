@@ -1,6 +1,6 @@
 ---
 layout: default
-permalink: /tutorials/07/
+permalink: /tutorials/08/
 ---
 
 1. What is the differences between a page and a frame? 
