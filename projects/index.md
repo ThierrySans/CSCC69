@@ -30,7 +30,7 @@ You can work in groups of 1-3 people. So start talking with your classmates arou
     <div class="row">
         <div class="column2">Mar 20</div>
         <div class="column3"><a href="WWW/pintos_4.html">Project 3: Virtual Memory</a></div>
-        <!--div class="column3"><a href="https://grademy.work/ThierrySans/C69W22-project3">Rubric</a></div-->
+        <div class="column3"><a href="https://grademy.work/ThierrySans/C69W22-project3">Rubric</a></div>
     </div>
     <div class="row">
         <div class="column2">Apr 10</div>
