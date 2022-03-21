@@ -44,6 +44,8 @@
     
 - week: File System Buffer Cache
   handout: 10/
+  notes:
+      Starting with Project 4: https://youtu.be/sOD3mvRWOEc
 
 - week: Indexed Files
   # handout: 11/
