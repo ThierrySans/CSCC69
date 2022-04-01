@@ -97,8 +97,8 @@
   link: https://utoronto.zoom.us/j/81646366886
   readings:
       "Chapter 48 Distributed Systems": http://pages.cs.wisc.edu/~remzi/OSTEP/dist-intro.pdf
-  # notes:
-  #     Distributed Systems: 11/slides/CSCC69-DistributedSystems
+  notes:
+      Distributed Systems: 11/slides/CSCC69-DistributedSystems
 
 - week: Mobile OS and OS Security
   # notes:
