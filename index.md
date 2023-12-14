@@ -89,7 +89,7 @@ A mark of **at least 50% on the final exam** is required to pass the course. If 
 
 ## Submission and Grading Policy
 
-For each project, the student or the team will be required to submit the source code on the Github repository through Github classroom. 
+For each project, the student or the team will be required to submit the code to the Github repository through Github classroom. Only the final commit subnitted to Gradescope will be graded. 
 
 The instructor reserves the right to assign different grades to each of the team members based on their individual contributions made to Github repository. 
 

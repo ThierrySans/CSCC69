@@ -18,24 +18,24 @@ You can work in groups of 1-3 people. So start talking with your classmates arou
         <div class="column3">Rubric</div>
     </div>
     <div class="row">
-        <div class="column2">Feb 6</div>
-        <div class="column3"><a href="WWW/pintos_2.html">Project 1: Threads</a></div>
-        <div class="column3"><a href="https://grademy.work/ThierrySans/C69W22-project1">Rubric</a></div>
+        <div class="column2">Feb 4</div>
+        <!--div class="column3"><a href="WWW/pintos_2.html">Project 1: Threads</a></div-->
+        <!--div class="column3"><a href="https://grademy.work/ThierrySans/C69W22-project1">Rubric</a></div-->
     </div>
     <div class="row">
-        <div class="column2">Feb 27</div>
-        <div class="column3"><a href="WWW/pintos_3.html">Project 2: User Programs</a></div>
-        <div class="column3"><a href="https://grademy.work/ThierrySans/C69W22-project2">Rubric</a></div>
+        <div class="column2">Feb 25</div>
+        <!--div class="column3"><a href="WWW/pintos_3.html">Project 2: User Programs</a></div-->
+        <!--div class="column3"><a href="https://grademy.work/ThierrySans/C69W22-project2">Rubric</a></div-->
     </div>
     <div class="row">
-        <div class="column2">Mar 20</div>
-        <div class="column3"><a href="WWW/pintos_4.html">Project 3: Virtual Memory</a></div>
-        <div class="column3"><a href="https://grademy.work/ThierrySans/C69W22-project3">Rubric</a></div>
+        <div class="column2">Mar 18</div>
+        <!--div class="column3"><a href="WWW/pintos_4.html">Project 3: Virtual Memory</a></div-->
+        <!--div class="column3"><a href="https://grademy.work/ThierrySans/C69W22-project3">Rubric</a></div-->
     </div>
     <div class="row">
-        <div class="column2">Apr 10</div>
-        <div class="column3"><a href="WWW/pintos_5.html">Project 4: File Systems</a></div>
-        <div class="column3"><a href="https://grademy.work/ThierrySans/C69W22-project4">Rubric</a></div>
+        <div class="column2">Apr 8</div>
+        <!--div class="column3"><a href="WWW/pintos_5.html">Project 4: File Systems</a></div-->
+        <!--div class="column3"><a href="https://grademy.work/ThierrySans/C69W22-project4">Rubric</a></div-->
     </div>
 </div>
 
