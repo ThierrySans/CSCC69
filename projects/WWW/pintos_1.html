@@ -92,7 +92,7 @@ First let's test the Pintos docker image:
 </P>
 <P>
 
-<TABLE><tr><td>&nbsp;</td><td class=example><pre>$ docker run --rm --name pintos -w /pintos/src/threads/build thierrysans/pintos pintos -q run alarm-zero
+<TABLE><tr><td>&nbsp;</td><td class=example><pre>$ docker run --platform linux/amd64 --rm --name pintos -w /pintos/src/threads/build thierrysans/pintos pintos -q run alarm-zero
 </pre></td></tr></table><P>
 
 It should run Pintos and execute the command <CODE>alarm-zero</CODE> before quitting (option <CODE>-q</CODE>):
@@ -137,7 +137,7 @@ By default, the command <CODE>pintos</CODE> runs the Bochs simulator. You can as
 </P>
 <P>
 
-<TABLE><tr><td>&nbsp;</td><td class=example><pre>$ docker run --rm --name pintos -w /pintos/src/threads/build thierrysans/pintos pintos --qemu -- -q run alarm-zero
+<TABLE><tr><td>&nbsp;</td><td class=example><pre>$ docker run --platform linux/amd64 --rm --name pintos -w /pintos/src/threads/build thierrysans/pintos pintos --qemu -- -q run alarm-zero
 </pre></td></tr></table><P>
 
 and the output should look like this: 
@@ -280,7 +280,7 @@ As the next step, build the source code supplied for the first project. First, r
 </P>
 <P>
 
-<TABLE><tr><td>&nbsp;</td><td class=example><pre>$ docker run --rm --name pintos -it -v &quot;$(pwd):/pintos&quot; thierrysans/pintos bash
+<TABLE><tr><td>&nbsp;</td><td class=example><pre>$ docker run --platform linux/amd64 --rm --name pintos -it -v &quot;$(pwd):/pintos&quot; thierrysans/pintos bash
 </pre></td></tr></table><P>
 
 Once in the Docker container, you should build the utils directory (first time only):
