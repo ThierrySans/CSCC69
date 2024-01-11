@@ -54,8 +54,7 @@ side.  Compilation should be done in the <Q><TT>threads</TT></Q> directory.
 Before you read the description of this project, you should read all of
 the following sections: <A HREF="pintos_1.html#SEC1">1. Introduction</A>, <A HREF="pintos_8.html#SEC138">C. Coding Standards</A>,
 <A HREF="pintos_10.html#SEC145">E. Debugging Tools</A>, and <A HREF="pintos_11.html#SEC158">F. Development Tools</A>.  You should at least
-skim the material from <A HREF="pintos_6.html#SEC91">A.1 Loading</A> through <A HREF="pintos_6.html#SEC111">A.5 Memory Allocation</A>, especially <A HREF="pintos_6.html#SEC100">A.3 Synchronization</A>.  To complete this project
-you will also need to read <A HREF="pintos_7.html#SEC131">B. 4.4<ACRONYM>BSD</ACRONYM> Scheduler</A>.
+skim the material from <A HREF="pintos_6.html#SEC91">A.1 Loading</A> through <A HREF="pintos_6.html#SEC111">A.5 Memory Allocation</A>, especially <A HREF="pintos_6.html#SEC100">A.3 Synchronization</A>. 
 </P>
 <P>
 
@@ -744,51 +743,6 @@ The priority scheduler is not used in any later project.
 </P>
 <P>
 
-<A NAME="Advanced Scheduler"></A>
-<HR SIZE="6">
-<A NAME="SEC27"></A>
-<H3> 2.2.4 Advanced Scheduler </H3>
-<!--docid::SEC27::-->
-<P>
-
-Implement a multilevel feedback queue scheduler similar to the
-4.4<ACRONYM>BSD</ACRONYM> scheduler to
-reduce the average response time for running jobs on your system.
-See section <A HREF="pintos_7.html#SEC131">B. 4.4<ACRONYM>BSD</ACRONYM> Scheduler</A>, for detailed requirements.
-</P>
-<P>
-
-Like the priority scheduler, the advanced scheduler chooses the thread
-to run based on priorities.  However, the advanced scheduler does not do
-priority donation.  Thus, we recommend that you have the priority
-scheduler working, except possibly for priority donation, before you
-start work on the advanced scheduler.
-</P>
-<P>
-
-You must write your code to allow us to choose a scheduling algorithm
-policy at Pintos startup time.  By default, the priority scheduler
-must be active, but we must be able to choose the 4.4<ACRONYM>BSD</ACRONYM>
-scheduler
-with the <Q><SAMP>-mlfqs</SAMP></Q> kernel option.  Passing this
-option sets <CODE>thread_mlfqs</CODE>, declared in <Q><TT>threads/thread.h</TT></Q>, to
-true when the options are parsed by <CODE>parse_options()</CODE>, which happens
-early in <CODE>main()</CODE>.
-</P>
-<P>
-
-When the 4.4<ACRONYM>BSD</ACRONYM> scheduler is enabled, threads no longer
-directly control their own priorities.  The <VAR>priority</VAR> argument to
-<CODE>thread_create()</CODE> should be ignored, as well as any calls to
-<CODE>thread_set_priority()</CODE>, and <CODE>thread_get_priority()</CODE> should return
-the thread's current priority as set by the scheduler.
-</P>
-<P>
-
-The advanced scheduler is not used in any later project.
-</P>
-<P>
-
 <A NAME="Project 1 FAQ"></A>
 <HR SIZE="6">
 <A NAME="SEC28"></A>
@@ -816,16 +770,10 @@ modified by the reference solution.
 <P>
 
 <TABLE><tr><td>&nbsp;</td><td class=example><pre> devices/timer.c       |   42 +++++-
- threads/fixed-point.h |  120 ++++++++++++++++++
  threads/synch.c       |   88 ++++++++++++-
  threads/thread.c      |  196 ++++++++++++++++++++++++++----
  threads/thread.h      |   23 +++
- 5 files changed, 440 insertions(+), 29 deletions(-)
 </pre></td></tr></table><P>
-
-<Q><TT>fixed-point.h</TT></Q> is a new file added by the reference solution.
-</P>
-<P>
 
 </P>
 <DT><B>How do I update the <Q><TT>Makefile</TT></Q>s when I add a new source file?</B>
@@ -1176,68 +1124,6 @@ acquired and released twice.
 </DL>
 <P>
 
-<A NAME="Advanced Scheduler FAQ"></A>
-<HR SIZE="6">
-<A NAME="SEC31"></A>
-<H3> 2.3.3 Advanced Scheduler FAQ </H3>
-<!--docid::SEC31::-->
-<P>
-
-</P>
-<DL COMPACT>
-<DT><B>How does priority donation interact with the advanced scheduler?</B>
-<DD><P>
-
-It doesn't have to.  We won't test priority donation and the advanced
-scheduler at the same time.
-</P>
-<P>
-
-</P>
-<DT><B>Can I use one queue instead of 64 queues?</B>
-<DD><P>
-
-Yes.  In general, your implementation may differ from the description,
-as long as its behavior is the same.
-</P>
-<P>
-
-</P>
-<DT><B>Some scheduler tests fail and I don't understand why.  Help!</B>
-<DD><P>
-
-If your implementation mysteriously fails some of the advanced
-scheduler tests, try the following:
-</P>
-<P>
-
-<UL>
-<LI>
-Read the source files for the tests that you're failing, to make sure
-that you understand what's going on.  Each one has a comment at the
-top that explains its purpose and expected results.
-<P>
-
-</P>
-<LI>
-Double-check your fixed-point arithmetic routines and your use of them
-in the scheduler routines.
-<P>
-
-</P>
-<LI>
-Consider how much work your implementation does in the timer
-interrupt.  If the timer interrupt handler takes too long, then it
-will take away most of a timer tick from the thread that the timer
-interrupt preempted.  When it returns control to that thread, it
-therefore won't get to do much work before the next timer interrupt
-arrives.  That thread will therefore get blamed for a lot more CPU
-time than it actually got a chance to use.  This raises the
-interrupted thread's recent CPU count, thereby lowering its priority.
-It can cause scheduling decisions to change.  It also raises the load
-average.
-</UL>
-</DL>
 <A NAME="Project 2--User Programs"></A>
 <HR SIZE="6">
 <TABLE CELLPADDING=1 CELLSPACING=1 BORDER=0>
