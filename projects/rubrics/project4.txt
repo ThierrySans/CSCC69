@@ -1,0 +1,29 @@
+Code:
+    - File System: 100 points
+    - [Bonus] Virtual Memory: 10 points
+ 
+Documentation:
+    - Index and Extensible Files: 18 points
+    - Subdirectories: 15 points
+
+Overall quality and organization: 20 points
+    - The documentation:
+        - does follow the required structure and formatting overall
+        - has answers that are clean, consistent, well organized and indented properly
+        - does not have excessive capitalization, punctuation, spelling, or grammar errors
+    - The repository:
+        - does follow the required structure
+        - does not contained superflous files (automatically generated files, discarded files and so on)
+    - The coding style: 
+        - follows the coding style decribe in the documentation
+        - is clean, consistent, well organized and indented properly
+        - does not repeat itself (DRY principle) and is easily maintainable
+        - uses informative variable and function identifiers
+        - has appropriate comments on structure, structure members, global or static variables, or function definitions
+        - does not contain any unused commented code
+        - does not compile with warnings
+        - does not generate superfluous debugging messages while running
+    - The code comments:
+        - helps understand the intent of your code (a.k.a why more than how)
+        - does not paraphrase the code
+
