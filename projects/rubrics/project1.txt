@@ -2,7 +2,7 @@ Code:
     - Alarm Clock: 40 points
     - Priority Scheduling: 21 points
 
-Documentation: 
+Documentation*:
     - Alarm Clock: 18 points
     - Documentation: 18 points
 
@@ -26,3 +26,8 @@ Overall quality and organization: 20 points
     - The code comments:
         - helps understand the intent of your code (a.k.a why more than how)
         - does not paraphrase the code
+        
+* Each question is worth 3 points. Points will be deducted as follows:
+    -3 for completely wrong answer (or an answer that does not match the code submitted)
+    -2 for a vague answer
+    -1 for an incomplete but yet seemingly correct answer

@@ -2,7 +2,7 @@ Code:
     - File System: 100 points
     - [Bonus] Virtual Memory: 10 points
  
-Documentation:
+Documentation*:
     - Index and Extensible Files: 18 points
     - Subdirectories: 15 points
 
@@ -27,3 +27,7 @@ Overall quality and organization: 20 points
         - helps understand the intent of your code (a.k.a why more than how)
         - does not paraphrase the code
 
+* Each question is worth 3 points. Points will be deducted as follows:
+    -3 for completely wrong answer (or an answer that does not match the code submitted)
+    -2 for a vague answer
+    -1 for an incomplete but yet seemingly correct answer

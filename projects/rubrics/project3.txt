@@ -2,7 +2,7 @@ Code:
     - Virtual Memory Management: 65 points
     - Memory Mapped Files: 35 points
 
-Documentation:
+Documentation*:
     - Page Table Management: 15 points
     - Paging To and From Disk: 27 points
     - Memory Mapped Files: 12 points
@@ -27,3 +27,8 @@ Overall quality and organization: 20 points
     - The code comments:
         - helps understand the intent of your code (a.k.a why more than how)
         - does not paraphrase the code
+
+* Each question is worth 3 points. Points will be deducted as follows:
+    -3 for completely wrong answer (or an answer that does not match the code submitted)
+    -2 for a vague answer
+    -1 for an incomplete but yet seemingly correct answer
