@@ -21,5 +21,3 @@ permalink: /tutorials/04/
 8. (Multiple donations) What should line `priority_donate_multiple.c:39` and line `42` print out and why? 
 
 9. (Multiple donations) What should line `priority_donate_multiple.c:48` print out and why? 
-
-10. What are the similarities and main difference between Priority Scheduling and the Multilevel Feedback Queue (a.k.a the advanced scheduler)? 
