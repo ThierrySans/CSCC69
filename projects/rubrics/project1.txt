@@ -1,6 +1,6 @@
 Code:
-    - Alarm Clock: 40 points
-    - Priority Scheduling: 21 points
+    - Alarm Clock: 18 points
+    - Priority Scheduling: 38 points
 
 Documentation*:
     - Alarm Clock: 18 points
