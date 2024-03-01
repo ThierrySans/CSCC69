@@ -59,8 +59,8 @@
       "(again) Chap 36 I/O Devices": http://pages.cs.wisc.edu/~remzi/OSTEP/file-devices.pdf
       "Chap 37 Hard Disk Drives": http://pages.cs.wisc.edu/~remzi/OSTEP/file-disks.pdf
       "Chap 44 Flash-based SSDs": http://pages.cs.wisc.edu/~remzi/OSTEP/file-ssd.pdf
-  # notes:
-  #     I/O and Disks: 07/slides/CSCC69-IO
+  notes:
+      I/O and Disks: 07/slides/CSCC69-IO
 
 - week: File Systems
   readings:
