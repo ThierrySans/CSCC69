@@ -1,15 +1,12 @@
 ---
 layout: default
-permalink: /tutorials/10/
+permalink: /tutorials/11/
 ---
 
-There are three parts in project 4:
+There are two parts in project 4:
 
 1. Indexed and Extensible Files
 2. Subdirectories
-3. Buffer Cache
-
-The handout recommends to start with part 3 first about the file system buffer cache. Managing the buffer cache is very similar to managing the virtual memory (by using the clock algorithm to manage cached blocks). So even if there is quite a lot of code to write for this part, you should be able to get done with it quite quickly since the design is very similar to what you have done for project 3.
 
 During the lecture we have seen that:
 - the file systems is logically divided into units called blocks
@@ -23,18 +20,22 @@ However, modern Operating systems define block size of 4 KB or 8 KB.
 
 2. Given an inode, how to find the blocks that hold the data? 
 
-3. What is a buffer cache and how does it things more efficient?
+3. How does the bounce buffer in `inode.c` in the functions `inode_read_at` and `inode_write_at` work?
 
-4. What is the max number of sectors for a buffer cache?
+4. What are bitmaps?
 
-5. So what is the total capacity of the buffer cache partition? 
+5. How do we set the nth bit in a bitmap?
 
-6. How does the bounce buffer in `inode.c` in the functions `inode_read_at` and `inode_write_at` work?
+6. How do we unset the nth bit in a bitmap?
+    
+7. How do we toggle the nth bit in a bitmap?
+   
+8. What is a bitmask?
 
-7. What is write-behind?
+9. In the orignal Pintos design, the file's data is stored in contiguous data blocks (the inode stores the pointer to the first block and the total file size). What are the two majors drawbacks of this design? 
 
-8. What is read-ahead?
+10. According to the Pintos documentation, what is the solution to resolve the problems encountered in question 6? 
 
-9. Why should we do read-ahead asynchronously?
+11. Considering a design with only one double indirect block pointer? What is the largest file size that you could store? 
 
-10. [Exam] What is the difference between a memory-mapped file and a file in the buffer cache? What advantages each solution provides? Can you use both or are they mutually exclusive?
+12. Why having direct and single indirect blocks when a double indirect can store that much data? 

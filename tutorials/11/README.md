@@ -1,22 +1,14 @@
 ---
 layout: default
-permalink: /tutorials/11/
+permalink: /tutorials/12/
 ---
 
-1. What are bitmaps?
-
-2. How do we set the nth bit in a bitmap?
-
-3. How do we unset the nth bit in a bitmap?
-    
-4. How do we toggle the nth bit in a bitmap?
-    
-5. What is a bitmask?
-
-6. In the orignal Pintos design, the file's data is stored in contiguous data blocks (the inode stores the pointer to the first block and the total file size). What are the two majors drawbacks of this design? 
-
-7. According to the Pintos documentation, what is the solution to resolve the problems encountered in question 6? 
-
-8. Considering a design with only one double indirect block pointer? What is the largest file size that you could store? 
-
-9. Why having direct and single indirect blocks when a double indirect can store that much data? 
+1. What is a directory?
+2. What is a sub-directory? 
+3. What is a file system path?
+4. What does the path /a/b/c represent?
+5. What does the path ./d/e/f (or simply d/e/f) represent? 
+6. What does the path ../g/h/i represent? 
+7. Where is the current/working directory stored? 
+8. What should the working/current directory of the child process be when it is created ?
+9. When can you remove a directory?
