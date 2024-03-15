@@ -74,8 +74,8 @@
       "Chap 41 Locality and The Fast File System": http://pages.cs.wisc.edu/~remzi/OSTEP/file-ffs.pdf
       "Chap 42 Crash Consistency: FSCK and Journaling": http://pages.cs.wisc.edu/~remzi/OSTEP/file-journaling.pdf
       "Chap 43 Log-structured File Systems": http://pages.cs.wisc.edu/~remzi/OSTEP/file-lfs.pdf
-  # notes:
-  #     Advanced File Systems: 09/slides/CSCC69-AdvancedFileSystems
+  notes:
+      Advanced File Systems: 09/slides/CSCC69-AdvancedFileSystems
 
 - week: Virtualization
   readings:
