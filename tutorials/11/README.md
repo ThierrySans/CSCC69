@@ -1,6 +1,6 @@
 ---
 layout: default
-permalink: /tutorials/12/
+permalink: /tutorials/11/
 ---
 
 1. What is a directory?

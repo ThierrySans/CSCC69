@@ -1,6 +1,6 @@
 ---
 layout: default
-permalink: /tutorials/11/
+permalink: /tutorials/10/
 ---
 
 There are two parts in project 4:
