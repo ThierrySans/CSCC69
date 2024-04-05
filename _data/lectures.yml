@@ -90,9 +90,9 @@
       Distributed Systems: 11/slides/CSCC69-DistributedSystems
 
 - week: Mobile OS and OS Security
-  # notes:
-  #     Mobile OS: 12/slides/CSCC69-MobileOS
-  #     OS Security: 12/slides/CSCC69-OSSecurity
+  notes:
+      Mobile OS: 12/slides/CSCC69-MobileOS
+      OS Security: 12/slides/CSCC69-OSSecurity
   readings:
       "SetUID, SetGID, and Sticky Bits in Linux File Permissions": https://www.geeksforgeeks.org/setuid-setgid-and-sticky-bits-in-linux-file-permissions/
       "Linux Capabilities: Why They Exist and How They Work": https://blog.container-solutions.com/linux-capabilities-why-they-exist-and-how-they-work
