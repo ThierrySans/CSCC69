@@ -89,7 +89,7 @@ A mark of **at least 50% on the final exam** is required to pass the course. If 
 
 ## Submission and Grading Policy
 
-For each project, the student or the team will be required to submit the code to the Github repository through Github classroom. Only the final commit subnitted to Gradescope will be graded. 
+For each project, the student or the team will be required to submit the code to the Github repository through Github classroom. Only the final commit submitted to Gradescope will be graded. 
 
 The instructor reserves the right to assign different grades to each of the team members based on their individual contributions made to Github repository. 
 
@@ -109,7 +109,7 @@ Assignment solutions must be prepared individually, except where an assignment h
 
 You are fully responsible for the piece of work you submit to Github repository as your contribution to the project. 
 
-When the assignment handout allows you to use snippets of code from the web, you should cite the source in the source code. As a rule of thumb, any piece of code larger than 5 lines that has been copied and re-used as is or even slightly modified must be clearly referenced. However, any piece of code larger than 25 lines should not be re-used. 
+When the assignment handout allows you to use snippets of code from the web, you should cite the source in the source code. As a rule of thumb, any piece of code larger than 5 lines that has been copied and re-used as is or even slightly modified must be clearly referenced. However, any piece of code larger than 25 lines should not be re-used. However, you are not allowed to use any AI assistant to produce assignment code or writeup.
 
 You may discuss projects with other students, for example to clarify the requirements of an project, to work through examples that help you understand the technology used for an project, or to learn how to configure your system to run a supporting piece of software used in an project. However, collaboration at the level of answering written questions or designing and writing code, is strictly forbidden. Written problems and programming projects must be answered, designed and coded by you alone, using the text, your own notes, and other texts and Web sources as aids.
 

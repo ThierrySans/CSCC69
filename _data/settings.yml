@@ -1,64 +1,48 @@
 # Site settings
 ref: CSCC69
 title: Operating systems
-edition: Winter 2024
+edition: Winter 2025
 description: "Principles of operating systems. The operating system as a control program and as a resource allocator. The concept of a process and concurrency problem: synchronization, mutual exclusion, deadlock. Additional topics include memory management, file systems, process scheduling, threads, and protection."
 website: https://thierrysans.me/CSCC69/
 github: https://github.com/ThierrySans/CSCC69
-piazza: https://piazza.com/utoronto.ca/winter2024/cscc69
-feedback: https://forms.gle/9YmawMMc6kmajJC66
+piazza: https://piazza.com/utoronto.ca/winter2025/cscc69
+feedback: https://forms.gle/yuUfbZVJCHp5Bs8N8
 
 instructor:
   name: Thierry Sans
   email: "thierry.sans@"
   website: https://thierrysans.github.io/
   hours: Fri 11 AM - 12 PM
-  location: IC 346
+  location: IA 4124
   contact: Piazza only (no email)
 
 # https://www.fingerlakesbmw.org/main/flobfuscate.php
 assistants:
-    - name: Aryan Thakur
-      contact: "aryan.thakur@mail."
-      hours: Tue 3-4 PM
-      location: IC 402
-    - name: Ali Abdoli
-      contact: "ali.abdoli@mail."
-      hours: Thu 1-2 PM
-      location: IC 402
-    - name: Man Hei Ho
-      contact: "man.ho@mail."
-      hours: Fri 5-6 PM
-      location: IC 402
-    - name: Shaopeng (Chris) Lin
-      contact: "shaopeng.lin@mail."
-      hours: Mon 2-3 PM
-      location: IC 402
-    - name: Youxin (Tony) Tan
-      contact: "youxin.tan@mail."
-      hours: Wed 2-3 PM
-      location: IC 402
+    # - name: Aryan Thakur
+    #   contact: "aryan.thakur@mail."
+    #   hours: Tue 3-4 PM
+    #   location: IC 402
   
 timings:
     - section: LEC01
       time: Fri 9-11 AM
-      location: SW 319
+      location: SW 309
       instructor: Thierry
     - section: TUT01
       time: Thu 9-10 AM
-      location: HL B101
-      instructor: Tony
+      location: HL B108
+      instructor: TBD
     - section: TUT02
       time: Tue 7-8 PM
-      location: SW 128
-      instructor: Ali and Chris
+      location: IC 326
+      instructor: TBD
     - section: TUT03
       time: Wed 7-8 PM
-      location: MW 120
-      instructor: Man Hei
+      location: IC 326
+      instructor: TBD
     - section: TUT04
       time: Mon 9-10 AM
-      location: AC 334
-      instructor: Aryan
+      location: IA 2060
+      instructor: TBD
         
-first: 20240108
+first: 20250106
