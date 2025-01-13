@@ -12,16 +12,28 @@ instructor:
   name: Thierry Sans
   email: "thierry.sans@"
   website: https://thierrysans.github.io/
-  hours: TBD
+  hours: Mon 1-3 PM
   location: IA 4124
   contact: Piazza only (no email)
 
 # https://www.fingerlakesbmw.org/main/flobfuscate.php
 assistants:
-    # - name: Aryan Thakur
-    #   contact: "aryan.thakur@mail."
-    #   hours: Tue 3-4 PM
-    #   location: IC 402
+    - name: Chris Lin
+      contact: Piazza
+      hours: Tue 3-4 PM
+      location: CS Help Center
+    - name: John Guirgis
+      contact: Piazza
+      hours: Wed 6-7 PM
+      location: CS Help Center
+    - name: Hriday Algh
+      contact: Piazza
+      hours: Thu 7-8 PM
+      location: CS Help Center
+    - name: Casper Sajewski-Lee
+      contact: Piazza
+      hours: Fri 1-2 PM
+      location: CS Help Center
   
 timings:
     - section: LEC01
@@ -29,20 +41,20 @@ timings:
       location: SW 309
       instructor: Thierry
     - section: TUT01
-      time: Thu 9-10 AM
+      time: Thu 8-9 PM
       location: HL B108
-      instructor: TBD
+      instructor: Casper
     - section: TUT02
       time: Tue 7-8 PM
       location: IC 326
-      instructor: TBD
+      instructor: Hriday
     - section: TUT03
       time: Wed 7-8 PM
       location: IC 326
-      instructor: TBD
+      instructor: John
     - section: TUT04
       time: Mon 9-10 AM
       location: IA 2060
-      instructor: TBD
+      instructor: Chris
         
 first: 20250106

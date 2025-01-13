@@ -28,7 +28,7 @@ We encourage you to post questions regarding course materials and projects on Pi
         <div class="hcolumn column3">{{a.name}}</div>
         <div class="column3">{{a.hours}}</div>
         <div class="column3">{{a.location}}</div>
-        <div class="column3">{{a.contact}}<span class="spam">whatever</span>utoronto.ca</div>
+        <div class="column3">{{a.contact}}</div>
     </div>
     {% endfor %}
 </div>
