@@ -14,8 +14,8 @@
       "Chap 28 Locks": http://pages.cs.wisc.edu/~remzi/OSTEP/threads-locks.pdf 
       "Chap 31 Semaphores": http://pages.cs.wisc.edu/~remzi/OSTEP/threads-sema.pdf
       "Chap 32 Common Concurrency Problems": http://pages.cs.wisc.edu/~remzi/OSTEP/threads-bugs.pdf
-  # notes:
-  #     Multithreading: 02/slides/CSCC69-Multithreading
+  notes:
+      Multithreading: 02/slides/CSCC69-Multithreading
 
 - week: Scheduling
   # notes:
