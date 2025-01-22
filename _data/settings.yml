@@ -21,19 +21,19 @@ assistants:
     - name: Chris Lin
       contact: Piazza
       hours: Tue 11 AM - 12 PM
-      location: CS Help Center
+      location: IA 3180 (CS Help Center)
     - name: John Guirgis
       contact: Piazza
       hours: Wed 6-7 PM
-      location: CS Help Center
+      location: IA 3180 (CS Help Center)
     - name: Hriday Algh
       contact: Piazza
       hours: Thu 7-8 PM
-      location: CS Help Center
+      location: IA 3180 (CS Help Center)
     - name: Casper Sajewski-Lee
       contact: Piazza
       hours: Fri 1-2 PM
-      location: CS Help Center
+      location: IA 3180 (CS Help Center)
   
 timings:
     - section: LEC01
