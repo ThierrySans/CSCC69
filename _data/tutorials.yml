@@ -7,6 +7,7 @@
   notes:
       Thread Switching: https://youtu.be/4C8J6jLPJPc
       John's Notes: https://johnguirgis.notion.site/Week-1-Interrupts-and-Threads-17c605f2b63a80639c12eaae576e7247
+      Chris's Notes: https://docs.google.com/presentation/d/1Z6A1eEmUWUrwKjabfxp8JC0TLIPLU2RyjdNROa3dwj8/edit?usp=drive_link
       
 - week: Synchronization
   handout: 03/
@@ -16,6 +17,7 @@
   notes:
       Priority donation (theory):  https://youtu.be/_cGMNPAtiH8
       Priority donation (examples): https://youtu.be/3nGRH-Y5YLU
+      Chris's Notes: https://drive.google.com/file/d/1I3kQk41Er8dw9I_b7CxrYEDvXK1hK3M7/view?usp=drive_link
 
 - week: System Calls
   handout: 05/
