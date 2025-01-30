@@ -27,8 +27,8 @@
       "Chap 8 Scheduling: The Multi-Level Feedback Queue": http://pages.cs.wisc.edu/~remzi/OSTEP/cpu-sched-mlfq.pdf
 
 - week: User Programs
-  # notes:
-  #     User Programs: 04/slides/CSCC69-UserPrograms
+  notes:
+      User Programs: 04/slides/CSCC69-UserPrograms
   readings:
       "Chap 5 Interlude: Process API": http://pages.cs.wisc.edu/~remzi/OSTEP/cpu-api.pdf
       "Chap 27 Interlude: Thread API": http://pages.cs.wisc.edu/~remzi/OSTEP/threads-api.pdf
