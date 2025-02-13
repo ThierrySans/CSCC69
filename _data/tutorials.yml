@@ -34,12 +34,12 @@
   
 - break: Reading Week  
   
-- week: Help Session 
-  
 - week: Memory Management
   handout: 08/
   notes:
      Starting with Project 3: https://youtu.be/PVKZkkiyXD0
+
+- week: Help Session
 
 - week: Memory Mapped Files
   handout: 09/
