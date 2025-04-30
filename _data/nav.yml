@@ -15,7 +15,7 @@
   absolute: False
 
 - title: Piazza
-  url:  https://piazza.com/utoronto.ca/winter2025/cscc69
+  url:  https://piazza.com/utoronto.ca/summer2025/cscc69
   absolute: True
 
 - title: Github
@@ -23,5 +23,5 @@
   absolute: True
   
 - title: Feedback
-  url: https://forms.gle/yuUfbZVJCHp5Bs8N8
+  url: https://forms.gle/MKeNGv2hsxT6nxb49
   absolute: True

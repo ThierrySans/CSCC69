@@ -1,18 +1,18 @@
 # Site settings
 ref: CSCC69
 title: Operating systems
-edition: Winter 2025
+edition: Summer 2025
 description: "Principles of operating systems. The operating system as a control program and as a resource allocator. The concept of a process and concurrency problem: synchronization, mutual exclusion, deadlock. Additional topics include memory management, file systems, process scheduling, threads, and protection."
 website: https://thierrysans.me/CSCC69/
 github: https://github.com/ThierrySans/CSCC69
-piazza: https://piazza.com/utoronto.ca/winter2025/cscc69
-feedback: https://forms.gle/yuUfbZVJCHp5Bs8N8
+piazza: https://piazza.com/utoronto.ca/summer2025/cscc69
+feedback: https://forms.gle/MKeNGv2hsxT6nxb49
 
 instructor:
   name: Thierry Sans
   email: "thierry.sans@"
   website: https://thierrysans.github.io/
-  hours: Mon 1-3 PM
+  hours: Fri 2-4 PM
   location: IA 4124
   contact: Piazza only (no email)
 
@@ -20,41 +20,33 @@ instructor:
 assistants:
     - name: Chris Lin
       contact: Piazza
-      hours: Tue 11 AM - 12 PM
-      location: IA 3180 (CS Help Center)
-    - name: John Guirgis
-      contact: Piazza
-      hours: Wed 8-9 PM
+      hours: TBD
       location: IA 3180 (CS Help Center)
     - name: Hriday Algh
       contact: Piazza
-      hours: Thu 7-8 PM
+      hours: TBD
       location: IA 3180 (CS Help Center)
-    - name: Casper Sajewski-Lee
+    - name: Sadra Setarehdan
       contact: Piazza
-      hours: Fri 1-2 PM
+      hours: TBD
       location: IA 3180 (CS Help Center)
   
 timings:
     - section: LEC01
-      time: Fri 9-11 AM
-      location: SW 309
+      time: Fri 11 AM - 1 PM
+      location: IA 2150 A
       instructor: Thierry
     - section: TUT01
-      time: Thu 8-9 PM
-      location: HL B108
-      instructor: Casper
+      time: Mon 3-4 PM
+      location: IA 2040
+      instructor: Sadra
     - section: TUT02
-      time: Tue 7-8 PM
-      location: IC 326
+      time: Thu 4-5 PM
+      location: IA B1010
       instructor: Hriday
-    - section: TUT03
-      time: Wed 7-8 PM
-      location: IC 326
-      instructor: John
-    - section: TUT04
-      time: Mon 9-10 AM
-      location: IA 2060
+    - section: TUT05
+      time: Mon 2-3 PM
+      location: IA 2040
       instructor: Chris
         
-first: 20250106
+first: 20250505
