@@ -12,7 +12,7 @@ instructor:
   name: Thierry Sans
   email: "thierry.sans@"
   website: https://thierrysans.github.io/
-  hours: Fri 2-4 PM
+  hours: Fri 10-11 AM
   location: IA 4124
   contact: Piazza only (no email)
 
@@ -20,15 +20,15 @@ instructor:
 assistants:
     - name: Chris Lin
       contact: Piazza
-      hours: TBD
+      hours: Tue 11 AM
       location: IA 3180 (CS Help Center)
     - name: Hriday Algh
       contact: Piazza
-      hours: TBD
+      hours: Thu 5-6 PM
       location: IA 3180 (CS Help Center)
     - name: Sadra Setarehdan
       contact: Piazza
-      hours: TBD
+      hours: Wed 1 PM
       location: IA 3180 (CS Help Center)
   
 timings:
