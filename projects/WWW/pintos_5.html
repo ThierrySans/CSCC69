@@ -473,7 +473,7 @@ independent, so that they do not need to wait on each other.
 </P>
 <P>
 
-Operations on different cache blocks must be independent.  In
+Operations on different blocks must be independent.  In
 particular, when I/O is required on a particular block, operations on
 other blocks that do not require I/O should proceed without having to
 wait for the I/O to complete.
