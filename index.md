@@ -77,11 +77,11 @@ The numeric marks of the projects and final exam will be used to compute a compo
     </div>
     <div class="row">
         <div class="hcolumn column4">Projects</div>
-        <div class="column4">80% (4 projects, 20% each)</div>
+        <div class="column4">60% (4 projects, 15% each)</div>
     </div>
     <div class="row">
         <div class="hcolumn column4">Final Exam</div>
-        <div class="column4">20%</div>
+        <div class="column4">40%</div>
     </div>
 </div>
 
@@ -121,13 +121,9 @@ You are not allowed to ask for help outside of the course Piazza. Asking for hel
 
 The course staff reserves the right to use code and text analysis tools to compare your submission with others (including past/present submissions and others available online) to verify that no improper behavior has occurred.
 
-Failure to comply with these guidelines is a serious academic offence. In past academic offense cases, the Associate Dean has imposed penalties for code violations that range from a mark of zero on plagiarized projects to academic suspension from the University.
+Failure to comply with these guidelines is a serious academic offense. In past academic offense cases, the Associate Dean has imposed penalties for code violations that range from a mark of zero on plagiarized projects to academic suspension from the University.
 
 
 ## Accessibility Needs
 
 The University of Toronto is committed to accessibility. If you require accommodations for a disability, or have any accessibility concerns about the course, the classroom or course materials, please contact Accessibility Services as soon as possible: <https://www.utsc.utoronto.ca/ability/welcome-accessability-services>
-
-## Acknowledgments 
-
-The course syllabus, lecture and project materials are heavily influenced by Stanford CS 140 and John Hopkins University CS 318. I would like to thank Ben Pfaff (Stanford and VMware Research), David Mazières (Stanford) and Ryan Huang (John Hopkins University) for giving me access to their materials.

@@ -1,3 +1,5 @@
+- week: No tutorial
+
 - week: Interrupts and Threads
   handout: 02/
   notes:
@@ -23,17 +25,15 @@
   handout: 06/
   notes:
     Virtual Memory: https://youtu.be/HWxMH_SNnNM
+
+- break: Reading Week
   
 - week: Memory Management
   handout: 08/
   notes:
      Starting with Project 3: https://youtu.be/PVKZkkiyXD0
 
-- break: Reading Week
-
 - week: Help Session
-
-- week: No tutorial
 
 - week: Memory Mapped Files
   handout: 09/

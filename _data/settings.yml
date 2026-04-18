@@ -1,11 +1,11 @@
 # Site settings
 ref: CSCC69
 title: Operating systems
-edition: Summer 2025
+edition: Summer 2026
 description: "Principles of operating systems. The operating system as a control program and as a resource allocator. The concept of a process and concurrency problem: synchronization, mutual exclusion, deadlock. Additional topics include memory management, file systems, process scheduling, threads, and protection."
 website: https://thierrysans.me/CSCC69/
 github: https://github.com/ThierrySans/CSCC69
-piazza: https://piazza.com/utoronto.ca/summer2025/cscc69
+piazza: https://piazza.com/utoronto.ca/summer2026/cscc69
 feedback: https://forms.gle/MKeNGv2hsxT6nxb49
 
 instructor:
@@ -18,35 +18,35 @@ instructor:
 
 # https://www.fingerlakesbmw.org/main/flobfuscate.php
 assistants:
-    - name: Chris Lin
-      contact: Piazza
-      hours: Tue 11 AM
-      location: IA 3180 (CS Help Center)
-    - name: Hriday Algh
-      contact: Piazza
-      hours: Thu 5-6 PM
-      location: IA B1010
-    - name: Sadra Setarehdan
-      contact: Piazza
-      hours: Wed 1 PM
-      location: IA 3180 (CS Help Center)
+    # - name: Chris Lin
+    #   contact: Piazza
+    #   hours: Tue 11 AM
+    #   location: IA 3180 (CS Help Center)
+    # - name: Hriday Algh
+    #   contact: Piazza
+    #   hours: Thu 5-6 PM
+    #   location: IA B1010
+    # - name: Sadra Setarehdan
+    #   contact: Piazza
+    #   hours: Wed 1 PM
+    #   location: IA 3180 (CS Help Center)
   
 timings:
     - section: LEC01
       time: Fri 11 AM - 1 PM
-      location: IA 2150 A
+      location: IC 130
       instructor: Thierry
     - section: TUT01
       time: Mon 3-4 PM
-      location: IA 2040
-      instructor: Sadra
+      location: IA 2010
+      # instructor: Sadra
     - section: TUT02
       time: Thu 4-5 PM
       location: IA B1010
-      instructor: Hriday
-    - section: TUT05
+      # instructor: Hriday
+    - section: TUT03
       time: Mon 2-3 PM
       location: IA 2040
-      instructor: Chris
+      # instructor: Chris
         
-first: 20250505
+first: 20260504
