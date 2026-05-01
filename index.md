@@ -101,6 +101,63 @@ If an emergency arises that prevents you from being able to complete any piece o
 
 If a piece of work has been mis-marked or if you believe the rubric used to evaluate the work is not appropriate, you may request a re-mark. For a re-mark to succeed, you must clearly and concisely express what you believe was mis-marked. To request a re-mark, please contact your TA. Requests must be submitted *within 1 week* of the marks being returned.
 
+## AI Policy
+
+Operating systems are learned by designing, implementing, debugging, and reasoning about low-level code. In this course, the Pintos assignments are intended to develop your understanding of kernel threads, synchronization, system calls, user programs, virtual memory, file systems, and debugging in a realistic operating-system environment.
+
+AI tools can be useful learning aids, but they can also complete large parts of the assignments without requiring you to understand the underlying ideas. For that reason, all code submitted for Pintos assignments must be written and understood by you and your team directly.
+
+You may use AI tools for:
+
+- Asking high-level conceptual questions about operating systems.
+- Reviewing lecture concepts such as scheduling, synchronization, virtual memory, system calls, page tables, file systems, or race conditions.
+- Explaining compiler errors, linker errors, runtime crashes, kernel panics, assertion failures, or test output.
+- Understanding documentation, APIs, C syntax, GDB commands, Makefiles, or Pintos tooling.
+- Asking for debugging strategies, sanity checks, invariants, or test ideas.
+- Asking for feedback on code that you have already written, provided the AI does not rewrite or complete the implementation for you.
+
+You may not use AI tools to:
+
+- Write, generate, or complete any part of an assignment implementation.
+- Fill in TODO sections or implement required Pintos functions.
+- Generate full functions, patches, diffs, or design-level solutions.
+- Convert assignment requirements directly into working code.
+- Refactor large parts of your code into a finished solution.
+- Debug by asking the AI to identify and fix the bug directly.
+- Use coding agents, automated editing tools, or AI autocomplete to modify assignment code.
+- Use AI to produce design-document answers that describe code or design decisions you did not make yourself.
+
+This applies to all Pintos assignments, tests, experiments, leaderboards, and design documents.
+
+Each assignment repository will include an `AGENTS.md` file that describes how AI tools are allowed to interact with the repository. Students must not modify, remove, weaken, or bypass this file. When using an online chat interface such as ChatGPT, Claude, Gemini, or similar tools, students should paste the contents of `AGENTS.md` at the beginning of the conversation. The purpose of this file is to ensure that AI tools act like teaching assistants rather than solution generators.
+
+AI autocomplete must be disabled while working on assignment code. Non-AI autocomplete, such as completing variable names, function names, or editor snippets, is permitted.
+
+Coding agents such as Cursor Agent, Claude Code, Codex, Copilot Workspace, or similar tools must not be used to edit, generate, or complete Pintos assignment code. They may only be used in a read-only teaching mode consistent with the `AGENTS.md` file.
+
+Ask yourself whether a course instructor or teaching assistant would provide the same help in office hours.
+
+Allowed:
+
+- “Can you explain what a race condition is?”
+- “What does this assertion failure mean?”
+- “What should I inspect when debugging a priority-scheduling bug?”
+- “Can you explain how condition variables differ from semaphores?”
+- “Here is my code. Can you ask me questions that help me debug it?”
+
+Not allowed:
+
+- “Implement priority donation for me.”
+- “Write `process_wait()`.”
+- “Fix my system call handler.”
+- “Complete the page fault handler.”
+- “Generate code that passes the Pintos tests.”
+- “Here is the assignment handout. Give me the solution.”
+
+You are responsible for understanding every line of code and every design decision in your submission. If you use AI in a permitted way, you should still be able to explain your implementation, justify your design, and debug your code independently.
+
+Violations of this policy will be treated as academic misconduct under the course and university academic-integrity policies. If you are unsure whether a use of AI is permitted, ask the teaching staff before using it.
+
 ## Academic Integrity
 
 You are expected to comply with the [Code of Behaviour on Academic Matters](http://www.governingcouncil.utoronto.ca/Assets/Governing+Council+Digital+Assets/Policies/PDF/ppjun011995.pdf). 
@@ -109,7 +166,9 @@ Assignment solutions must be prepared individually, except where an assignment h
 
 You are fully responsible for the piece of work you submit to Github repository as your contribution to the project. 
 
-When the assignment handout allows you to use snippets of code from the web, you should cite the source in the source code. As a rule of thumb, any piece of code larger than 5 lines that has been copied and re-used as is or even slightly modified must be clearly referenced. However, any piece of code larger than 25 lines should not be re-used. However, you are not allowed to use any AI assistant to produce assignment code or writeup.
+When the assignment handout allows you to use snippets of code from the web, you should cite the source in the source code. As a rule of thumb, any piece of code larger than 5 lines that has been copied and re-used as is or even slightly modified must be clearly referenced. However, any piece of code larger than 25 lines should not be re-used.
+
+The use of AI tools is permitted only to the extent allowed by the AI policy described above.
 
 You may discuss projects with other students, for example to clarify the requirements of an project, to work through examples that help you understand the technology used for an project, or to learn how to configure your system to run a supporting piece of software used in an project. However, collaboration at the level of answering written questions or designing and writing code, is strictly forbidden. Written problems and programming projects must be answered, designed and coded by you alone, using the text, your own notes, and other texts and Web sources as aids.
 
