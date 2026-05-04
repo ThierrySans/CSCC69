@@ -18,12 +18,12 @@ You can work in groups of 1-3 people. So start talking with your classmates arou
         <div class="column3">Rubric</div>
     </div>
     <div class="row">
-        <div class="column2">Wed May 31</div>
+        <div class="column2">Sun May 31</div>
         <div class="column3"><a href="WWW/pintos_2.html">Project 1: Threads</a></div>
         <div class="column3"><a href="rubrics/project1.txt">Rubric</a></div>
     </div>
     <div class="row">
-        <div class="column2">Wed Jun 21</div>
+        <div class="column2">Sun Jun 21</div>
         <div class="column3"><a href="WWW/pintos_3.html">Project 2: User Programs</a></div>
         <div class="column3"><a href="rubrics/project2.txt">Rubric</a></div>
     </div>
