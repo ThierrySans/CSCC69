@@ -1,7 +1,7 @@
 - week: The Big Picture
-  # notes:
-  #     Introduction: 01/slides/CSCC69-Introduction
-  #     The Big Picture: 01/slides/CSCC69-TheBigPicture
+  notes:
+      Introduction: 01/slides/CSCC69-Introduction
+      The Big Picture: 01/slides/CSCC69-TheBigPicture
   readings:
       "Chap 2 Introduction to Operating Systems": http://pages.cs.wisc.edu/~remzi/OSTEP/intro.pdf
       "Chap 4 The Abstraction: The Process": http://pages.cs.wisc.edu/~remzi/OSTEP/cpu-intro.pdf
