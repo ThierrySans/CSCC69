@@ -10,7 +10,6 @@ feedback: https://forms.gle/MKeNGv2hsxT6nxb49
 
 instructor:
   name: Thierry Sans
-  email: "thierry.sans@"
   website: https://thierrysans.github.io/
   hours: Fri 10-11 AM
   location: IA 4124
@@ -18,35 +17,23 @@ instructor:
 
 # https://www.fingerlakesbmw.org/main/flobfuscate.php
 assistants:
-    # - name: Chris Lin
-    #   contact: Piazza
-    #   hours: Tue 11 AM
-    #   location: IA 3180 (CS Help Center)
-    # - name: Hriday Algh
-    #   contact: Piazza
-    #   hours: Thu 5-6 PM
-    #   location: IA B1010
-    # - name: Sadra Setarehdan
-    #   contact: Piazza
-    #   hours: Wed 1 PM
-    #   location: IA 3180 (CS Help Center)
+    - name: Arshiya Mahmoodinezhad
+      contact: Piazza
+      hours: TBD
+      location: IA 3180 (CS Help Center)
   
 timings:
     - section: LEC01
       time: Fri 11 AM - 1 PM
       location: IC 130
       instructor: Thierry
-    - section: TUT01
-      time: Mon 3-4 PM
-      location: IA 2010
-      # instructor: Sadra
     - section: TUT02
-      time: Thu 4-5 PM
-      location: IA B1010
-      # instructor: Hriday
+      time: Mon 12-1 PM
+      location: IA-2010
+      instructor: Arshiya
     - section: TUT03
       time: Mon 2-3 PM
       location: IA 2040
-      # instructor: Chris
+      instructor: Arshiya
         
 first: 20260504
