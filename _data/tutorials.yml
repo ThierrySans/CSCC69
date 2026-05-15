@@ -1,13 +1,12 @@
 - week: No tutorial
 
-- week: Getting Started
-  notes:
-      Getting Started: https://youtu.be/7D77e5bm8lw
-
 - week: Interrupts and Threads
   handout: 02/
   notes:
+      Getting Started: https://youtu.be/7D77e5bm8lw
       Thread Switching: https://youtu.be/4C8J6jLPJPc
+
+- week: No tutorial
       
 - week: Synchronization
   handout: 03/
@@ -24,20 +23,18 @@
     System Calls: https://youtu.be/jfPdiaAG0AQ
     Starting with Project 2: https://youtu.be/3DcNBOUkXuw
 
-- break: Reading Week
-
 - week: Virtual Memory
   handout: 06/
   notes:
     Virtual Memory: https://youtu.be/HWxMH_SNnNM
-  
+
 - week: Memory Management
   handout: 08/
   notes:
      Starting with Project 3: https://youtu.be/PVKZkkiyXD0
 
-- week: Help Session
-
+- week: No tutorial
+  
 - week: Memory Mapped Files
   handout: 09/
   notes:
