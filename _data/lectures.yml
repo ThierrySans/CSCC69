@@ -35,7 +35,7 @@
       "Chap 5 Interlude: Process API": http://pages.cs.wisc.edu/~remzi/OSTEP/cpu-api.pdf
       "Chap 27 Interlude: Thread API": http://pages.cs.wisc.edu/~remzi/OSTEP/threads-api.pdf
 
-- week: Virtual Memory
+- week: Virtual Memory (part 1)
   readings:
       "Chap 15 Mechanism: Address Translation": http://pages.cs.wisc.edu/~remzi/OSTEP/vm-mechanism.pdf
       "Chap 16 Segmentation": http://pages.cs.wisc.edu/~remzi/OSTEP/vm-segmentation.pdf
@@ -45,6 +45,8 @@
   notes:
       Virtual Memory: 05/slides/CSCC69-VirtualMemory
       Paging in details: 05/slides/CSCC69-Paging
+
+- week: Virtual Memory (part 2)
 
 - week: Memory Management
   date: Jun 16
@@ -57,28 +59,30 @@
 
 # - break: Reading Week
 
-- week: I/O and Disks
-  readings:
-      "(again) Chap 36 I/O Devices": http://pages.cs.wisc.edu/~remzi/OSTEP/file-devices.pdf
-      "Chap 37 Hard Disk Drives": http://pages.cs.wisc.edu/~remzi/OSTEP/file-disks.pdf
-      "Chap 44 Flash-based SSDs": http://pages.cs.wisc.edu/~remzi/OSTEP/file-ssd.pdf
-  notes:
-      I/O and Disks: 07/slides/CSCC69-IO
+# - week: I/O and Disks
+#   readings:
+#       "(again) Chap 36 I/O Devices": http://pages.cs.wisc.edu/~remzi/OSTEP/file-devices.pdf
+#       "Chap 37 Hard Disk Drives": http://pages.cs.wisc.edu/~remzi/OSTEP/file-disks.pdf
+#       "Chap 44 Flash-based SSDs": http://pages.cs.wisc.edu/~remzi/OSTEP/file-ssd.pdf
+#   notes:
+#       I/O and Disks: 07/slides/CSCC69-IO
 
-- week: File Systems
+- week: File Systems (part 1)
   readings:
       "Chap 39 Files and Directories": http://pages.cs.wisc.edu/~remzi/OSTEP/file-intro.pdf
       "Chap 40 File System Implementation": http://pages.cs.wisc.edu/~remzi/OSTEP/file-implementation.pdf
-  # notes:
-  #     File Systems: 08/slides/CSCC69-FileSystems
+  notes:
+      File Systems: 08/slides/CSCC69-FileSystems
 
-- week: Advanced File Systems
-  readings:
-      "Chap 41 Locality and The Fast File System": http://pages.cs.wisc.edu/~remzi/OSTEP/file-ffs.pdf
-      "Chap 42 Crash Consistency: FSCK and Journaling": http://pages.cs.wisc.edu/~remzi/OSTEP/file-journaling.pdf
-      "Chap 43 Log-structured File Systems": http://pages.cs.wisc.edu/~remzi/OSTEP/file-lfs.pdf
-  # notes:
-  #     Advanced File Systems: 09/slides/CSCC69-AdvancedFileSystems
+- week: File Systems (part 2)
+
+# - week: Advanced File Systems
+#   readings:
+#       "Chap 41 Locality and The Fast File System": http://pages.cs.wisc.edu/~remzi/OSTEP/file-ffs.pdf
+#       "Chap 42 Crash Consistency: FSCK and Journaling": http://pages.cs.wisc.edu/~remzi/OSTEP/file-journaling.pdf
+#       "Chap 43 Log-structured File Systems": http://pages.cs.wisc.edu/~remzi/OSTEP/file-lfs.pdf
+#   # notes:
+#   #     Advanced File Systems: 09/slides/CSCC69-AdvancedFileSystems
 
 - week: Virtualization
   readings:
