@@ -84,15 +84,15 @@
 #   # notes:
 #   #     Advanced File Systems: 09/slides/CSCC69-AdvancedFileSystems
 
-- week: Virtualization
-  readings:
-      "Appendix B Virtual Machine Monitors": http://pages.cs.wisc.edu/~remzi/OSTEP/vmm-intro.pdf
+# - week: Virtualization
+#   readings:
+#       "Appendix B Virtual Machine Monitors": http://pages.cs.wisc.edu/~remzi/OSTEP/vmm-intro.pdf
   # notes:
   #     Virtualization: 10/slides/CSCC69-Virtualization
 
-- week: Distributed Systems
-  readings:
-      "Chapter 48 Distributed Systems": http://pages.cs.wisc.edu/~remzi/OSTEP/dist-intro.pdf
+# - week: Distributed Systems
+#   readings:
+#       "Chapter 48 Distributed Systems": http://pages.cs.wisc.edu/~remzi/OSTEP/dist-intro.pdf
   # notes:
   #     Distributed Systems: 11/slides/CSCC69-DistributedSystems
 
