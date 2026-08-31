@@ -85,7 +85,7 @@ The numeric marks of the projects and final exam will be used to compute a compo
     </div>
 </div>
 
-A mark of **at least 50% on the final exam** is required to pass the course. If you receive less than 50% on the final exam, your overall course grade will be capped at 49.
+A mark of **at least 50% on the final exam** is required to pass the course. If you receive less than 50% on the final exam, your overall course grade will be capped at 45.
 
 ## Submission and Grading Policy
 
